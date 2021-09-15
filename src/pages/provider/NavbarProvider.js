@@ -17,6 +17,9 @@ const NavbarProvider = () => {
                     <NavLink to="/" className="con-btn">Подключить <img src="/images/icon/Arrow4.png" alt=""/></NavLink>
                 </div>
             </div>
+            <div className="row">
+
+            </div>
 
         </div>
     );

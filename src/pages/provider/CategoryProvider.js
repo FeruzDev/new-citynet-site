@@ -2,29 +2,15 @@ import React from 'react';
 
 const CategoryProvider = () => {
     return (
-        <div className='category-provider'>
-            <div className="row">
-                <div className="col-md-4">
-                    <div className="category-box">
-                        <h2>Интернет</h2>
-                    </div>
-                </div>
+       <div>
 
-
-                <div className="col-md-4">
-                    <div className="category-box">
-                       <h2> IP TV</h2>
-                    </div>
-                </div>
-
-
-                <div className="col-md-4">
-                    <div className="category-box">
-                       <h2> IP телефония</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
+          <nav>
+              <a href="#">home</a>
+              <a href="#">home</a>
+              <a href="#">home</a>
+              <div className="animation start-home"></div>
+          </nav>
+       </div>
     );
 };
 

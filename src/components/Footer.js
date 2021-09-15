@@ -1,18 +1,19 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="footer-pair">
+        <div className="footer-pair container">
             <div className="row">
                 <div className="col-md-3">
-                    <img src="/images/icon/logoFooter.png" alt=""/>
+                   <NavLink to="/home-iptv"> <img src="/images/icon/logoFooter.png" alt=""/></NavLink>
                 </div>
                 <div className="col-md-3">
                     <h3>
                         Направление
                     </h3>
                     <a href="#!">Интернет</a>
-                    <a href="#!">Видеонаблюдение</a>
+                    <NavLink to="/video-monitoring">Видеонаблюдение</NavLink>
                     <a href="#!">Проектирование</a>
                     <a href="#!">Монтаж</a>
                 </div>
@@ -36,8 +37,6 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-
-
 
             <div className="row sub-footer-pr">
                     <h3>Служба поддержки</h3>

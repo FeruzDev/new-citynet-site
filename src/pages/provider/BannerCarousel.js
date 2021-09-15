@@ -11,49 +11,25 @@ const BannerCarousel = () => {
 
     };
 
-
     return (
-        <div className='banner-carousel'>
+        <div className='banner-carousel container'>
             <Slider {...settings}>
-                 <div className="carousel-item-img">
-
-
-
-
-                     <div className="row banner-title">
-
-
-                             <h1>
-                                 Интернет выдержит <br/>
-                                 любые нагрузки
-                             </h1>
-                             <div className="third-arrow">
-                                 <a href="#!">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
-                             </div>
-
-
-                     </div>
-                     <img className="banner-carousel-img-item" src="/images/bannercarousel.png" alt=""/>
-
-
-                 </div>
-
-
-
                 <div className="carousel-item-img">
-
-
 
 
                     <div className="row banner-title">
 
 
                         <h1>
-                            Интернет выдержит <br/>
-                            любые нагрузки
-                        </h1>
+                            «CityNet» — это все преимущества с одним оператором связи </h1>
+                        <p>
+                            Мы являемся универсальным оператором, предоставляя качественный и бесперебойный
+                            интернет-сервис. А также, мы предлагаем безлимитный доступ в интернет-сеть с использованием
+                            современного оборудования для обеспечения возрастающих потребностей пользователей.
+                        </p>
                         <div className="third-arrow">
-                            <a href="#!">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                            <a href="#!">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                                        alt=""/></a>
                         </div>
 
 
@@ -67,17 +43,19 @@ const BannerCarousel = () => {
                 <div className="carousel-item-img">
 
 
-
-
                     <div className="row banner-title">
 
 
                         <h1>
-                            Интернет выдержит <br/>
-                            любые нагрузки
+                            «CityNet» - универсальный оператор связи для бизнеса
                         </h1>
+                        <p>
+                            pКомпания помогает оперативно провести Интернет сетевым и государственным компаниям,
+                            индивидуальным предпринимателям и частным лицам.
+                        </p>
                         <div className="third-arrow">
-                            <a href="#!">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                            <a href="#!">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                                        alt=""/></a>
                         </div>
 
 
@@ -88,21 +66,48 @@ const BannerCarousel = () => {
                 </div>
 
 
-
                 <div className="carousel-item-img">
-
-
 
 
                     <div className="row banner-title">
 
 
                         <h1>
-                            Интернет выдержит <br/>
-                            любые нагрузки
+                            «CityNet» - универсальный оператор связи для бизнеса
                         </h1>
+                        <p>
+                            pКомпания помогает оперативно провести Интернет сетевым и государственным компаниям,
+                            индивидуальным предпринимателям и частным лицам.
+                        </p>
                         <div className="third-arrow">
-                            <a href="#!">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                            <a href="#!">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                                        alt=""/></a>
+                        </div>
+
+
+                    </div>
+                    <img className="banner-carousel-img-item" src="/images/bannercarousel.png" alt=""/>
+
+
+                </div>
+
+
+                <div className="carousel-item-img">
+
+
+                    <div className="row banner-title">
+
+
+                        <h1>
+                            «CityNet» - универсальный оператор связи для бизнеса
+                        </h1>
+                        <p>
+                            pКомпания помогает оперативно провести Интернет сетевым и государственным компаниям,
+                            индивидуальным предпринимателям и частным лицам.
+                        </p>
+                        <div className="third-arrow">
+                            <a href="#!">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                                        alt=""/></a>
                         </div>
 
 
@@ -112,8 +117,6 @@ const BannerCarousel = () => {
 
                 </div>
             </Slider>
-
-
 
 
             <div className="for-call-center">
