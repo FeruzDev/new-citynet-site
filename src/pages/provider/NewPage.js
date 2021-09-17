@@ -7,41 +7,45 @@ const NewPage = () => {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="new-page-child">
-                                <img src="/images/icon/new.png" alt=""/>
-                                <p>Подключение высокоскоростного и безлимитного Интернета</p>
+                                <img src="/images/PNG/q1.png" alt=""/>
+                                <h6>Подключение безлимитного Интернета </h6>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="new-page-child">
-                                <img src="/images/icon/new.png" alt=""/>
-                                <p> IP телефония
-                                </p>
+                                <img src="/images/PNG/q2.png" alt=""/>
+
+                                <h6> IP телефония  </h6>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="new-page-child">
-                                <img src="/images/icon/new.png" alt=""/>
-                                <p>VPN</p>
+                                <img src="/images/PNG/q3.png" alt=""/>
+
+                                <h6>VPN</h6>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="new-page-child">
-                                <img src="/images/icon/new.png" alt=""/>
-                                <p>IP телевидение
-                                </p>
+                                <img src="/images/PNG/q4.png" alt=""/>
+
+                                <h6>IP телевидение
+                                </h6>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="new-page-child">
-                                <img src="/images/icon/new.png" alt=""/>
-                                <p>Видеонаблюдение </p>
+                                <img src="/images/PNG/q5.png" alt=""/>
+
+                                <h6>Видеонаблюдение </h6>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="new-page-child">
-                                <img src="/images/icon/new.png" alt=""/>
-                                <p> Хостинг
-                                </p>
+                                <img src="/images/PNG/q6.png" alt=""/>
+
+                                <h6> Хостинг
+                                </h6>
                             </div>
                         </div>
                     </div>

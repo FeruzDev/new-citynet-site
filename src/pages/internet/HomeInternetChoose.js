@@ -52,10 +52,11 @@ const HomeInternetChoose = () => {
 
 
             <div className="contact-footer-home">
-                <div className="sot-set-list">
-                    <a href="#!"><img src="/images/icon/instagramlogo1.png" alt=""/></a>
-                    <a href="#!"><img src="/images/icon/telegram1.png" alt=""/></a>
-                    <a href="#!"><img src="/images/icon/facebook1.png" alt=""/></a>
+                <div className="sot-set-list position-relative  " style={{zIndex: '9999'}}>
+                    <a href="https://www.instagram.com/citynet.uz/" target="_blank" ><img src="/images/icon/instagramlogo1.png" alt=""/></a>
+                    <a href="https://t.me/citynet_uzb" target="_blank"><img src="/images/icon/telegram1.png" alt=""/></a>
+                    <a href="https://www.facebook.com/CITYNET.uz/" target="_blank"><img src="/images/icon/facebook1.png" alt=""/></a>
+
                 </div>
                 <div className="sv">
                     <span>

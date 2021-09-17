@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const TvPartOne = () => {
     return (
@@ -14,7 +15,7 @@ const TvPartOne = () => {
                             <p>
                                 Подключение IPTV на особых условиях </p>
                             <div className="third-arrow">
-                                <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                                <Link to="/form">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
                             </div>
                         </div>
                     </div>

@@ -26,9 +26,11 @@ const TvPartTwo = () => {
                 <div className='tv-part-two container'>
                     <h1>Тарифый планы</h1>
                     <div className="row">
+
+
                         <div className="col-md-6 col-sm-12 col-xl-4 col-lg-6">
                     <div className="tv-part-two-child ">
-                        <h2>Стартовый</h2>
+                        <h2>SIMPLE</h2>
                         <div className='speed-list'>
                             <img src="/images/icon/moon.png" alt=""/>
                             <h3>
@@ -71,7 +73,7 @@ const TvPartTwo = () => {
                         </div>
                         <div className="col-md-6 col-sm-12 col-xl-4 col-lg-6">
                             <div className="tv-part-two-child ">
-                                <h2>Стартовый</h2>
+                                <h2>SIMPLE</h2>
                                 <div className='speed-list'>
                                     <img src="/images/icon/moon.png" alt=""/>
                                     <h3>
@@ -114,7 +116,7 @@ const TvPartTwo = () => {
                         </div>
                         <div className="col-md-6 col-sm-12 col-xl-4 col-lg-6">
                             <div className="tv-part-two-child ">
-                                <h2>Стартовый</h2>
+                                <h2>SIMPLE</h2>
                                 <div className='speed-list'>
                                     <img src="/images/icon/moon.png" alt=""/>
                                     <h3>

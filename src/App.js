@@ -19,6 +19,7 @@ import MainInstallation from "./pages/Installation/MainInstallation";
 import ItDevelopment from "./pages/ITDevelopment/ITDevelopment";
 import MainContact from "./pages/kontakt/MainContact";
 import Animation from "./pages/iptelephony/Animation";
+import AllChannels from "./pages/IPTVtv/AllChannels";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
                     <Route path="/" exact component={MainIpTelephony}/>
                     <Route path="/mainInternet/traffic" exact component={MainInternetTraffic}/>
                     <Route path="/maintv" exact component={MainTv}/>
+                    <Route path="/maintv/all-channels" exact component={AllChannels}/>
                     <Route path="/equipment" exact component={MainEquipment}/>
                     <Route path="/itequipment" exact component={MainItEquipment}/>
                     <Route path="/form" exact component={MainForm}/>

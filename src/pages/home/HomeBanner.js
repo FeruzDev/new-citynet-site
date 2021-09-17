@@ -199,9 +199,9 @@ const HomeBanner = () => {
 
             <div className="contact-footer-home">
                 <div className="sot-set-list">
-                    <a href="#!"><img src="/images/icon/instagramlogo1.png" alt=""/></a>
-                    <a href="#!"><img src="/images/icon/telegram1.png" alt=""/></a>
-                    <a href="#!"><img src="/images/icon/facebook1.png" alt=""/></a>
+                    <a href="https://www.instagram.com/citynet.uz/" target="_blank" ><img src="/images/icon/instagramlogo1.png" alt=""/></a>
+                    <a href="https://t.me/citynet_uzb" target="_blank"><img src="/images/icon/telegram1.png" alt=""/></a>
+                    <a href="https://www.facebook.com/CITYNET.uz/" target="_blank"><img src="/images/icon/facebook1.png" alt=""/></a>
                 </div>
                 <div className="mouse">
                     <a href="#company" ><span>
@@ -209,14 +209,14 @@ const HomeBanner = () => {
                     </span>
 
                       </a>
-                    <a href="#!">  <img src="/images/icon/mouse.png" alt=""/></a>
+                    <a href="#company"  >  <img src="/images/icon/mouse.png" alt=""/></a>
 
                 </div>
                 <div className="sv">
                     <span>
                         Связить с нами
                     </span>
-                    <a href="#!">   <img src="/images/icon/sv.png" alt=""/></a>
+                    <NavLink to="/contact"  >   <img src="/images/icon/sv.png" alt=""/></NavLink>
                 </div>
             </div>
         </div>

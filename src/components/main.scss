@@ -498,30 +498,40 @@ nav {
     margin-bottom: 25px;
   }
 
+
   .provider-opacity {
     position: absolute;
     z-index: 2;
     width: 50px;
-    height: 561px;
+    height: 100%;
     background-color: white;
 
-    right: -0.1px;
+    right: -40px;
     box-shadow: -15px 0px 20px 0px white;
 
   }
 
   .slick-slider {
     position: relative;
+    height: 600px !important;
+
+  }
+
+  .slick-active{
+    width: 260px !important;
   }
 
   .slick-next {
     box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.08);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    right: -5px;
+    width: 60px;
+    height: 60px;
+    right: -25px  !important;
     z-index: 3;
 
+    top: 50% !important;
+
+    background-color: #FFFFFF;
 
     &::before {
       content: url("../images/carouselstrelkanext.png");
@@ -552,12 +562,12 @@ nav {
 
 
   .price-item {
-    margin-top: 20px;
+    margin-top: 18px;
 
 
     .price-item-child {
 
-      padding: 14px;
+      padding: 24px;
       margin-right: 20px;
       background-color: #FFFFFF;
       border: 1px solid #E8E8EA;
@@ -585,7 +595,7 @@ nav {
         color: #101828;
 
 
-        margin-bottom: 60px;
+        margin-bottom: 44px;
 
       }
 
@@ -595,10 +605,16 @@ nav {
         align-items: start;
         margin-top: 24px;
 
-        img {
+        div{
+          width: 21px;
 
-          margin-top: 4px;
+          img {
+
+            margin-top: 4px;
+
+          }
         }
+
 
         h3 {
           display: flex;
@@ -622,35 +638,36 @@ nav {
         }
       }
 
-      p {
-        font-weight: normal;
-        font-size: 15px;
-        color: #B0B0B0;
 
-        margin-top: 24px;
-      }
 
       h1 {
         font-weight: 500;
         font-size: 39px;
-        text-align: center;
+        text-align: left;
         color: #000000;
-        margin: 0;
+
+
+        margin-bottom: 0;
+        margin-top: 20px;
 
       }
 
       h5 {
         font-size: 15px;
-        text-align: center;
-        color: #000000;
-        margin: -12px;
+
+
+        margin-left: 3px;
+        margin-top: -12px;
+        font-weight: normal;
+        line-height: 18px;
+        color: #575D68;
 
       }
 
 
       .third-arrow {
 
-        margin-top: 46px;
+        margin-top: 39px;
         display: block;
         border-radius: 8px;
         padding: 0;
@@ -685,6 +702,31 @@ nav {
       }
     }
   }
+}
+
+
+.sale{
+  margin-top: 26px;
+
+  h4{
+    color: #581EFD;
+    font-size: 22px;
+    font-weight: normal;
+
+    margin-bottom: -6px;
+  }
+  span{
+    font-size: 13px;
+    line-height: 15px;
+
+
+    color: #BABABA;
+  }
+
+}
+
+.sale:nth-child(7){
+  margin-top: 18px !important;
 }
 
 .traffic-part {
@@ -2245,7 +2287,7 @@ nav {
 
         .third-arrow {
 
-          margin-top: 63px;
+          margin-top: 23px;
           display: block;
           background: #0086E7;
           border-radius: 8px;
@@ -2430,8 +2472,20 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         margin-right: 57px;
-        margin-top: 70px;
+        margin-top: 90px;
+        position: relative;
+        h6{
+          position: absolute;
+          bottom: -60px;
+          text-align: center;
+          width: 170px;
+
+        }
+        img{
+          width: 73px;
+        }
       }
 
       .box:hover {
@@ -8077,7 +8131,56 @@ hr {
   }
 }
 
+.all-channels{
 
+}
+
+.new-page{
+
+
+  .col-md-4{
+    display: flex;
+    justify-content: center;
+  }
+  .new-page-child{
+
+    &:hover {
+      box-shadow: 0px 0px 8px 2px rgba(0, 119, 228, 0.16);
+      border: 2px solid #58B7FF;
+    }
+      width: 134px;
+
+    text-align: center;
+      height: 134px;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      margin-top: 90px;
+      position: relative;
+      h6{
+        position: absolute;
+        bottom: -60px;
+        text-align: center;
+        width: 230px;
+
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #101828;
+      }
+      img{
+        width: 73px;
+      }
+
+  }
+
+}
 @media only screen and (min-width: 1200px) {
   .navbar-b {
     display: none;

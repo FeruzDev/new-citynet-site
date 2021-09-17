@@ -27,11 +27,11 @@ const NavbarGeneral = () => {
                                 <img src="images/icon/arrow4.png" className="arrow-img-white" alt=""/>
                             </NavLink>
                         </div>
-                        <div>
-                            <button   onClick={()=> changeLang('ru')} >Ru</button>
-                            <button  onClick={()=> changeLang('uz')}>UZ</button>
-                            <button  onClick={()=> changeLang('en')}>EN</button>
-                        </div>
+                        {/*<div>*/}
+                        {/*    <button   onClick={()=> changeLang('ru')} >Ru</button>*/}
+                        {/*    <button  onClick={()=> changeLang('uz')}>UZ</button>*/}
+                        {/*    <button  onClick={()=> changeLang('en')}>EN</button>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
 

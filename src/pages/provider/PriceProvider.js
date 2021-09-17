@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
+import {Link} from "react-router-dom";
 
 
 
@@ -18,7 +19,7 @@ const PriceProvider = () => {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
             },
             {
@@ -82,310 +83,250 @@ const PriceProvider = () => {
             <h1>Тарифный планы</h1>
             <div className="provider-opacity"></div>
             <Slider {...settings}>
-                <div className='price-item'>
-           <div className="price-item-child">
-               <h2>Безлимитный</h2>
-               <div className='speed-list'>
-                   <img src="/images/icon/moon.png" alt=""/>
-                   <h3>
-                       <span>200 Мб/с</span>
-                       <span>Скорость, до с 01:00 до 13:00</span>
-                   </h3>
-               </div>
-
-               <div className='speed-list'>
-                   <img src="/images/icon/sun.png" alt=""/>
-                   <h3>
-                       <span>200 Мб/с</span>
-                       <span>Скорость, до </span>
-                   </h3>
-               </div>
-
-
-               <div className='speed-list'>
-                   <img src="/images/icon/infin.png" alt=""/>
-                   <h3>
-                       <span>Безлимит</span>
-                   </h3>
-               </div>
-
-               <p>TAS-IX 6 Мбит/с на ADSL</p>
 
 
 
-               <h1>
-                   90 000
-               </h1>
-               <h5>
-                   Сум / Месяц
-               </h5>
 
-               <div className="third-arrow">
-                   <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
-               </div>
-           </div>
-                </div>
+
+
 
 
                 <div className='price-item'>
                     <div className="price-item-child">
-                        <h2>Безлимит</h2>
+                        <h2>OPTIMUM</h2>
                         <div className='speed-list'>
-                            <img src="/images/icon/moon.png" alt=""/>
+                            <div><img src="/images/icon/speed.png" alt=""/></div>
                             <h3>
-                                <span>200 Мб/с</span>
-                                <span>Скорость, до с 01:00 до 13:00</span>
+                                <span>10 Мб/с</span>
+                                <span>Скорость </span>
                             </h3>
                         </div>
 
                         <div className='speed-list'>
-                            <img src="/images/icon/sun.png" alt=""/>
+                            <div> <img src="/images/icon/tas.png" alt=""/></div>
                             <h3>
-                                <span>200 Мб/с</span>
-                                <span>Скорость, до </span>
+                                <span>100 Мб/с</span>
+                                <span>TAS-IX</span>
                             </h3>
                         </div>
 
-
-                        <div className='speed-list'>
-                            <img src="/images/icon/infin.png" alt=""/>
-                            <h3>
-                                <span>Безлимит</span>
-                            </h3>
-                        </div>
-
-                        <p>TAS-IX 6 Мбит/с на ADSL</p>
 
 
 
                         <h1>
-                            90 000
+                            115 000
                         </h1>
                         <h5>
                             Сум / Месяц
                         </h5>
 
-                        <div className="third-arrow">
-                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+
+                        <div className="sale">
+                            <h4>103 500 Сум</h4>
+                            <span>6 месяцев скидка 10%</span>
                         </div>
-                    </div>
-                </div>
-                <div className='price-item'>
-                    <div className="price-item-child">
-                        <h2>Безлимит</h2>
-                        <div className='speed-list'>
-                            <img src="/images/icon/moon.png" alt=""/>
-                            <h3>
-                                <span>200 Мб/с</span>
-                                <span>Скорость, до с 01:00 до 13:00</span>
-                            </h3>
+                        <div className="sale">
+                            <h4>92 000 Сум</h4>
+                            <span>1 год скидка 10%</span>
+
                         </div>
-
-                        <div className='speed-list'>
-                            <img src="/images/icon/sun.png" alt=""/>
-                            <h3>
-                                <span>200 Мб/с</span>
-                                <span>Скорость, до </span>
-                            </h3>
-                        </div>
-
-
-                        <div className='speed-list'>
-                            <img src="/images/icon/infin.png" alt=""/>
-                            <h3>
-                                <span>Безлимит</span>
-                            </h3>
-                        </div>
-
-                        <p>TAS-IX 6 Мбит/с на ADSL</p>
-
-
-
-                        <h1>
-                            90 000
-                        </h1>
-                        <h5>
-                            Сум / Месяц
-                        </h5>
-
-                        <div className="third-arrow">
-                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
-                        </div>
-                    </div>
-                </div>
-                <div className='price-item'>
-                    <div className="price-item-child">
-                        <h2>Премиум</h2>
-                        <div className='speed-list'>
-                            <img src="/images/icon/moon.png" alt=""/>
-                            <h3>
-                                <span>200 Мб/с</span>
-                                <span>Скорость, до с 01:00 до 13:00</span>
-                            </h3>
-                        </div>
-
-                        <div className='speed-list'>
-                            <img src="/images/icon/sun.png" alt=""/>
-                            <h3>
-                                <span>200 Мб/с</span>
-                                <span>Скорость, до </span>
-                            </h3>
-                        </div>
-
-
-                        <div className='speed-list'>
-                            <img src="/images/icon/infin.png" alt=""/>
-                            <h3>
-                                <span>Безлимит</span>
-                            </h3>
-                        </div>
-
-                        <p>TAS-IX 6 Мбит/с на ADSL</p>
-
-
-
-                        <h1>
-                            90 000
-                        </h1>
-                        <h5>
-                            Сум / Месяц
-                        </h5>
-
-                        <div className="third-arrow">
-                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
-                        </div>
-                    </div>
-                </div>
-                <div className='price-item'>
-                    <div className="price-item-child">
-                        <h2>Платинум</h2>
-                        <div className='speed-list'>
-                            <img src="/images/icon/moon.png" alt=""/>
-                            <h3>
-                                <span>200 Мб/с</span>
-                                <span>Скорость, до с 01:00 до 13:00</span>
-                            </h3>
-                        </div>
-
-                        <div className='speed-list'>
-                            <img src="/images/icon/sun.png" alt=""/>
-                            <h3>
-                                <span>200 Мб/с</span>
-                                <span>Скорость, до </span>
-                            </h3>
-                        </div>
-
-
-                        <div className='speed-list'>
-                            <img src="/images/icon/infin.png" alt=""/>
-                            <h3>
-                                <span>Безлимит</span>
-                            </h3>
-                        </div>
-
-                        <p>TAS-IX 6 Мбит/с на ADSL</p>
-
-
-
-                        <h1>
-                            90 000
-                        </h1>
-                        <h5>
-                            Сум / Месяц
-                        </h5>
-
-                        <div className="third-arrow">
-                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
-                        </div>
-                    </div>
-                </div>
-                <div className='price-item'>
-                    <div className="price-item-child">
-                        <h2>Премиум</h2>
-                        <div className='speed-list'>
-                            <img src="/images/icon/moon.png" alt=""/>
-                            <h3>
-                                <span>200 Мб/с</span>
-                                <span>Скорость, до с 01:00 до 13:00</span>
-                            </h3>
-                        </div>
-
-                        <div className='speed-list'>
-                            <img src="/images/icon/sun.png" alt=""/>
-                            <h3>
-                                <span>200 Мб/с</span>
-                                <span>Скорость, до </span>
-                            </h3>
-                        </div>
-
-
-                        <div className='speed-list'>
-                            <img src="/images/icon/infin.png" alt=""/>
-                            <h3>
-                                <span>Безлимит</span>
-                            </h3>
-                        </div>
-
-                        <p>TAS-IX 6 Мбит/с на ADSL</p>
-
-
-
-                        <h1>
-                            90 000
-                        </h1>
-                        <h5>
-                            Сум / Месяц
-                        </h5>
-
-                        <div className="third-arrow">
-                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
-                        </div>
-                    </div>
-                </div>
-                <div className='price-item'>
-                    <div className="price-item-child">
-                        <h2>Платинум</h2>
-                        <div className='speed-list'>
-                            <img src="/images/icon/moon.png" alt=""/>
-                            <h3>
-                                <span>200 Мб/с</span>
-                                <span>Скорость, до с 01:00 до 13:00</span>
-                            </h3>
-                        </div>
-
-                        <div className='speed-list'>
-                            <img src="/images/icon/sun.png" alt=""/>
-                            <h3>
-                                <span>200 Мб/с</span>
-                                <span>Скорость, до </span>
-                            </h3>
-                        </div>
-
-
-                        <div className='speed-list'>
-                            <img src="/images/icon/infin.png" alt=""/>
-                            <h3>
-                                <span>Безлимит</span>
-                            </h3>
-                        </div>
-
-                        <p>TAS-IX 6 Мбит/с на ADSL</p>
-
-
-
-                        <h1>
-                            90 000
-                        </h1>
-                        <h5>
-                            Сум / Месяц
-                        </h5>
-
                         <div className="third-arrow">
                             <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
                         </div>
                     </div>
                 </div>
 
+
+
+
+
+
+                <div className='price-item'>
+                    <div className="price-item-child">
+                        <h2>EXCLUSIVE</h2>
+                        <div className='speed-list'>
+                            <div><img src="/images/icon/speed.png" alt=""/></div>
+                            <h3>
+                                <span>30 Мб/с</span>
+                                <span>Скорость </span>
+                            </h3>
+                        </div>
+
+                        <div className='speed-list'>
+                            <div> <img src="/images/icon/tas.png" alt=""/></div>
+                            <h3>
+                                <span>100 Мб/с</span>
+                                <span>TAS-IX</span>
+                            </h3>
+                        </div>
+
+
+
+
+                        <h1>
+                            195 000
+                        </h1>
+                        <h5>
+                            Сум / Месяц
+                        </h5>
+
+
+                        <div className="sale">
+                            <h4>175 500 Сум</h4>
+                            <span>6 месяцев скидка 10%</span>
+                        </div>
+                        <div className="sale">
+                            <h4>156 000 Сум</h4>
+                            <span>1 год скидка 10%</span>
+
+                        </div>
+                        <div className="third-arrow">
+                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div className='price-item'>
+                    <div className="price-item-child">
+                        <h2>PREMIUM</h2>
+                        <div className='speed-list'>
+                            <div><img src="/images/icon/speed.png" alt=""/></div>
+                            <h3>
+                                <span>40 Мб/с</span>
+                                <span>Скорость </span>
+                            </h3>
+                        </div>
+
+                        <div className='speed-list'>
+                            <div> <img src="/images/icon/tas.png" alt=""/></div>
+                            <h3>
+                                <span>100 Мб/с</span>
+                                <span>TAS-IX</span>
+                            </h3>
+                        </div>
+
+
+
+
+                        <h1>
+                            249 000
+                        </h1>
+                        <h5>
+                            Сум / Месяц
+                        </h5>
+
+
+                        <div className="sale">
+                            <h4>249 200 Сум</h4>
+                            <span>6 месяцев скидка 10%</span>
+                        </div>
+                        <div className="sale">
+                            <h4>199 200 Сум</h4>
+                            <span>1 год скидка 10%</span>
+
+                        </div>
+                        <div className="third-arrow">
+                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div className='price-item'>
+                    <div className="price-item-child">
+                        <h2>NEXT</h2>
+                        <div className='speed-list'>
+                            <div><img src="/images/icon/speed.png" alt=""/></div>
+                            <h3>
+                                <span>6 Мб/с</span>
+                                <span>Скорость </span>
+                            </h3>
+                        </div>
+
+                        <div className='speed-list'>
+                            <div> <img src="/images/icon/tas.png" alt=""/></div>
+                            <h3>
+                                <span>100 Мб/с</span>
+                                <span>TAS-IX</span>
+                            </h3>
+                        </div>
+
+
+
+
+                        <h1>
+                            95 000
+                        </h1>
+                        <h5>
+                            Сум / Месяц
+                        </h5>
+
+
+                        <div className="sale">
+                            <h4>85 500 Сум</h4>
+                            <span>6 месяцев скидка 10%</span>
+                        </div>
+                        <div className="sale">
+                            <h4>76 000 Сум</h4>
+                            <span>1 год скидка 10%</span>
+
+                        </div>
+                        <div className="third-arrow">
+                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='price-item'>
+                    <div className="price-item-child">
+                        <h2>COMFORT</h2>
+                        <div className='speed-list'>
+                            <div><img src="/images/icon/speed.png" alt=""/></div>
+                            <h3>
+                                <span>20 Мб/с</span>
+                                <span>Скорость </span>
+                            </h3>
+                        </div>
+
+                        <div className='speed-list'>
+                            <div> <img src="/images/icon/tas.png" alt=""/></div>
+                            <h3>
+                                <span>100 Мб/с</span>
+                                <span>TAS-IX</span>
+                            </h3>
+                        </div>
+
+
+
+
+                        <h1>
+                            145 000
+                        </h1>
+                        <h5>
+                            Сум / Месяц
+                        </h5>
+
+
+                        <div className="sale">
+                            <h4>130 500 Сум</h4>
+                            <span>6 месяцев скидка 10%</span>
+                        </div>
+                        <div className="sale">
+                            <h4>116 000 Сум</h4>
+                            <span>1 год скидка 10%</span>
+                        </div>
+                        <div className="third-arrow">
+                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                        </div>
+                    </div>
+                </div>
 
 
 

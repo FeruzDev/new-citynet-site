@@ -17,13 +17,13 @@ const IptelephonyEight = () => {
                         <h4>Направление</h4>
                         <NavLink to="/home-internet">Интернет</NavLink>
                         <NavLink to="/video-monitoring">Видеонаблюдение</NavLink>
-                        <NavLink to="/main-iptv-proekt">Проектирование</NavLink>
-                        <a href="#">Монтаж</a>
+                        <NavLink to="/main-provider">Проектирование</NavLink>
+                        <NavLink  to="Installation">Монтаж</NavLink>
                     </div>
                     <div className="col-md-3 col-sm-6 ">
                         <h4>О компании</h4>
-                        <a href="#">О нас</a>
-                        <a href="#">Партнеры</a>
+                        <a href="#company">О нас</a>
+                        <a href="#partner">Партнеры</a>
                     </div>
                     <div className="col-md-3 col-sm-6 ">
                         <h4>Локация</h4>

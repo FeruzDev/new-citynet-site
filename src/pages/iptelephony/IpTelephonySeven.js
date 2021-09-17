@@ -4,7 +4,7 @@ const IpTelephonySeven = () => {
     return (
         <div className="iptelephony-part-seven position-relative">
 
-            <div className="container iptelephony-part-seven-child ">
+            <div id='partner' className="container iptelephony-part-seven-child ">
                 <h4>Наши партнеры</h4>
 
                 <div className="row d-flex justify-content-between m-0">

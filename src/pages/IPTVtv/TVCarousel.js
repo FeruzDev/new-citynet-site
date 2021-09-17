@@ -51,18 +51,17 @@ export default class SimpleSlider extends Component {
         return (
             <div className="container tv-carousel">
                 <Slider {...settings}>
-                    <div><div className="box"></div></div>
-                    <div><div className="box"></div></div>
-                    <div><div className="box"></div></div>
-                    <div><div className="box"></div></div>
-                    <div><div className="box"></div></div>
-                    <div><div className="box"></div></div>
-                    <div><div className="box"></div></div>
-                    <div><div className="box"></div></div>
-                    <div><div className="box"></div></div>
-                    <div><div className="box"></div></div>
-                    <div><div className="box"></div></div>
-                    <div><div className="box"></div></div>
+                    <div><div className="box"><img src="/images/channels/t1.png" alt=""/></div></div>
+                    <div><div className="box"><img src="/images/channels/t2.png" alt=""/></div></div>
+                    <div><div className="box"><img src="/images/channels/t3.png" alt=""/></div></div>
+                    <div><div className="box"><img src="/images/channels/t4.png" alt=""/></div></div>
+                    <div><div className="box"><img src="/images/channels/t5.png" alt=""/></div></div>
+                    <div><div className="box"><img src="/images/channels/t6.png" alt=""/></div></div>
+                    <div><div className="box"><img src="/images/channels/t7.png" alt=""/></div></div>
+                    <div><div className="box"><img src="/images/channels/t8.png" alt=""/></div></div>
+                    <div><div className="box"><img src="/images/channels/t9.png" alt=""/></div></div>
+                    <div><div className="box"><img src="/images/channels/t10.png" alt=""/></div></div>
+
                 </Slider>
             </div>
         );
