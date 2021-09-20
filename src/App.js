@@ -20,6 +20,7 @@ import ItDevelopment from "./pages/ITDevelopment/ITDevelopment";
 import MainContact from "./pages/kontakt/MainContact";
 import Animation from "./pages/iptelephony/Animation";
 import AllChannels from "./pages/IPTVtv/AllChannels";
+import AllNews from "./pages/forNews/AllNews";
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
                     <Route path="/ItDevelopment" exact component={ItDevelopment}/>
                     <Route path="/contact" exact component={MainContact}/>
                     <Route path="/animatsiya" exact component={Animation}/>
+                    <Route path="/" exact component={AllNews}/>
                 </Switch>
             </div>
         </BrowserRouter>

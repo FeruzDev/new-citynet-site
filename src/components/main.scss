@@ -6189,6 +6189,54 @@ hr {
   background-color: transparent !important;
 }
 
+
+
+.main-news{
+
+  margin-top: 500px;
+  .news-main-title{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    a:hover{
+      text-decoration: none;
+    }
+  }
+
+  .container{
+    .row{
+      .col-md-4{
+        padding: 20px;
+        img{
+          width: 100%;
+          border-radius: 12px;
+        }
+        h3{
+          font-weight: 500;
+          font-size: 24px;
+
+          color: #171717;
+          margin-top: 32px;
+
+
+        }
+        p{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+
+          margin-top: 8px;
+          color: #878B93;
+
+        }
+      }
+    }
+  }
+}
+
 //////////////////////////////////////////media//////////////////////////////////////////
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   .navbar-expand-lg {

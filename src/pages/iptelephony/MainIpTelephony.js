@@ -9,6 +9,7 @@ import IpTelephonySeven from "./IpTelephonySeven";
 import IptelephonyEight from "./IptelephonyEight";
 import HomeBanner from "../home/HomeBanner";
 import NavbarHome from "../navbar/NavbarHome";
+import MainNews from "../forNews/MainNews";
 
 const MainIpTelephony = () => {
 
@@ -21,7 +22,9 @@ const MainIpTelephony = () => {
             <IpTelephonyThree/>
             <IpTelephonyFour/>
             <IptelephonyPartFive/>
+
             <IpTelephonySix/>
+            <MainNews/>
             <IpTelephonySeven/>
             <IptelephonyEight/>
 
