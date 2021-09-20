@@ -3430,7 +3430,21 @@ button.slick-arrow.slick-next {
   margin-top: 40px;
   margin-bottom: 20px;
   padding: 0;
+  position: relative;
 
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+
+    margin: 73px auto;
+    color: #0086E7;
+    position: absolute;
+    left: 42%;
+  }
   .slick-slider {
     .slick-next:before, [dir=rtl] .slick-prev:before {
       display: none;
@@ -3447,7 +3461,7 @@ button.slick-arrow.slick-next {
 
 .tv-footer {
   margin-bottom: 223px;
-  margin-top: 120px;
+  margin-top: 160px;
 
   .tv-footer-child {
     padding: 0;
@@ -8133,6 +8147,35 @@ hr {
 
 .all-channels{
 
+  .container{
+    h2{
+      margin-top: 39px;
+    }
+    .russian-channel, .HD-channel{
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 41px;
+      color: #101828;
+      margin-top: 144px;
+    }
+    .row{
+      .col-md-2{
+
+        margin-top: 48px;
+        img{
+
+          width: 100%;
+        }
+        h4{
+          font-weight: normal;
+          font-size: 18px;
+          color: #101828;
+          margin-top: 8px;
+
+        }
+      }
+    }
+  }
 }
 
 .new-page{

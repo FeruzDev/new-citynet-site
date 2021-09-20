@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import {Link} from "react-router-dom";
 
 export default class SimpleSlider extends Component {
     render() {
@@ -63,6 +64,9 @@ export default class SimpleSlider extends Component {
                     <div><div className="box"><img src="/images/channels/t10.png" alt=""/></div></div>
 
                 </Slider>
+
+
+                <Link to="/maintv/all-channels">Посмотреть все каналы</Link>
             </div>
         );
     }

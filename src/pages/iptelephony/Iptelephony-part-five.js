@@ -21,25 +21,25 @@ const IptelephonyPartFive = () => {
                     </div>
                 </div>
                 <div className="row position-relative">
-                    <div className="box"><img src="images/PNG/vd.png" alt=""/> <h6>Видеонаблюдение</h6></div>
-                    <div className="box"><img src="images/PNG/sc.png" alt=""/><h6>  Системы конференцсвязи </h6></div>
-                    <div className="box"><img src="images/PNG/ps.png" alt=""/><h6>  	Охранная и пожарная сигнализация </h6></div>
-                    <div className="box"><img src="images/PNG/sk.png" alt=""/><h6>  Система контроля и управления доступом </h6></div>
-                    <div className="box"><img src="images/PNG/ipd.png" alt=""/><h6> 	IP-домофония  </h6></div>
-                    <div className="box"><img src="images/PNG/set.png" alt=""/><h6> Структурирование кабельных сетей </h6></div>
-                    <div className="box"><img src="images/PNG/ipt.png" alt=""/><h6>  	IP-телефония </h6></div>
-                    <div className="box"><img src="images/PNG/eek.png" alt=""/><h6>  Электромонтажные работы</h6></div>
-                    <div className="box"><img src="images/PNG/tv.png" alt=""/><h6>  	Телевидение   </h6></div>
-                    <div className="box"><img src="images/PNG/bm.png" alt=""/><h6>  	BMS и RMS</h6></div>
-                    <div className="box"><img src="images/PNG/web.png" alt=""/><h6>  Разработка веб-приложений </h6></div>
-                    <div className="box"><img src="images/PNG/sb.png" alt=""/><h6>   	Автоматическая парковка </h6></div>
-                    <div className="box"><img src="images/PNG/net.png" alt=""/><h6>  	Интернет-провайдер </h6></div>
-                    <div className="box"><img src="images/PNG/pt.png" alt=""/><h6>  	Противопожарная обработка </h6></div>
-                    <div className="box"><img src="images/PNG/rv.png" alt=""/><h6>  	Речевое оповещение </h6></div>
-                    <div className="box"><img src="images/PNG/po.png" alt=""/><h6>  	Пожаротушение </h6></div>
-                    <div className="box"><img src="images/PNG/dw.png" alt=""/><h6>  	Пожаротушение </h6></div>
-                    <div className="box"><img src="images/PNG/cq.png" alt=""/><h6>  	Контроль качества </h6></div>
-                    <div className="box"><img src="images/PNG/ec.png" alt=""/><h6>   	Экранные дисплеи</h6></div>
+                    <div className="box"><img src="images/PNG/vd2.png" alt=""/> <h6>Видеонаблюдение</h6></div>
+                    <div className="box"><img src="images/PNG/sc2.png" alt=""/><h6>  Системы конференцсвязи </h6></div>
+                    <div className="box"><img src="images/PNG/ps2.png" alt=""/><h6>  	Охранная и пожарная сигнализация </h6></div>
+                    <div className="box"><img src="images/PNG/sk2.png" alt=""/><h6>  Система контроля и управления доступом </h6></div>
+                    <div className="box"><img src="images/PNG/ipd2.png" alt=""/><h6> 	IP-домофония  </h6></div>
+                    <div className="box"><img src="images/PNG/set2.png" alt=""/><h6> Структурирование кабельных сетей </h6></div>
+                    <div className="box"><img src="images/PNG/ipt2.png" alt=""/><h6>  	IP-телефония </h6></div>
+                    <div className="box"><img src="images/PNG/eek2.png" alt=""/><h6>  Электромонтажные работы</h6></div>
+                    <div className="box"><img src="images/PNG/tv2.png" alt=""/><h6>  	Телевидение   </h6></div>
+                    <div className="box"><img src="images/PNG/bm2.png" alt=""/><h6>  	BMS и RMS</h6></div>
+                    <div className="box"><img src="images/PNG/web2.png" alt=""/><h6>  Разработка веб-приложений </h6></div>
+                    <div className="box"><img src="images/PNG/sb2.png" alt=""/><h6>   	Автоматическая парковка </h6></div>
+                    <div className="box"><img src="images/PNG/net2.png" alt=""/><h6>  	Интернет-провайдер </h6></div>
+                    <div className="box"><img src="images/PNG/pt2.png" alt=""/><h6>  	Противопожарная обработка </h6></div>
+                    <div className="box"><img src="images/PNG/rv2.png" alt=""/><h6>  	Речевое оповещение </h6></div>
+                    <div className="box"><img src="images/PNG/po2.png" alt=""/><h6>  	Пожаротушение </h6></div>
+                    <div className="box"><img src="images/PNG/dw2.png" alt=""/><h6>  	Пожаротушение </h6></div>
+                    <div className="box"><img src="images/PNG/cq2.png" alt=""/><h6>  	Контроль качества </h6></div>
+                    <div className="box"><img src="images/PNG/ec2.png" alt=""/><h6>   	Экранные дисплеи</h6></div>
 
                 </div>
                 <div className="line25">

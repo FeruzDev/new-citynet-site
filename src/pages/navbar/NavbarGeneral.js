@@ -16,15 +16,15 @@ const NavbarGeneral = () => {
             <div className="container">
                 <div className="row">
                     <div className="next">
-                        <NavLink to="/"><img src="images/icon/citynetblack.png" alt=""/></NavLink>
+                        <NavLink to="/"><img src="/images/icon/citynetblack.png" alt=""/></NavLink>
                     </div>
                     <div className="prev">
                         <h4>+998 71 202 11 11
                         </h4>
                         <div className="third-arrow ml-3">
                             <NavLink to="/form">
-                                <p>{getText("connect")}</p>
-                                <img src="images/icon/arrow4.png" className="arrow-img-white" alt=""/>
+                                <p>Подключить</p>
+                                <img src="/images/icon/arrow4.png" className="arrow-img-white" alt=""/>
                             </NavLink>
                         </div>
                         {/*<div>*/}
@@ -41,12 +41,12 @@ const NavbarGeneral = () => {
             <div className="container">
                 <div className="row">
                     <div>
-                        <NavLink to="/form">{getText("search")}</NavLink>
-                        <NavLink to="/contact">{getText("contact")}</NavLink>
+                        <NavLink to="/form">Тарифы</NavLink>
+                        <NavLink to="/contact">Контакт</NavLink>
 
                     </div>
                     <div className="Personal-Area">
-                        <NavLink to="/" >{getText("cabinet")}</NavLink>
+                        <NavLink to="/" >   Личный Кабинет</NavLink>
                     </div>
                 </div>
 
