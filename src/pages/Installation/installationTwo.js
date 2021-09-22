@@ -11,8 +11,8 @@ const InstallationTwo = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <div className="TextPlus-child">
-                            <img src="/images/icon/textplus.png" alt=""/>
-                            <h4>Внутренний контроль</h4>
+                            <img src="/images/icon/mon.svg" alt=""/>
+                            <h4 className="font-family-medium">Внутренний контроль</h4>
                             <p>Внутренний контроль (производственный) выполняется персоналом самих организаций,
                                 производящих строительную продукцию (строительно-мПредприятия составляют паспорта на
                                 свою продукцию (изделия, конструкции, материалы), в которых отмечается ее соответствие
@@ -23,8 +23,8 @@ const InstallationTwo = () => {
                     </div>
                     <div className="col-md-6">
                         <div className="TextPlus-child">
-                            <img src="/images/icon/textplus.png" alt=""/>
-                            <h4>Внешний контроль</h4>
+                            <img src="/images/icon/mon2.svg" alt=""/>
+                            <h4 className="font-family-medium">Внешний контроль</h4>
                             <p>Внешний контроль качества строительства проводится различными надзорами, не зависящими от
                                 самой организации, по отношению к которой он проводится.</p>
                         </div>

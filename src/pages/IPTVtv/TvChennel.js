@@ -4,7 +4,7 @@ const TvChennel = () => {
     return (
         <div className="tv-chennel">
             <div className="tv-chennel-child container">
-                <h4>ТВ- каналы</h4>
+                <h4 className="font-family-medium">ТВ- каналы</h4>
                 <p>Узнайте, какие услуги можно подключить по вашему адресу</p>
             </div>
         </div>

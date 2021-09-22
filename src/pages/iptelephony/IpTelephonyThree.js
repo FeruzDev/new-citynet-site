@@ -26,7 +26,7 @@ const IpTelephonyThree = () => {
                             <img src="/images/icon/iptelephonyfour.png" alt=""/>
                         </div>
                         <div className="col-md-6">
-                            <h4>Преимущества компании</h4>
+                            <h4 className="font-family-medium">Преимущества компании</h4>
                             <p style={{lineHeight: "24px"}}>•	Компания является признанным лидером в области информационных технологий в Узбекистане и партнёрами нашей компании являются страны СНГ, КНР и ЕС;
 
 
@@ -35,7 +35,7 @@ const IpTelephonyThree = () => {
 
                             </p>
                             <div className="third-arrow">
-                                <a href="#!">Перейти на сайт<img className="arrow-img-white"
+                                <a href="#!"  className="font-family-medium">Перейти на сайт<img className="arrow-img-white"
                                                                  src="/images/icon/Arrow4.png" alt=""/></a>
                             </div>
                         </div>

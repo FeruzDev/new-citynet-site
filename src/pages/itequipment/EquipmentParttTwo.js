@@ -52,7 +52,7 @@ class EquipmentPartTwo extends React.Component {
                     <div className="row">
                         <div className="col-md-3 ">
                             <div className="saidbar">
-                                <h4>Каталог товаров</h4>
+                                <h4  className="font-family-medium">Каталог товаров</h4>
                                 {
                                     this.getEquipments().map((e, index) => {
                                         return (
@@ -99,12 +99,12 @@ class EquipmentPartTwo extends React.Component {
                                             x
                                         </p>
 
-                                        <h3>
+                                        <h3  className="font-family-medium">
                                             <del></del>
                                             <br/>3 703 197 сум
                                         </h3>
                                         <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                            <button type="button" className="btn btn-primary">Подробнее</button>
+                                            <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                         </NavLink></div>
                                     </div>
                                 </div>
@@ -117,12 +117,12 @@ class EquipmentPartTwo extends React.Component {
                                             x
                                         </p>
 
-                                        <h3>
+                                        <h3  className="font-family-medium">
                                             <del>3 703 197 сум</del>
                                             <br/>3 703 197 сум
                                         </h3>
                                         <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                            <button type="button" className="btn btn-primary">Подробнее</button>
+                                            <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                         </NavLink></div>
                                     </div>
                                 </div>
@@ -135,12 +135,12 @@ class EquipmentPartTwo extends React.Component {
                                             x
                                         </p>
 
-                                        <h3>
+                                        <h3  className="font-family-medium">
                                             <del></del>
                                             <br/>3 703 197 сум
                                         </h3>
                                         <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                            <button type="button" className="btn btn-primary">Подробнее</button>
+                                            <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                         </NavLink></div>
                                     </div>
                                 </div>
@@ -153,12 +153,12 @@ class EquipmentPartTwo extends React.Component {
                                             x
                                         </p>
 
-                                        <h3>
+                                        <h3  className="font-family-medium">
                                             <del></del>
                                             <br/>3 703 197 сум
                                         </h3>
                                         <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                            <button type="button" className="btn btn-primary">Подробнее</button>
+                                            <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                         </NavLink></div>
                                     </div>
                                 </div>
@@ -173,12 +173,12 @@ class EquipmentPartTwo extends React.Component {
                                             x
                                         </p>
 
-                                        <h3>
+                                        <h3  className="font-family-medium">
                                             <del></del>
                                             <br/>3 703 197 сум
                                         </h3>
                                         <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                            <button type="button" className="btn btn-primary">Подробнее</button>
+                                            <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                         </NavLink></div>
                                     </div>
                                 </div>
@@ -191,12 +191,12 @@ class EquipmentPartTwo extends React.Component {
                                             x
                                         </p>
 
-                                        <h3>
+                                        <h3  className="font-family-medium">
                                             <del>3 703 197 сум</del>
                                             <br/>3 703 197 сум
                                         </h3>
                                         <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                            <button type="button" className="btn btn-primary">Подробнее</button>
+                                            <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                         </NavLink></div>
                                     </div>
                                 </div>
@@ -209,12 +209,12 @@ class EquipmentPartTwo extends React.Component {
                                             x
                                         </p>
 
-                                        <h3>
+                                        <h3  className="font-family-medium">
                                             <del></del>
                                             <br/>3 703 197 сум
                                         </h3>
                                         <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                            <button type="button" className="btn btn-primary">Подробнее</button>
+                                            <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                         </NavLink></div>
                                     </div>
                                 </div>
@@ -227,12 +227,12 @@ class EquipmentPartTwo extends React.Component {
                                             x
                                         </p>
 
-                                        <h3>
+                                        <h3  className="font-family-medium">
                                             <del></del>
                                             <br/>3 703 197 сум
                                         </h3>
                                         <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                            <button type="button" className="btn btn-primary">Подробнее</button>
+                                            <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                         </NavLink></div>
                                     </div>
                                 </div>

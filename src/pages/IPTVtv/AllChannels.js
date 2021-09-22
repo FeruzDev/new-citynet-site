@@ -11,7 +11,7 @@ const AllChannels = () => {
 
 
             <div className="container">
-                <h2>Узбекский каналы</h2>
+                <h2 className="font-family-medium">Узбекский каналы</h2>
 
                 
                 <div className="row">
@@ -118,7 +118,7 @@ const AllChannels = () => {
                 </div>
 
 
-                <h2 className="russian-channel">Русские каналы</h2>
+                <h2 className="russian-channel font-family-medium">Русские каналы</h2>
                 <div className="row">
 
                     <div className="col-md-2">
@@ -326,7 +326,7 @@ const AllChannels = () => {
                 </div>
 
 
-                <h2 className="HD-channel">HD каналы</h2>
+                <h2 className="HD-channel font-family-medium">HD каналы</h2>
                 <div className="row">
 
                     <div className="col-md-2">
@@ -534,7 +534,7 @@ const AllChannels = () => {
                 </div>
 
 
-                <h2 className="HD-channel">4K каналы</h2>
+                <h2 className="HD-channel font-family-medium">4K каналы</h2>
                 <div className="row">
 
 

@@ -4,13 +4,13 @@ const TrafficServices = () => {
     return (
         <div className="traffic-services position-relative">
             <div className="traffic-services-child container">
-                <h3>Популярные услуги</h3>
+                <h3  className="font-family-medium">Популярные услуги</h3>
                 <div className="row">
                     <div className="col-md-4">
                         <div className="boxed">
                         <img src="/images/icon/servicesone.png" alt=""/>
                         </div>
-                        <h4>Видеотека </h4>
+                        <h4   className="font-family-medium">Видеотека </h4>
                         <p>Пользование видеотекой с огромным выбором передач и фильмов</p>
                     </div>
                     <div className="col-md-4">
@@ -18,7 +18,7 @@ const TrafficServices = () => {
 
                         <img src="/images/icon/servicestwo.png" alt=""/>
                         </div>
-                        <h4>Каналы</h4>
+                        <h4  className="font-family-medium">Каналы</h4>
                         <p>Просмотр каналов кабельного/спутникового/центрального ТВ в любое время с дополнительной функцией «удаление» рекламы</p>
                     </div>
                     <div className="col-md-4">
@@ -26,7 +26,7 @@ const TrafficServices = () => {
 
                         <img src="/images/icon/servicesthree.png" alt=""/>
                         </div>
-                        <h4>Игры </h4>
+                        <h4  className="font-family-medium">Игры </h4>
                         <p>Неограниченный доступ к сетевым играм даст возможность свободно пользоваться в любой момент</p>
                     </div>
                 </div>

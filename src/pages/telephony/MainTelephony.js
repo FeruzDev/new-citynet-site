@@ -5,11 +5,14 @@ import TelephonyCardThree from "./TelephonyCardThree"
 import TelephonyCardFour from "./TelephonyCardFour";
 import NavbarGeneral from "../navbar/NavbarGeneral";
 import DisplayNavbar from "../navbar/DisplayNavbar";
+import PriceCards from "./PriceCards";
 const MainTelephony = () => {
     return (
         <div><NavbarGeneral/>
             <DisplayNavbar/>
             <TelephonyCardOne/>
+            <PriceCards/>
+
             <TelephonyCardTwo/>
             <TelephonyCardThree/>
             <TelephonyCardFour/>

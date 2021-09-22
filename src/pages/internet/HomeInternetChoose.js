@@ -13,7 +13,7 @@ const HomeInternetChoose = () => {
                 <div className="row">
 
                     <div className="col-md-6">
-                        <NavLink to="/"><img src="images/icon/citynet.png" alt=""/></NavLink>
+                        <NavLink to="/"><img src="images/logo12.png" alt=""/></NavLink>
                     </div>
                     <div className="col-md-6">
                         <div className="menus">
@@ -29,19 +29,19 @@ const HomeInternetChoose = () => {
             <div className="chooses d-flex">
 
                 <Link to="/main-provider" className="mediumChild">
-                    <span>
+                    <span className="font-family-medium">
                       Интернет
                     </span>
                 </Link>
 
                 <Link to="/maintv"  className="mediumChild">
-                    <span>
+                    <span className="font-family-medium">
                        IP TV
                     </span>
                 </Link>
 
                 <Link to="/telifaniya" className="mediumChild">
-                    <span>
+                    <span className="font-family-medium">
                       IP телефония
                     </span>
                 </Link>

@@ -21,6 +21,7 @@ import MainContact from "./pages/kontakt/MainContact";
 import Animation from "./pages/iptelephony/Animation";
 import AllChannels from "./pages/IPTVtv/AllChannels";
 import AllNews from "./pages/forNews/AllNews";
+import NewsDetail from "./pages/forNews/NewsDetail";
 
 
 function App() {
@@ -43,13 +44,14 @@ function App() {
                     <Route path="/equipment" exact component={MainEquipment}/>
                     <Route path="/itequipment" exact component={MainItEquipment}/>
                     <Route path="/form" exact component={MainForm}/>
-                    <Route path="/home" exact component={HomeBanner}/>
+
                     <Route path="/home-internet" exact component={HomeInternetChoose}/>
                     <Route path="/Installation" exact component={MainInstallation}/>
                     <Route path="/ItDevelopment" exact component={ItDevelopment}/>
                     <Route path="/contact" exact component={MainContact}/>
-                    <Route path="/animatsiya" exact component={Animation}/>
-                    <Route path="/" exact component={AllNews}/>
+
+                    <Route path="/all-news" exact component={AllNews}/>
+                    <Route path="/all-news/news-detail/:id" exact component={NewsDetail}/>
                 </Switch>
             </div>
         </BrowserRouter>

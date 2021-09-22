@@ -19,7 +19,8 @@ const MainInstallation = () => {
             <InstallationPartThree/>
             <InstallationTwo/>
             <OurEmployees/>
-            <InstallationEnd/>
+            {/*<InstallationEnd/>*/}
+            <IptvPartFour/>
 
         </div>
     );

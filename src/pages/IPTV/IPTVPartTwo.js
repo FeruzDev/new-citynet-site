@@ -29,23 +29,23 @@ const IptvPartTwo = () => {
                 </div>
             </div>
             <div className="container iptv-part-two-child card-imageses">
-                <h4>Проектирование в «CityNet IT Engineering» — это:</h4>
+                <h4  className="font-family-medium mt-5">Проектирование в «CityNet IT Engineering» — это:</h4>
                 <div className="row">
                     <div className="col-md-4">
-                            <img src="images/icon/GT.png" alt=""/>
+                            <img src="images/icon/a1.svg" alt=""/>
                             <p>Высокий профессионализм и инженерная культура индивидуальных исполнителей</p>
 
                     </div>
                     <div className="col-md-4">
 
-                            <img src="images/icon/Gthree.png" alt=""/>
+                            <img src="images/icon/a2.svg" alt=""/>
                             <p>
                                 Отлаженная схема контроля качества выполнения работ на каждом этапе со стороны выделяемых для каждого проекта</p>
 
                     </div>
                     <div className="col-md-4">
 
-                            <img src="images/icon/Gtwo.png" alt=""/>
+                            <img src="images/icon/a3.svg" alt=""/>
                             <p>Выполнение проектных работ в соответствие с ГОСТ и нормативными документами отрасли</p>
 
                     </div>

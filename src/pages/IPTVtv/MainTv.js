@@ -10,15 +10,15 @@ import DisplayNavbar from "../navbar/DisplayNavbar";
 
 const MainTv = () => {
     return (
-        <div className="tv-hidden">
+        <div className="tv-hidden  ">
             <NavbarGeneral/>
             <DisplayNavbar/>
             <TvPartOne/>
             <TvPartTwo/>
             <TvCard/>
+            <TvFooter/>
             <TvChennel/>
             <TvCarousel/>
-            <TvFooter/>
         </div>
     );
 };

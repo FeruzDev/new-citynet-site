@@ -24,7 +24,7 @@ const InstallationPartFour = () => {
                         <div className="development-card">
                         <img src="/images/icon/developmentimages1.png" alt=""/>
                         <div className="card-one">
-                            <h4>Разработка баз данных, программ учета и серверных приложений</h4>
+                            <h4 className="font-family-medium">Разработка баз данных, программ учета и серверных приложений</h4>
                             <p>Автоматизация бизнес-процессов организации, поддержка стандартных процедур</p>
                         </div>
                     </div>
@@ -33,8 +33,8 @@ const InstallationPartFour = () => {
                         <div className="development-card">
                         <img src="/images/icon/developmentimages2.png" alt=""/>
                         <div className="card-one">
-                            <h4>Разработка баз данных, программ учета и серверных приложений</h4>
-                            <p>Автоматизация бизнес-процессов организации, поддержка стандартных процедур</p>
+                            <h4 className="font-family-medium">Система электронного документооборота и контроля исполнения учета</h4>
+                            <p>На основании нового кодекса осуществлено и полностью переведены налоговые декларации (расчеты) и иные документы.</p>
                         </div>
                     </div>
                     </div>

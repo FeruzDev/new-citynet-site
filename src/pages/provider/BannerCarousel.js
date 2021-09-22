@@ -21,14 +21,13 @@ const BannerCarousel = () => {
 
 
                         <h1>
-                            «CityNet» — это все преимущества с одним оператором связи </h1>
+                            «CityNet» - универсальный оператор связи для бизнеса </h1>
                         <p>
-                            Мы являемся универсальным оператором, предоставляя качественный и бесперебойный
-                            интернет-сервис. А также, мы предлагаем безлимитный доступ в интернет-сеть с использованием
-                            современного оборудования для обеспечения возрастающих потребностей пользователей.
+                            Компания помогает оперативно провести Интернет сетевым и государственным компаниям,
+                            индивидуальным предпринимателям и частным лицам.
                         </p>
                         <div className="third-arrow">
-                            <a href="#!">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                            <a href="#!">Перейти <img className="arrow-img-white" src="/images/icon/Arrow4.png"
                                                         alt=""/></a>
                         </div>
 
@@ -47,15 +46,14 @@ const BannerCarousel = () => {
 
 
                         <h1>
-                            «CityNet» - универсальный оператор связи для бизнеса
-                        </h1>
+                            «CityNet» - универсальный оператор связи для бизнеса </h1>
                         <p>
-                            pКомпания помогает оперативно провести Интернет сетевым и государственным компаниям,
+                            Компания помогает оперативно провести Интернет сетевым и государственным компаниям,
                             индивидуальным предпринимателям и частным лицам.
                         </p>
                         <div className="third-arrow">
-                            <a href="#!">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
-                                                        alt=""/></a>
+                            <a href="#!">Перейти <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                                      alt=""/></a>
                         </div>
 
 
@@ -64,7 +62,6 @@ const BannerCarousel = () => {
 
 
                 </div>
-
 
                 <div className="carousel-item-img">
 
@@ -73,15 +70,14 @@ const BannerCarousel = () => {
 
 
                         <h1>
-                            «CityNet» - универсальный оператор связи для бизнеса
-                        </h1>
+                            «CityNet» - универсальный оператор связи для бизнеса </h1>
                         <p>
-                            pКомпания помогает оперативно провести Интернет сетевым и государственным компаниям,
+                            Компания помогает оперативно провести Интернет сетевым и государственным компаниям,
                             индивидуальным предпринимателям и частным лицам.
                         </p>
                         <div className="third-arrow">
-                            <a href="#!">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
-                                                        alt=""/></a>
+                            <a href="#!">Перейти <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                                      alt=""/></a>
                         </div>
 
 
@@ -90,7 +86,6 @@ const BannerCarousel = () => {
 
 
                 </div>
-
 
                 <div className="carousel-item-img">
 
@@ -99,15 +94,14 @@ const BannerCarousel = () => {
 
 
                         <h1>
-                            «CityNet» - универсальный оператор связи для бизнеса
-                        </h1>
+                            «CityNet» - универсальный оператор связи для бизнеса </h1>
                         <p>
-                            pКомпания помогает оперативно провести Интернет сетевым и государственным компаниям,
+                            Компания помогает оперативно провести Интернет сетевым и государственным компаниям,
                             индивидуальным предпринимателям и частным лицам.
                         </p>
                         <div className="third-arrow">
-                            <a href="#!">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
-                                                        alt=""/></a>
+                            <a href="#!">Перейти <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                                      alt=""/></a>
                         </div>
 
 
@@ -116,6 +110,8 @@ const BannerCarousel = () => {
 
 
                 </div>
+
+
             </Slider>
 
 

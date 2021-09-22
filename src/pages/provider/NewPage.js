@@ -8,28 +8,28 @@ const NewPage = () => {
                         <div className="col-md-4">
                             <div className="new-page-child">
                                 <img src="/images/PNG/q1.png" alt=""/>
-                                <h6>Подключение безлимитного Интернета </h6>
+                                <h6  className="font-family-medium">Подключение безлимитного Интернета </h6>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="new-page-child">
                                 <img src="/images/PNG/q2.png" alt=""/>
 
-                                <h6> IP телефония  </h6>
+                                <h6  className="font-family-medium"> IP телефония  </h6>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="new-page-child">
                                 <img src="/images/PNG/q3.png" alt=""/>
 
-                                <h6>VPN</h6>
+                                <h6  className="font-family-medium">VPN</h6>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="new-page-child">
                                 <img src="/images/PNG/q4.png" alt=""/>
 
-                                <h6>IP телевидение
+                                <h6  className="font-family-medium">IP телевидение
                                 </h6>
                             </div>
                         </div>
@@ -37,14 +37,14 @@ const NewPage = () => {
                             <div className="new-page-child">
                                 <img src="/images/PNG/q5.png" alt=""/>
 
-                                <h6>Видеонаблюдение </h6>
+                                <h6  className="font-family-medium">Видеонаблюдение </h6>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="new-page-child">
                                 <img src="/images/PNG/q6.png" alt=""/>
 
-                                <h6> Хостинг
+                                <h6  className="font-family-medium"> Хостинг
                                 </h6>
                             </div>
                         </div>

@@ -16,10 +16,10 @@ const NavbarGeneral = () => {
             <div className="container">
                 <div className="row">
                     <div className="next">
-                        <NavLink to="/"><img src="/images/icon/citynetblack.png" alt=""/></NavLink>
+                        <NavLink to="/"><img src="/images/logo13.png" alt=""/></NavLink>
                     </div>
                     <div className="prev">
-                        <h4>+998 71 202 11 11
+                        <h4 className="font-family-medium">+998 71 202 11 11
                         </h4>
                         <div className="third-arrow ml-3">
                             <NavLink to="/form">

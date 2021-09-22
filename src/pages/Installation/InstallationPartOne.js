@@ -9,15 +9,15 @@ const DetailsPartOne = () => {
 
                     <div className="col-md-6">
                         <div>
-                            <h4>{getText("Mounting")}</h4>
-                            <p>{getText("MountingText")}</p>
+                            <h4 className="font-family-medium">Монтаж </h4>
+                            <p>Сделать так, чтобы слайды партнёров свайпались для возможности дать информацию о всех партнерах.</p>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div className="container mt-4">
-            <h3> «CityNet IT Engineering»</h3>
+            <div className="container  ">
+            <h3 className="font-family-medium">Монтаж в «CityNet IT Engineering»</h3>
             </div>
             <div className="line29">
                 <div className="line-insert">

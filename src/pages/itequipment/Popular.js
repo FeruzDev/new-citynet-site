@@ -51,7 +51,7 @@ const PriceProvider = () => {
         <div className="position-relative">
         <div className="provider container">
 
-            <h1>Популярные</h1>
+            <h1 className="font-family-medium">Популярные</h1>
             <Slider {...settings}>
                 <div className="popular">
                     <div className="popular-child">
@@ -63,9 +63,9 @@ const PriceProvider = () => {
                                     x
                                 </p>
 
-                                <h3><del></del><br/>3 703 197 сум</h3>
+                                <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
                                 <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary">Подробнее</button>
+                                    <button type="button" className="btn btn-primary   font-family-medium" >Подробнее</button>
                                 </NavLink></div>                        </div>
                     </div>
                 </div>
@@ -79,9 +79,9 @@ const PriceProvider = () => {
                                 x
                             </p>
 
-                            <h3><del>3 703 197 сум</del><br/>3 703 197 сум</h3>
+                            <h3  className="font-family-medium"><del>3 703 197 сум</del><br/>3 703 197 сум</h3>
                             <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                <button type="button" className="btn btn-primary">Подробнее</button>
+                                <button type="button" className="btn btn-primary  font-family-medium ">Подробнее</button>
                             </NavLink></div>                        </div>
                     </div>
                 </div>
@@ -95,9 +95,9 @@ const PriceProvider = () => {
                                 x
                             </p>
 
-                            <h3><del></del><br/>3 703 197 сум</h3>
+                            <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
                             <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                <button type="button" className="btn btn-primary">Подробнее</button>
+                                <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                             </NavLink></div>                        </div>
                     </div>
                 </div>
@@ -111,9 +111,9 @@ const PriceProvider = () => {
                                 x
                             </p>
 
-                            <h3><del></del><br/>3 703 197 сум</h3>
+                            <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
                             <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                <button type="button" className="btn btn-primary">Подробнее</button>
+                                <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                             </NavLink></div>                        </div>
                     </div>
                 </div>
@@ -127,9 +127,9 @@ const PriceProvider = () => {
                                 x
                             </p>
 
-                            <h3><del></del><br/>3 703 197 сум</h3>
+                            <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
                             <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                <button type="button" className="btn btn-primary">Подробнее</button>
+                                <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                             </NavLink></div>                        </div>
                     </div>
                 </div>
@@ -143,9 +143,9 @@ const PriceProvider = () => {
                                 x
                             </p>
 
-                            <h3><del></del><br/>3 703 197 сум</h3>
+                            <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
                             <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                <button type="button" className="btn btn-primary">Подробнее</button>
+                                <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                             </NavLink></div>                        </div>
                     </div>
                 </div>

@@ -24,17 +24,17 @@ const TvPartTwo = () => {
                 </div>
             </div>
                 <div className='tv-part-two container'>
-                    <h1>Тарифый планы</h1>
+                    <h1 className="font-family-medium">Тарифый планы</h1>
                     <div className="row">
 
 
                         <div className="col-md-6 col-sm-12 col-xl-4 col-lg-6">
                     <div className="tv-part-two-child ">
-                        <h2>SIMPLE</h2>
+                        <h2  className="font-family-medium">SIMPLE</h2>
                         <div className='speed-list'>
                             <img src="/images/icon/moon.png" alt=""/>
                             <h3>
-                                <span>200 Мб/с</span>
+                                <span  className="font-family-medium">200 Мб/с</span>
                                 <span>Скорость, до с 01:00 до 13:00</span>
                             </h3>
                         </div>
@@ -42,7 +42,7 @@ const TvPartTwo = () => {
                         <div className='speed-list'>
                             <img src="/images/icon/sun.png" alt=""/>
                             <h3>
-                                <span>200 Мб/с</span>
+                                <span>  className="font-family-medium"200 Мб/с</span>
                                 <span>Скорость, до </span>
                             </h3>
                         </div>
@@ -51,7 +51,7 @@ const TvPartTwo = () => {
                         <div className='speed-list'>
                             <img src="/images/icon/infin.png" alt=""/>
                             <h3>
-                                <span>Безлимит</span>
+                                <span  className="font-family-medium">Безлимит</span>
                             </h3>
                         </div>
 
@@ -59,7 +59,7 @@ const TvPartTwo = () => {
 
 
 
-                        <h1>
+                        <h1  className="font-family-medium">
                             90 000
                         </h1>
                         <h5>
@@ -67,17 +67,17 @@ const TvPartTwo = () => {
                         </h5>
 
                         <div className="third-arrow">
-                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                            <a href="#!"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
                         </div>
                     </div>
                         </div>
                         <div className="col-md-6 col-sm-12 col-xl-4 col-lg-6">
                             <div className="tv-part-two-child ">
-                                <h2>SIMPLE</h2>
+                                <h2  className="font-family-medium">SIMPLE</h2>
                                 <div className='speed-list'>
                                     <img src="/images/icon/moon.png" alt=""/>
                                     <h3>
-                                        <span>200 Мб/с</span>
+                                        <span  className="font-family-medium">200 Мб/с</span>
                                         <span>Скорость, до с 01:00 до 13:00</span>
                                     </h3>
                                 </div>
@@ -85,7 +85,7 @@ const TvPartTwo = () => {
                                 <div className='speed-list'>
                                     <img src="/images/icon/sun.png" alt=""/>
                                     <h3>
-                                        <span>200 Мб/с</span>
+                                        <span>  className="font-family-medium"200 Мб/с</span>
                                         <span>Скорость, до </span>
                                     </h3>
                                 </div>
@@ -94,7 +94,7 @@ const TvPartTwo = () => {
                                 <div className='speed-list'>
                                     <img src="/images/icon/infin.png" alt=""/>
                                     <h3>
-                                        <span>Безлимит</span>
+                                        <span  className="font-family-medium">Безлимит</span>
                                     </h3>
                                 </div>
 
@@ -102,7 +102,7 @@ const TvPartTwo = () => {
 
 
 
-                                <h1>
+                                <h1  className="font-family-medium">
                                     90 000
                                 </h1>
                                 <h5>
@@ -110,17 +110,17 @@ const TvPartTwo = () => {
                                 </h5>
 
                                 <div className="third-arrow">
-                                    <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                                    <a href="#!"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-6 col-sm-12 col-xl-4 col-lg-6">
                             <div className="tv-part-two-child ">
-                                <h2>SIMPLE</h2>
+                                <h2  className="font-family-medium">SIMPLE</h2>
                                 <div className='speed-list'>
                                     <img src="/images/icon/moon.png" alt=""/>
                                     <h3>
-                                        <span>200 Мб/с</span>
+                                        <span  className="font-family-medium">200 Мб/с</span>
                                         <span>Скорость, до с 01:00 до 13:00</span>
                                     </h3>
                                 </div>
@@ -128,7 +128,7 @@ const TvPartTwo = () => {
                                 <div className='speed-list'>
                                     <img src="/images/icon/sun.png" alt=""/>
                                     <h3>
-                                        <span>200 Мб/с</span>
+                                        <span>  className="font-family-medium"200 Мб/с</span>
                                         <span>Скорость, до </span>
                                     </h3>
                                 </div>
@@ -137,7 +137,7 @@ const TvPartTwo = () => {
                                 <div className='speed-list'>
                                     <img src="/images/icon/infin.png" alt=""/>
                                     <h3>
-                                        <span>Безлимит</span>
+                                        <span  className="font-family-medium">Безлимит</span>
                                     </h3>
                                 </div>
 
@@ -145,7 +145,7 @@ const TvPartTwo = () => {
 
 
 
-                                <h1>
+                                <h1  className="font-family-medium">
                                     90 000
                                 </h1>
                                 <h5>
@@ -153,10 +153,11 @@ const TvPartTwo = () => {
                                 </h5>
 
                                 <div className="third-arrow">
-                                    <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                                    <a href="#!"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 

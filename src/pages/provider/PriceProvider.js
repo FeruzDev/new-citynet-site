@@ -80,7 +80,7 @@ const PriceProvider = () => {
             </div>
 
         <div className="price-provider container">
-            <h1>Тарифный планы</h1>
+            <h1 className="font-family-medium">Тарифный планы</h1>
             <div className="provider-opacity"></div>
             <Slider {...settings}>
 
@@ -91,13 +91,14 @@ const PriceProvider = () => {
 
 
 
+
                 <div className='price-item'>
                     <div className="price-item-child">
-                        <h2>OPTIMUM</h2>
+                        <h2 className="font-family-medium">OPTIMUM</h2>
                         <div className='speed-list'>
                             <div><img src="/images/icon/speed.png" alt=""/></div>
                             <h3>
-                                <span>10 Мб/с</span>
+                                <span className="font-family-medium">10 Мб/с</span>
                                 <span>Скорость </span>
                             </h3>
                         </div>
@@ -105,7 +106,7 @@ const PriceProvider = () => {
                         <div className='speed-list'>
                             <div> <img src="/images/icon/tas.png" alt=""/></div>
                             <h3>
-                                <span>100 Мб/с</span>
+                                <span className="font-family-medium">100 Мб/с</span>
                                 <span>TAS-IX</span>
                             </h3>
                         </div>
@@ -113,7 +114,7 @@ const PriceProvider = () => {
 
 
 
-                        <h1>
+                        <h1  className="font-family-medium">
                             115 000
                         </h1>
                         <h5>
@@ -131,7 +132,7 @@ const PriceProvider = () => {
 
                         </div>
                         <div className="third-arrow">
-                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                            <Link to="/form"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
                         </div>
                     </div>
                 </div>
@@ -139,15 +140,13 @@ const PriceProvider = () => {
 
 
 
-
-
                 <div className='price-item'>
                     <div className="price-item-child">
-                        <h2>EXCLUSIVE</h2>
+                        <h2 className="font-family-medium">EXCLUSIVE</h2>
                         <div className='speed-list'>
                             <div><img src="/images/icon/speed.png" alt=""/></div>
                             <h3>
-                                <span>30 Мб/с</span>
+                                <span className="font-family-medium">30 Мб/с</span>
                                 <span>Скорость </span>
                             </h3>
                         </div>
@@ -155,7 +154,7 @@ const PriceProvider = () => {
                         <div className='speed-list'>
                             <div> <img src="/images/icon/tas.png" alt=""/></div>
                             <h3>
-                                <span>100 Мб/с</span>
+                                <span className="font-family-medium">100 Мб/с</span>
                                 <span>TAS-IX</span>
                             </h3>
                         </div>
@@ -163,7 +162,7 @@ const PriceProvider = () => {
 
 
 
-                        <h1>
+                        <h1  className="font-family-medium">
                             195 000
                         </h1>
                         <h5>
@@ -181,22 +180,19 @@ const PriceProvider = () => {
 
                         </div>
                         <div className="third-arrow">
-                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                            <Link to="/form"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
                         </div>
                     </div>
                 </div>
 
 
-
-
-
                 <div className='price-item'>
                     <div className="price-item-child">
-                        <h2>PREMIUM</h2>
+                        <h2 className="font-family-medium">PREMIUM</h2>
                         <div className='speed-list'>
                             <div><img src="/images/icon/speed.png" alt=""/></div>
                             <h3>
-                                <span>40 Мб/с</span>
+                                <span className="font-family-medium">30 Мб/с</span>
                                 <span>Скорость </span>
                             </h3>
                         </div>
@@ -204,7 +200,7 @@ const PriceProvider = () => {
                         <div className='speed-list'>
                             <div> <img src="/images/icon/tas.png" alt=""/></div>
                             <h3>
-                                <span>100 Мб/с</span>
+                                <span className="font-family-medium">100 Мб/с</span>
                                 <span>TAS-IX</span>
                             </h3>
                         </div>
@@ -212,7 +208,7 @@ const PriceProvider = () => {
 
 
 
-                        <h1>
+                        <h1  className="font-family-medium">
                             249 000
                         </h1>
                         <h5>
@@ -221,7 +217,7 @@ const PriceProvider = () => {
 
 
                         <div className="sale">
-                            <h4>249 200 Сум</h4>
+                            <h4>224 100 Сум</h4>
                             <span>6 месяцев скидка 10%</span>
                         </div>
                         <div className="sale">
@@ -230,7 +226,7 @@ const PriceProvider = () => {
 
                         </div>
                         <div className="third-arrow">
-                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                            <Link to="/form"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
                         </div>
                     </div>
                 </div>
@@ -239,13 +235,15 @@ const PriceProvider = () => {
 
 
 
+
+
                 <div className='price-item'>
                     <div className="price-item-child">
-                        <h2>NEXT</h2>
+                        <h2 className="font-family-medium">NEXT</h2>
                         <div className='speed-list'>
                             <div><img src="/images/icon/speed.png" alt=""/></div>
                             <h3>
-                                <span>6 Мб/с</span>
+                                <span className="font-family-medium">6 Мб/с</span>
                                 <span>Скорость </span>
                             </h3>
                         </div>
@@ -253,7 +251,7 @@ const PriceProvider = () => {
                         <div className='speed-list'>
                             <div> <img src="/images/icon/tas.png" alt=""/></div>
                             <h3>
-                                <span>100 Мб/с</span>
+                                <span className="font-family-medium">100 Мб/с</span>
                                 <span>TAS-IX</span>
                             </h3>
                         </div>
@@ -261,8 +259,8 @@ const PriceProvider = () => {
 
 
 
-                        <h1>
-                            95 000
+                        <h1  className="font-family-medium">
+                             95 000
                         </h1>
                         <h5>
                             Сум / Месяц
@@ -279,18 +277,21 @@ const PriceProvider = () => {
 
                         </div>
                         <div className="third-arrow">
-                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                            <Link to="/form"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
                         </div>
                     </div>
                 </div>
 
+
+
+
                 <div className='price-item'>
                     <div className="price-item-child">
-                        <h2>COMFORT</h2>
+                        <h2 className="font-family-medium">COMFORT</h2>
                         <div className='speed-list'>
                             <div><img src="/images/icon/speed.png" alt=""/></div>
                             <h3>
-                                <span>20 Мб/с</span>
+                                <span className="font-family-medium">20 Мб/с</span>
                                 <span>Скорость </span>
                             </h3>
                         </div>
@@ -298,7 +299,7 @@ const PriceProvider = () => {
                         <div className='speed-list'>
                             <div> <img src="/images/icon/tas.png" alt=""/></div>
                             <h3>
-                                <span>100 Мб/с</span>
+                                <span className="font-family-medium">100 Мб/с</span>
                                 <span>TAS-IX</span>
                             </h3>
                         </div>
@@ -306,7 +307,7 @@ const PriceProvider = () => {
 
 
 
-                        <h1>
+                        <h1  className="font-family-medium">
                             145 000
                         </h1>
                         <h5>
@@ -321,9 +322,10 @@ const PriceProvider = () => {
                         <div className="sale">
                             <h4>116 000 Сум</h4>
                             <span>1 год скидка 10%</span>
+
                         </div>
                         <div className="third-arrow">
-                            <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                            <Link to="/form"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
                         </div>
                     </div>
                 </div>

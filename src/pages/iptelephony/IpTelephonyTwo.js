@@ -37,14 +37,14 @@ const IpTelephonyTwo = () => {
                         </svg>
                     </div>
                 </div>
-                <div className="container iptelephony-part-two-child">
+                <div className="container iptelephony-part-two-child" id="company">
 
-                    <div className="row" id="company">
+                    <div className="row" >
                         <div className="col-md-6">
                             <img src="images/icon/iptelephonytwo.png" alt=""/>
                         </div>
                         <div className="col-md-6">
-                            <h4 id="hh">О компании</h4>
+                            <h4 id="hh" className="font-family-medium">О компании</h4>
                             <p>Компания «CityNet» — это ведущая высокотехнологичная компания в области инновационных
                                 технологий в Узбекистане. За долгий период времени нашей компанией было внедрено
                                 множество инновационных решений для улучшения бизнеса и обеспечения безопасности людей.

@@ -22,14 +22,14 @@ const BannerCarousel = () => {
                     <div className="row banner-title">
 
 
-                        <h1>
+                        <h1  className="font-family-medium">
                             Системы видеонаблюдения
                         </h1>
                         <p>Видеонаблюдение – это система, включающая в себя сочетание оборудования и программного
                             обеспечения, предназначенного для визуального контроля за территорией, действиями и
                             ситуацией. </p>
                         <div className="third-arrow">
-                            <NavLink to="/equipment">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                            <NavLink  className="font-family-medium" to="/equipment">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
                                                     alt=""/></NavLink>
                         </div>
 

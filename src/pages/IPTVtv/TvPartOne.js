@@ -11,11 +11,11 @@ const TvPartOne = () => {
 
                     <div className="col-md-6">
                         <div>
-                            <h4>Специальное предложение для абонентов</h4>
+                            <h4 className='font-family-medium'>Специальное предложение для абонентов</h4>
                             <p>
                                 Подключение IPTV на особых условиях </p>
                             <div className="third-arrow">
-                                <Link to="/form">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
+                                <Link to="/form"  className='font-family-medium'>Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
                             </div>
                         </div>
                     </div>

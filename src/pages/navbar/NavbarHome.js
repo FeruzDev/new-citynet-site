@@ -7,7 +7,7 @@ const NavbarHome = () => {
     return (
         <div className="">
             <nav className="navbar navbar-expand-lg navbar-light bg-white home-nav">
-                <Link className="navbar-brand" to="/"><img src="/images/icon/citynet.png" alt=""/></Link>
+                <Link className="navbar-brand" to="/"><img src="/images/icon/logo12.png" alt=""/></Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavv"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

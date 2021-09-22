@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import PartOne from "./PartOne";
 import PartSecond from "./PartSecond";
 import PartThree from "./PartThree";
@@ -12,6 +12,10 @@ import DisplayNavbar from "../navbar/DisplayNavbar";
 
 
 const VideoMonitoring = () => {
+
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
             <NavbarGeneral/>

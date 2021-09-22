@@ -6,11 +6,11 @@ const TrafficTablisa = () => {
             <div className="traffic-tablisa-child container">
             <table className="table-sm ">
                 <tr>
-                    <th>Район</th>
-                    <th>Микрорайон</th>
-                    <th>Улица</th>
-                    <th>Дома</th>
-                    <th>Технология</th>
+                    <th className="font-family-medium">Район</th>
+                    <th className="font-family-medium">Микрорайон</th>
+                    <th className="font-family-medium">Улица</th>
+                    <th className="font-family-medium">Дома</th>
+                    <th className="font-family-medium">Технология</th>
                 </tr>
                 <tr>
                     <td>Шайхантахурский район</td>

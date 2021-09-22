@@ -13,14 +13,14 @@ const HomeBanner = () => {
                 <div className="row">
 
                     <div className="col-md-6">
-                        <NavLink to="/"><img src="/images/icon/citynet.png" alt=""/></NavLink>
+                        <NavLink to="/"><img src="/images/logo12.png" alt=""/></NavLink>
                     </div>
                     <div className="col-md-6">
                       <div className="menus">
-                          <a href="#" >О нас</a>
-                          <a href="#!">Интернет</a>
-                          <a href="#!">Продукты</a>
-                          <a href="#!">Партнеры</a>
+                          <a href="#company" >О нас</a>
+                          <a href="#services">Услуги</a>
+                          <a href="#news">Новости</a>
+                          <a href="#partner">Партнеры</a>
                       </div>
                     </div>
                 </div>
@@ -169,27 +169,27 @@ const HomeBanner = () => {
 
 
             <div className="chooses d-flex">
-                <Link className="smallChild" to="/Installation">
+                <Link className="smallChild font-family-medium" to="/Installation">
                     <span>
                         Монтаж
                     </span>
                 </Link>
-                <Link to="/main-iptv-proekt" className="mediumChild">
+                <Link to="/main-iptv-proekt" className="mediumChild font-family-medium">
                     <span>
                          Проектирование
                     </span>
                 </Link>
-                <Link to="/home-internet" className="bigChild">
+                <Link to="/home-internet" className="bigChild font-family-medium">
                     <span>
                         Интернет
                     </span>
                 </Link>
-                <Link to="/itequipment" className="mediumChild">
+                <Link to="/itequipment" className="mediumChild font-family-medium">
                     <span>
                         IT оборудование
                     </span>
                 </Link>
-                <Link className="smallChild" to="/ItDevelopment">
+                <Link className="smallChild font-family-medium" to="/ItDevelopment">
                     <span>
                         IT разработка
                     </span>

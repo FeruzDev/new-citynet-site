@@ -13,7 +13,7 @@ const MainForm = () => {
                     <div className="main-form-child">
                         <div className="row">
                             <div className=" col-md-6  ">
-                                <h4>Заявка на подключение</h4>
+                                <h4 className="font-family-medium">Заявка на подключение</h4>
                                 <p>Заполните заявку и наши специалисты свяжутся с Вами в течение 24 часов!</p>
                                 <div className="row">
                                     <div className="col-md-6">
@@ -56,7 +56,7 @@ const MainForm = () => {
                                     <input type="text" className="form-control m-3" placeholder="Имя"/>
                                     <input type="number" className="form-control mx-3" placeholder="Контакный телефон"/>
                                     <div className="third-arrow ml-3">
-                                        <a href="#!"> <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                        <a href="#!" className="font-family-medium"> <img className="arrow-img-white" src="/images/icon/Arrow4.png"
                                                            alt=""/>Отправить заявку</a>
                                     </div>
                                 </div>

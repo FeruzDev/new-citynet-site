@@ -1,10 +1,11 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const IptelephonyPartFive = () => {
     return (
-        <div className="iptelephony-part-five position-relative">
+        <div id="services" className="iptelephony-part-five position-relative">
             <div className="iptelephony-part-five-child container ">
-                <h4>Наши услуги</h4>
+                <h4 className="font-family-medium">Наши услуги</h4>
                 <div className="row">
 
                 </div>
@@ -21,25 +22,25 @@ const IptelephonyPartFive = () => {
                     </div>
                 </div>
                 <div className="row position-relative">
-                    <div className="box"><img src="images/PNG/vd2.png" alt=""/> <h6>Видеонаблюдение</h6></div>
-                    <div className="box"><img src="images/PNG/sc2.png" alt=""/><h6>  Системы конференцсвязи </h6></div>
-                    <div className="box"><img src="images/PNG/ps2.png" alt=""/><h6>  	Охранная и пожарная сигнализация </h6></div>
-                    <div className="box"><img src="images/PNG/sk2.png" alt=""/><h6>  Система контроля и управления доступом </h6></div>
-                    <div className="box"><img src="images/PNG/ipd2.png" alt=""/><h6> 	IP-домофония  </h6></div>
-                    <div className="box"><img src="images/PNG/set2.png" alt=""/><h6> Структурирование кабельных сетей </h6></div>
-                    <div className="box"><img src="images/PNG/ipt2.png" alt=""/><h6>  	IP-телефония </h6></div>
-                    <div className="box"><img src="images/PNG/eek2.png" alt=""/><h6>  Электромонтажные работы</h6></div>
-                    <div className="box"><img src="images/PNG/tv2.png" alt=""/><h6>  	Телевидение   </h6></div>
-                    <div className="box"><img src="images/PNG/bm2.png" alt=""/><h6>  	BMS и RMS</h6></div>
-                    <div className="box"><img src="images/PNG/web2.png" alt=""/><h6>  Разработка веб-приложений </h6></div>
-                    <div className="box"><img src="images/PNG/sb2.png" alt=""/><h6>   	Автоматическая парковка </h6></div>
-                    <div className="box"><img src="images/PNG/net2.png" alt=""/><h6>  	Интернет-провайдер </h6></div>
-                    <div className="box"><img src="images/PNG/pt2.png" alt=""/><h6>  	Противопожарная обработка </h6></div>
-                    <div className="box"><img src="images/PNG/rv2.png" alt=""/><h6>  	Речевое оповещение </h6></div>
-                    <div className="box"><img src="images/PNG/po2.png" alt=""/><h6>  	Пожаротушение </h6></div>
-                    <div className="box"><img src="images/PNG/dw2.png" alt=""/><h6>  	Пожаротушение </h6></div>
-                    <div className="box"><img src="images/PNG/cq2.png" alt=""/><h6>  	Контроль качества </h6></div>
-                    <div className="box"><img src="images/PNG/ec2.png" alt=""/><h6>   	Экранные дисплеи</h6></div>
+                    <div className="box"><img src="images/PNG/vd2.png" alt=""/> <h6 className="font-family-medium">Видеонаблюдение</h6></div>
+                    <div className="box"><img src="images/PNG/sc2.png" alt=""/><h6 className="font-family-medium">  Системы конференцсвязи </h6></div>
+                    <div className="box"><img src="images/PNG/ps2.png" alt=""/><h6 className="font-family-medium">  	Охранная и пожарная сигнализация </h6></div>
+                    <div className="box"><img src="images/PNG/sk2.png" alt=""/><h6 className="font-family-medium">  Система контроля и управления доступом </h6></div>
+                    <div className="box"><img src="images/PNG/ipd2.png" alt=""/><h6 className="font-family-medium"> 	IP-домофония  </h6></div>
+                    <div className="box"><img src="images/PNG/set2.png" alt=""/><h6 className="font-family-medium"> Структурирование кабельных сетей </h6></div>
+                    <div className="box"><img src="images/PNG/ipt2.png" alt=""/><h6 className="font-family-medium">  	IP-телефония </h6></div>
+                    <div className="box"><img src="images/PNG/eek2.png" alt=""/><h6 className="font-family-medium">  Электромонтажные работы</h6></div>
+                    <div className="box"><img src="images/PNG/tv2.png" alt=""/><h6 className="font-family-medium">  	Телевидение   </h6></div>
+                    <div className="box"><img src="images/PNG/bm2.png" alt=""/><h6 className="font-family-medium">  	BMS и RMS</h6></div>
+                    <div className="box"><img src="images/PNG/web2.png" alt=""/><h6 className="font-family-medium">  Разработка веб-приложений </h6></div>
+                    <div className="box"><img src="images/PNG/sb2.png" alt=""/><h6 className="font-family-medium">   	Автоматическая парковка </h6></div>
+                    <div className="box"><img src="images/PNG/net2.png" alt=""/><h6 className="font-family-medium "> 	Интернет-провайдер </h6></div>
+                    <div className="box"><img src="images/PNG/pt2.png" alt=""/><h6 className="font-family-medium">  	Противопожарная обработка </h6></div>
+                    <div className="box"><img src="images/PNG/rv2.png" alt=""/><h6 className="font-family-medium">  	Пожаротушение </h6></div>
+                    <div className="box"><img src="images/PNG/po2.png" alt=""/><h6 className="font-family-medium">   Проектирование	 </h6></div>
+                    <div className="box"><img src="images/PNG/dw2.png" alt=""/><h6 className="font-family-medium">  	Контроль качества </h6></div>
+                    <div className="box"><img src="images/PNG/cq2.png" alt=""/><h6 className="font-family-medium">  	Дисплей </h6></div>
+                    <div className="box"><img src="images/PNG/ec2.png" alt=""/><h6 className="font-family-medium">   	Экранные дисплеи</h6></div>
 
                 </div>
                 <div className="line25">

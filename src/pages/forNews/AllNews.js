@@ -1,14 +1,19 @@
 import React from 'react';
-import NavbarHome from "../navbar/NavbarHome";
-import HomeBanner from "../home/HomeBanner";
 import NewsList from "./NewsList";
+import NavbarGeneral from "../navbar/NavbarGeneral";
+import DisplayNavbar from "../navbar/DisplayNavbar";
+import IptelephonyEight from "../iptelephony/IptelephonyEight";
+import MainNewForDetail from "./MainNewForDetail";
 
 const AllNews = () => {
     return (
         <div>
-            <NavbarHome />
-            <HomeBanner />
+            <NavbarGeneral/>
+            <DisplayNavbar/>
             <NewsList/>
+            <MainNewForDetail/>
+            <IptelephonyEight/>
+
         </div>
     );
 };

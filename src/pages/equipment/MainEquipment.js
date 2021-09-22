@@ -57,13 +57,13 @@ class MainEquipment extends React.Component {
                     <div className="row">
                         <div className="col-md-3">
                             <div className="saidbar">
-                                <h4>Каталог товаров</h4>
+                                <h4 className="font-family-medium">Каталог товаров</h4>
                                 {
                                     this.getEquipments().map((e, index) => {
                                         return (
                                             <div className="saidbar-between">
                                                 <span className={this.state.active === index ? 'active' : ''}
-                                                      onClick={this.toggleActive.bind(this, index)}>{e.title}</span>
+                                                      onClick={this.toggleActive.bind(this, index)} >{e.title}</span>
                                                 <img
                                                     src={`images/icon/${this.state.active === index ? 'arrow-down-s-line.svg' : 'arrow-right-s-line.svg'}`}
                                                     alt=""/>
@@ -94,11 +94,11 @@ class MainEquipment extends React.Component {
                                     </div>
                                 </div>
                                 <div className="col-md-7">
-                                    <h4>ITC Audio T-6708 Сетевой аудио адаптер, без встроенного усилителя</h4>
+                                    <h4  className="font-family-medium">ITC Audio T-6708 Сетевой аудио адаптер, без встроенного усилителя</h4>
                                     <div>Сетевой Аудио адаптер IP.
                                         Без усилителя
                                     </div>
-                                    <h3>3 703 197 сум</h3>
+                                    <h3  className="font-family-medium">3 703 197 сум</h3>
                                     <span><img src="images/icon/stock .png" alt=""/></span>
                                     <p>Запросить дилерскую цену</p>
                                     <button type="button" className="btn btn-primary"><span>Инфо</span></button>

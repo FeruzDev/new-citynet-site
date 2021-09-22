@@ -14,6 +14,7 @@ import FormaProvider from "./FormaProvider";
 import ProviderPart from "./PrividerPart";
 import DisplayNavbar from "../navbar/DisplayNavbar";
 import NewPage from "./NewPage";
+import Notification from "./Notification";
 
 const MainProvider = () => {
     return (
@@ -22,12 +23,13 @@ const MainProvider = () => {
             <NavbarGeneral/>
             <DisplayNavbar/>
             <BannerCarousel/>
+            <Notification/>
             <PriceProvider/>
             <ProviderPart/>
             <NewPage/>
             <FormaProvider/>
             <TrafficServices/>
-            <Test/>
+            {/*<Test/>*/}
             <IptelephonyEight/>
         </div>
     );

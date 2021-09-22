@@ -30,7 +30,7 @@ const ContactForma = () => {
                     <div className="Contact-forma-child">
                         <div className="row">
                             <div className=" col-md-6 ">
-                                <h4>Свяжитесь с нами</h4>
+                                <h4 className="font-family-medium">Свяжитесь с нами</h4>
                                 <div className="row">
                                     <div className="col-md-6">
                                         <input type="text" className="form-control" placeholder="Имя"/>
@@ -43,7 +43,7 @@ const ContactForma = () => {
                                     </div>
                                     <input type="text" className="form-control m-3 text" placeholder="Сообшения"/>
                                     <div className="third-arrow ml-3">
-                                        <a href="#!"> <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                        <a href="#!" className="font-family-medium"> <img className="arrow-img-white" src="/images/icon/Arrow4.png"
                                                            alt=""/>Отправить заявку</a>
                                     </div>
                                 </div>
@@ -61,7 +61,7 @@ const ContactForma = () => {
                                 </div>
                                 <div className="contact-in">
                                     <img src="images/icon/contactimages3.png" alt=""/>
-                                    <a href="#">Узбекистан, 100066, г. Ташкент, Шайхантахурский район,
+                                    <a href="#" >Узбекистан, 100066, г. Ташкент, Шайхантахурский район,
                                         ул. Кичик халка йули, 2</a>
                                 </div>
                             </div>

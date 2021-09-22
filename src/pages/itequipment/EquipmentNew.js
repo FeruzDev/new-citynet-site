@@ -60,9 +60,9 @@ const EquipmentNew = () => {
                                     x
                                 </p>
 
-                                <h3><del></del><br/>3 703 197 сум</h3>
+                                <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
                                 <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary">Подробнее</button>
+                                    <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                 </NavLink></div>                            </div>
                         </div>
                     </div>
@@ -76,9 +76,9 @@ const EquipmentNew = () => {
                                     x
                                 </p>
 
-                                <h3><del>3 703 197 сум</del><br/>3 703 197 сум</h3>
+                                <h3  className="font-family-medium"><del>3 703 197 сум</del><br/>3 703 197 сум</h3>
                                 <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary">Подробнее</button>
+                                    <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                 </NavLink></div>                            </div>
                         </div>
                     </div>
@@ -92,9 +92,9 @@ const EquipmentNew = () => {
                                     x
                                 </p>
 
-                                <h3><del></del><br/>3 703 197 сум</h3>
+                                <h3  className="font-family-medium" ><del></del><br/>3 703 197 сум</h3>
                                 <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary">Подробнее</button>
+                                    <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                 </NavLink></div>                            </div>
                         </div>
                     </div>
@@ -108,9 +108,9 @@ const EquipmentNew = () => {
                                     x
                                 </p>
 
-                                <h3><del></del><br/>3 703 197 сум</h3>
+                                <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
                                 <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary">Подробнее</button>
+                                    <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                 </NavLink></div>                            </div>
                         </div>
                     </div>
@@ -124,9 +124,9 @@ const EquipmentNew = () => {
                                     x
                                 </p>
 
-                                <h3><del></del><br/>3 703 197 сум</h3>
+                                <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
                                 <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary">Подробнее</button>
+                                    <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                 </NavLink></div>                            </div>
                         </div>
                     </div>
@@ -140,9 +140,9 @@ const EquipmentNew = () => {
                                     x
                                 </p>
 
-                                <h3><del></del><br/>3 703 197 сум</h3>
+                                <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
                                 <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary">Подробнее</button>
+                                    <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
                                 </NavLink></div>                            </div>
                         </div>
                     </div>

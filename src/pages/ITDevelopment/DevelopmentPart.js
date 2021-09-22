@@ -24,53 +24,31 @@ const DevelopmentPart= () => {
                 </div>
             </div>
             <div className="container development-part-child">
-                <h4>Проекты</h4>
+                <h4 className="font-family-medium">Проекты</h4>
                 <div className="row">
                     <div className="col-md-4 col-sm-6">
                         <div className="boxed">
                         <img src="images/icon/icons1.png" alt=""/>
                         </div>
-                        <h5>Проекты 1</h5>
+                        <h5 className="font-family-medium">Проекты 1</h5>
                         <p>Медцентр, клиника ∙ Медицинская лаборатория ∙ Диагностический центр</p>
                     </div>
                     <div className="col-md-4 col-sm-6">
                         <div className="boxed">
                         <img src="images/icon/icons2.png" alt=""/>
                         </div>
-                        <h5>Проекты 1</h5>
+                        <h5 className="font-family-medium">Проекты 1</h5>
                         <p>Медцентр, клиника ∙ Медицинская лаборатория ∙ Диагностический центр</p>
                     </div>
                     <div className="col-md-4 col-sm-6">
                         <div className="boxed">
                         <img src="/images/icon/icons3.png" alt=""/>
                         </div>
-                        <h5>Проекты 3</h5>
+                        <h5 className="font-family-medium">Проекты 3</h5>
                         <p>Сеть рынков</p>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-md-4 col-sm-6">
-                        <div className="boxed">
-                        <img src="images/icon/icons1.png" alt=""/>
-                        </div>
-                        <h5>Проекты 1</h5>
-                        <p>Медцентр, клиника ∙ Медицинская лаборатория ∙ Диагностический центр</p>
-                    </div>
-                    <div className="col-md-4 col-sm-6">
-                        <div className="boxed">
-                        <img src="images/icon/icons2.png" alt=""/>
-                        </div>
-                        <h5>Проекты 1</h5>
-                        <p>Медцентр, клиника ∙ Медицинская лаборатория ∙ Диагностический центр</p>
-                    </div>
-                    <div className="col-md-4 col-sm-6">
-                        <div className="boxed">
-                        <img src="/images/icon/icons3.png" alt=""/>
-                        </div>
-                        <h5>Проекты 3</h5>
-                        <p>Сеть рынков</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     );

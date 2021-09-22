@@ -1,5 +1,49 @@
 $color-brand: #0086E7;
 
+
+@font-face {
+  src: url("/fonts/Norms/TTNorms-Regular.ttf") format("truetype");
+  font-family: "TTNorms-Regular";
+}
+
+@font-face {
+  src: url("/fonts/Norms/TTNorms-Medium.ttf") format("truetype");
+  font-family: "TTNorms-Medium";
+}
+
+@font-face {
+  src: url("/fonts/Norms/TTNorms-Bold.ttf") format("truetype");
+  font-family: "TTNorms-Bold";
+}
+
+.font-family-regular{
+  font-family: "TTNorms-Regular", sans-serif;
+}
+
+
+.font-family-medium{
+  font-family: "TTNorms-Medium", sans-serif;
+}
+
+
+
+.font-family-bold{
+  font-family: "TTNorms-Bold", sans-serif;
+}
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "TTNorms-Regular", sans-serif !important;
+
+}
+a:hover{
+  text-decoration: none;
+}
 .navbar-provider {
   height: 96px;
   border-bottom: 1px solid #E8E8EA;
@@ -34,8 +78,7 @@ $color-brand: #0086E7;
       .con-btn {
         background: #0086E7;
         border-radius: 8px;
-        font-weight: 500;
-        font-size: 18px;
+          font-size: 18px;
 
         height: 82px;
         display: flex;
@@ -92,9 +135,10 @@ $color-brand: #0086E7;
     display: flex !important;
     justify-content: space-between;
     position: absolute;
-    width: 160px;
+    width: 130px;
     bottom: 47px;
-    left: 70px;
+    left: 139px;
+
 
 
     li {
@@ -135,12 +179,13 @@ $color-brand: #0086E7;
       display: flex;
       flex-direction: column;
 
+      padding-left: 70px;
+
       h1 {
 
-        font-weight: 500;
-        font-size: 36px;
+          font-size: 36px;
         line-height: 42px;
-        width: 90%;
+        width: 50%;
         color: white;
       }
 
@@ -148,7 +193,7 @@ $color-brand: #0086E7;
         font-weight: normal;
         font-size: 18px;
         line-height: 21px;;
-        width: 80%;
+        width: 42%;
         height: 63px;
         color: #FFFFFF;
       }
@@ -156,39 +201,35 @@ $color-brand: #0086E7;
       .third-arrow {
 
         margin-top: 51px;
-        display: block;
-        background: #0086E7;
-        border-radius: 8px;
-        width: 252px;
-        height: 96px;
-        padding: 0;
-        padding-bottom: 16px;
-        padding-right: 24px;
-        padding-left: 24px;
 
         a {
-          padding: 0;
-          margin: 0;
-          color: #fff;
-          padding-right: 24px;
-
-          position: relative;
-          padding-top: 50px;
-          background-color: #0086E7;
+          background: #0086E7;
           border-radius: 8px;
           width: 252px;
-          height: 96px;
+          height: 87px;
+
+          padding-left: 24px;
+          position: relative;
+          padding-top: 50px;
+          color: #FFFFFF;
+          border-radius: 8px;
+
+
+          padding-bottom: 19px;
           display: flex;
           justify-content: space-between;
 
+          align-items: center;
           &:hover {
             text-decoration: none;
           }
 
           img {
-            position: absolute;
-            right: 30px;
-            bottom: 24px;
+
+
+
+            margin-right: 24px;
+
           }
         }
       }
@@ -201,14 +242,14 @@ $color-brand: #0086E7;
   .for-call-center {
     position: absolute;
     z-index: 999;
-    bottom: 59px;
+    bottom: 40px;
     right: 61px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     img {
-      width: 80px;
+      width: 57px;
     }
 
     h3 {
@@ -221,6 +262,32 @@ $color-brand: #0086E7;
   }
 }
 
+.notification{
+  h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FF4E4E;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 21px;
+    text-transform: uppercase;
+  }
+  .notification-body{
+    background: #FF4E4E;
+    border-radius: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 120px;
+    padding-right: 120px;
+    p{
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
+}
 .special-offers {
   overflow-x: hidden;
   background: #F8F8F8;
@@ -247,8 +314,7 @@ $color-brand: #0086E7;
       }
 
       h2 {
-        font-weight: 500;
-        font-size: 34px;
+          font-size: 34px;
         color: #0086E7;
         margin-top: 30px;
       }
@@ -576,7 +642,7 @@ nav {
       transition: 0.5s;
 
       &:hover {
-        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08), 0px 4px 48px rgba(0, 0, 0, 0.08);
+        //box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08), 0px 4px 48px rgba(0, 0, 0, 0.08);
         margin-top: -19px;
         //border: 0px ;
         transition-delay: .1s;
@@ -590,8 +656,7 @@ nav {
       }
 
       h2 {
-        font-weight: 500;
-        font-size: 28px;
+          font-size: 28px;
         color: #101828;
 
 
@@ -599,11 +664,17 @@ nav {
 
       }
 
+      .speed-list:nth-child(2){
+        margin-top: 38px;
+      }
+      .speed-list:nth-child(3){
+        margin-top: 12px;
+      }
       .speed-list {
 
         display: flex;
         align-items: start;
-        margin-top: 24px;
+
 
         div{
           width: 21px;
@@ -623,8 +694,7 @@ nav {
           flex-direction: column;
 
           span:nth-child(1) {
-            font-weight: 500;
-            font-size: 15px;
+                  font-size: 15px;
             color: #101828;
           }
 
@@ -641,8 +711,7 @@ nav {
 
 
       h1 {
-        font-weight: 500;
-        font-size: 39px;
+          font-size: 39px;
         text-align: left;
         color: #000000;
 
@@ -726,7 +795,7 @@ nav {
 }
 
 .sale:nth-child(7){
-  margin-top: 18px !important;
+  margin-top: 12px !important;
 }
 
 .traffic-part {
@@ -811,8 +880,7 @@ nav {
       }
 
       h2 {
-        font-weight: 500;
-        font-size: 28px;
+          font-size: 28px;
         color: #101828;
 
 
@@ -838,8 +906,7 @@ nav {
           flex-direction: column;
 
           span:nth-child(1) {
-            font-weight: 500;
-            font-size: 15px;
+                  font-size: 15px;
             color: #101828;
           }
 
@@ -862,8 +929,7 @@ nav {
       }
 
       h1 {
-        font-weight: 500;
-        font-size: 39px;
+          font-size: 39px;
         text-align: center;
         color: #000000;
         margin: 0;
@@ -941,8 +1007,7 @@ nav {
 
 
         h3 {
-          font-weight: 500;
-          font-size: 18px;
+              font-size: 18px;
           line-height: 21px;
           text-transform: uppercase;
           color: #171717;
@@ -972,8 +1037,7 @@ nav {
 
       h2 {
         font-style: normal;
-        font-weight: 500;
-        font-size: 34px;
+          font-size: 34px;
         line-height: 40px;
         color: #0086E7;
       }
@@ -1000,8 +1064,7 @@ nav {
     .col-md-3 {
 
       h3 {
-        font-weight: 500;
-        font-size: 24px;
+          font-size: 24px;
         line-height: 28px;
         color: #000000;
       }
@@ -1035,7 +1098,6 @@ nav {
     margin-top: 100px;
 
     h3 {
-      font-weight: 500;
       font-size: 20px;
       color: #000000;
       margin-right: 5px;
@@ -1180,23 +1242,24 @@ nav {
       box-sizing: border-box;
 
       .col-md-8 {
-        margin-top: 7%;
+        margin-top:  91px;
+        padding-left: 100px;
         h4 {
-          font-weight: 500;
-          font-size: 36px;
+              font-size: 36px;
           line-height: 42px;
         }
 
         p {
           font-size: 18px;
           line-height: 21px;
+          margin-top: 22px;
         }
 
-        margin-left: 41px;
+
 
         .third-arrow {
 
-          margin-top: 26px;
+          margin-top: 22px;
           display: block;
           border-radius: 8px;
           padding: 0;
@@ -1580,7 +1643,6 @@ nav {
     padding: 0;
 
     h3 {
-      font-weight: 500;
       font-size: 35px;
       line-height: 46px;
       margin: 40px 0;
@@ -1675,6 +1737,7 @@ nav {
 
       .col-md-9 {
         margin: 0;
+
       }
     }
   }
@@ -1693,21 +1756,23 @@ nav {
     height: 100%;
 
     .col-md-9 {
-      padding-top: 15px;
-      padding-left: 40px;
+      padding-top: 80px;
+      padding-left: 100px;
 
       h4 {
         font-weight: 300;
         font-size: 36px;
         line-height: 42px;
-        margin-top: 5px;
+
+
+        width: 85%;
       }
 
       p {
-        font-weight: 400;
+
         font-size: 18px;
         line-height: 21px;
-
+        width: 60%;
         color: #222222;
       }
 
@@ -1735,8 +1800,7 @@ nav {
 
         h4 {
           margin-bottom: .5rem;
-          font-weight: 500;
-          line-height: 1.2;
+              line-height: 1.2;
           margin-top: 10px;
 
 
@@ -1755,18 +1819,19 @@ nav {
 .details-part-three {
   background-color: #F8F8F8;
   margin-top: 100px;
+  padding-bottom:  80px;
 
   .container {
     padding: 0;
 
     h3 {
-      font-weight: 500;
       font-size: 35px;
       line-height: 46px;
       padding-top: 48px;
 
       margin-bottom: 43px;
 
+      width: 75%;
     }
 
     p {
@@ -1824,15 +1889,14 @@ nav {
       .col-md-6 {
         margin-top: 10%;
         h4 {
-          font-weight: 500;
-          font-size: 36px;
+              font-size: 36px;
           line-height: 42px;
           margin-bottom: 43px;
           margin-top: 0;
         }
 
         p {
-          font-weight: 400;
+
           font-size: 18px;
           line-height: 21px;
           padding-bottom: 50px;
@@ -1850,11 +1914,11 @@ nav {
 .iptv-part-two {
 
 
+  margin-top: 90px;
   .iptv-part-two-child {
 
     h4 {
       margin-bottom: 38px;
-      font-weight: 500;
       font-size: 35px;
       line-height: 46px;
     }
@@ -2012,7 +2076,6 @@ nav {
     padding: 0;
 
     h4 {
-      font-weight: 500;
       font-size: 36px;
       line-height: 42px;
       margin-bottom: 58px;
@@ -2042,8 +2105,7 @@ nav {
 
         h5 {
           margin-top: 32px;
-          font-weight: 500;
-          font-size: 24px;
+              font-size: 24px;
           line-height: 28px;
 
           color: #171717;
@@ -2188,7 +2250,6 @@ nav {
     padding: 0;
 
     h4 {
-      font-weight: 500;
       font-size: 36px;
       line-height: 42px;
       margin-bottom: 58px;
@@ -2213,8 +2274,7 @@ nav {
         }
         h5 {
           margin-top: 32px;
-          font-weight: 500;
-          font-size: 24px;
+              font-size: 24px;
           line-height: 28px;
 
           color: #171717;
@@ -2237,6 +2297,7 @@ nav {
     padding: 0;
     padding-bottom: 200px;
 
+    padding-top: 116px;
     .row {
       .col-md-6 {
         position: unset;
@@ -2244,13 +2305,13 @@ nav {
         img {
           width: 398px;
           height: 523px;
-          margin-top: 20px;
+
         }
 
         h4 {
-          margin-top: 116px;
-          font-weight: 500;
-          font-size: 35px;
+
+          margin-top: 80px;
+              font-size: 35px;
           line-height: 41px;
         }
 
@@ -2264,7 +2325,138 @@ nav {
   }
 
 }
+.price-cards{
 
+  margin-bottom: 200px;
+
+  position: relative;
+  h1{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #171717;
+
+
+    margin-bottom: 47px;
+    margin-top: 90px;
+  }
+  .row{
+    .col-md-4{
+
+      .box{
+        padding: 24px;
+
+        background: #FFFFFF;
+        border: 1px solid #E8E8EA;
+        box-sizing: border-box;
+        border-radius: 12px;
+
+
+        h3{
+              font-size: 28px;
+          line-height: 33px;
+
+          color: #101828;
+        }
+
+        h4{
+          margin-top:  48px;
+          font-size: 39px;
+          line-height: 46px;
+          /* identical to box height */
+
+          display: flex;
+          align-items: flex-end;
+
+          color: #101828;
+
+          mix-blend-mode: normal;
+        }
+
+
+
+        h5{
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 18px;
+          color: #575D68;
+        }
+        .watch-box{
+
+          margin-top: 38px;
+
+          display: flex;
+          flex-direction: row;
+
+          img{
+            margin-right: 12px;
+            margin-top: -10px;
+          }
+          h6{
+            padding: 0;
+            margin: 0;
+
+          }
+
+          span{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 18px;
+            /* identical to box height */
+
+
+            color: #B0B0B0;
+
+          }
+        }
+
+
+
+      }
+    }
+  }
+
+
+
+  .third-arrow {
+
+    margin-top: 25px;
+    display: block;
+    background: #0086E7;
+    border-radius: 8px;
+    width: 100%;
+    height: 75px;
+    padding: 0;
+    padding-bottom: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    a {
+      color: #fff;
+      padding-right: 24px;
+
+      padding-top: 40px;
+
+      display: flex;
+      justify-content: space-between;
+      //margin-bottom: 19px;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      img {
+        //position: absolute;
+        right: 30px;
+        //bottom: 12px;
+        width: 27px;
+        padding: 0;
+        margin-bottom: 19px;
+      }
+    }
+  }
+}
 .iptelephony-part-three {
   background-color: #F8F8F8;
 
@@ -2334,6 +2526,7 @@ nav {
   }
 }
 
+
 .provider-part {
   background-color: #F8F8F8;
 
@@ -2342,44 +2535,37 @@ nav {
     margin-bottom: 170px;
 
     .row {
+      padding-top: 57px;
       .col-md-6 {
         img {
           width: 100%;
-          padding-top: 57px;
+
           padding-bottom: 57px;
           box-sizing: border-box;
         }
 
-        h4 {
-          margin-top: 47px;
-        }
+
 
         .third-arrow {
 
           margin-top: 63px;
-          display: block;
-          background: #0086E7;
-          border-radius: 8px;
-          width: 252px;
-          height: 96px;
-          padding: 0;
-          padding-bottom: 16px;
-          padding-right: 24px;
-          padding-left: 24px;
-
           a {
             padding: 0;
             margin: 0;
             color: #fff;
             padding-right: 24px;
 
+            padding-left: 24px;
+
+            position: relative;
             //position: relative;
-            padding-top: 54px;
+            padding-top: 50px;
             background: #0086E7;
             border-radius: 8px;
             width: 252px;
-            height: 96px;
+            height: 86px;
             display: flex;
+            bottom: 19px;
             justify-content: space-between;
             //margin-bottom: 19px;
 
@@ -2388,12 +2574,12 @@ nav {
             }
 
             img {
-              //position: absolute;
-              right: 30px;
-              //bottom: 12px;
+              position: absolute;
+              right: 24px;
+              bottom: 16px;
               width: 27px;
               padding: 0;
-              margin-bottom: 19px;
+
             }
           }
         }
@@ -2449,14 +2635,14 @@ nav {
 }
 
 .iptelephony-part-five {
+  padding-top: 98px;
   .iptelephony-part-five-child {
     margin-bottom: 300px;
 
     h4 {
-      font-weight: 500;
       font-size: 36px;
       line-height: 42px;
-      margin-top: 98px;
+
 
     }
 
@@ -2555,14 +2741,21 @@ button.slick-arrow.slick-next {
 
   .iptelephony-part-seven-child {
     padding: 0;
-    margin-bottom: 300px;
+    margin-bottom:375px;
+    padding-top: 200px;
 
     h4 {
-      margin-top: 250px;
+      margin-top: 0px;
+      text-align: center;
+      font-size: 36px;
+
+
+
+      color: #171717;
     }
 
     .row {
-      margin-top: 134px;
+      margin-top: 100px;
 
       .col-md-3 {
       }
@@ -2574,6 +2767,11 @@ button.slick-arrow.slick-next {
   background-color: #F7F7F7;;
 
   margin-top: 50px;
+
+  overflow: hidden;
+  position: relative;
+
+  z-index: 99;
 
   .iptelephony-part-eight-child {
     padding: 0;
@@ -2591,8 +2789,7 @@ button.slick-arrow.slick-next {
       }
 
       h4 {
-        font-weight: 500;
-        font-size: 24px;
+          font-size: 24px;
         line-height: 28px;
         margin-bottom: 28px;
       }
@@ -2622,8 +2819,7 @@ button.slick-arrow.slick-next {
 
       .eight-right {
         h5 {
-          font-weight: 500;
-          font-size: 20px;
+              font-size: 20px;
           line-height: 24px;
           text-align: end;
           margin-right: 12px;
@@ -2790,7 +2986,7 @@ button.slick-arrow.slick-next {
         .form-group {
           .form-control {
             border: none;
-            border-bottom: 2px solid darkgrey;
+            border-bottom: 2px solid #F1F3F5;
             border-radius: 0;
             width: 268px;
             margin-top: 15px;
@@ -2806,8 +3002,7 @@ button.slick-arrow.slick-next {
           Size: 35px;
           padding-bottom: 0;
           box-sizing: border-box;
-          font-weight: 500;
-          font-size: 35px;
+              font-size: 35px;
           line-height: 41px;
           display: flex;
           align-items: center;
@@ -3092,8 +3287,7 @@ button.slick-arrow.slick-next {
         }
 
         a {
-          font-weight: 500;
-          font-size: 18px;
+              font-size: 18px;
           line-height: 17px;
           text-decoration: none;
           color: #0086E7;
@@ -3102,9 +3296,15 @@ button.slick-arrow.slick-next {
     }
   }
 }
+.line5612 {
+  position: absolute;
+  right: 0;
+  bottom: -180px;
+}
 
 .traffic-services {
   margin-bottom: 220px;
+  padding-top: 140px;
 
   .line39 {
     position: absolute;
@@ -3117,6 +3317,10 @@ button.slick-arrow.slick-next {
     right: 0;
     bottom: -148px;
   }
+
+
+
+
 
   .traffic-services-child {
     padding: 0;
@@ -3145,8 +3349,7 @@ button.slick-arrow.slick-next {
 
         h4 {
           margin-top: 32px;
-          font-weight: 500;
-          font-size: 24px;
+              font-size: 24px;
           line-height: 28px;
           color: #171717;
         }
@@ -3191,10 +3394,10 @@ button.slick-arrow.slick-next {
 
 
       .col-md-6 {
-        margin-top: 10%;
+
+        margin-top: 90px;
         h4 {
-          font-weight: 500;
-          font-size: 36px;
+              font-size: 36px;
           line-height: 42px;
           margin-top: 10px;
         }
@@ -3202,18 +3405,15 @@ button.slick-arrow.slick-next {
         p {
           font-size: 18px;
           line-height: 21px;
+          padding-top: 16px;
         }
 
         margin-left: 40px;
 
         .third-arrow {
 
-          display: block;
-          border-radius: 8px;
-          padding: 0;
-          width: 252px;
-          height: 86px;
 
+          margin-top: 70px;
 
           a {
             padding-bottom: 0;
@@ -3224,8 +3424,8 @@ button.slick-arrow.slick-next {
             padding-top: 49px;
             background: #0086E7;
             border-radius: 8px;
-            width: 90%;
-            height: 96px;
+            width: 252px;
+            height: 86px;
             display: flex;
             justify-content: space-between;
             //margin: 0 auto;
@@ -3257,6 +3457,7 @@ button.slick-arrow.slick-next {
 .tv-part-two {
   margin-bottom: 200px;
 
+  margin-top: 100px;
   .tv-part-two-child {
     padding: 32px 24px;
     margin-top: 20px;
@@ -3271,7 +3472,6 @@ button.slick-arrow.slick-next {
     }
 
     h2 {
-      font-weight: 500;
       font-size: 28px;
       color: #101828;
 
@@ -3297,8 +3497,7 @@ button.slick-arrow.slick-next {
         flex-direction: column;
 
         span:nth-child(1) {
-          font-weight: 500;
-          font-size: 15px;
+              font-size: 15px;
           color: #101828;
         }
 
@@ -3321,7 +3520,6 @@ button.slick-arrow.slick-next {
     }
 
     h1 {
-      font-weight: 500;
       font-size: 39px;
       //text-align: center;
       color: #000000;
@@ -3381,14 +3579,13 @@ button.slick-arrow.slick-next {
 }
 
 .tv-card {
-  background-color: #F8F8F8;
+
 
   .tv-card-child {
     margin-top: 20px;
     padding: 0;
 
     h4 {
-      font-weight: 500;
       font-size: 35px;
       line-height: 46px;
       padding-top: 64px;
@@ -3410,12 +3607,12 @@ button.slick-arrow.slick-next {
 }
 
 .tv-chennel {
+
   .tv-chennel-child {
     padding: 0;
 
     h4 {
       margin-top: 60px;
-      font-weight: 500;
       font-size: 35px;
       line-height: 41px;
     }
@@ -3428,7 +3625,8 @@ button.slick-arrow.slick-next {
 
 .tv-carousel {
   margin-top: 40px;
-  margin-bottom: 20px;
+
+  margin-bottom: 500px;
   padding: 0;
   position: relative;
 
@@ -3461,7 +3659,7 @@ button.slick-arrow.slick-next {
 
 .tv-footer {
   margin-bottom: 223px;
-  margin-top: 160px;
+  margin-top:   60px;
 
   .tv-footer-child {
     padding: 0;
@@ -3539,8 +3737,7 @@ button.slick-arrow.slick-next {
           }
 
           h4 {
-            font-weight: 500;
-            font-size: 15px;
+                  font-size: 15px;
             line-height: 18px;
             margin-bottom: 23px;
           }
@@ -3574,8 +3771,7 @@ button.slick-arrow.slick-next {
 
           .col-md-7 {
             h4 {
-              font-weight: 500;
-              font-size: 24px;
+                      font-size: 24px;
               line-height: 28px;
               margin-top: 30px;
             }
@@ -4022,8 +4218,7 @@ button.slick-arrow.slick-next {
       .col-md-6 {
 
         h4 {
-          font-weight: 500;
-          font-size: 36px;
+              font-size: 36px;
           line-height: 42px;
         }
 
@@ -4197,8 +4392,7 @@ button.slick-arrow.slick-next {
         }
 
         h4 {
-          font-weight: 500;
-          font-size: 36px;
+              font-size: 36px;
           line-height: 42px;
         }
 
@@ -4313,6 +4507,7 @@ button.slick-arrow.slick-next {
       h4 {
         margin-right: 20px;
         color: #101828;
+        font-size: 18px;
       }
 
       .third-arrow {
@@ -4584,11 +4779,12 @@ button.slick-arrow.slick-next {
           width: 100%;
           display: flex;
           justify-content: flex-end;
+          position: relative;
+          z-index: 999;
 
           a {
             color: #FFFFFF;
-            font-weight: 500;
-            font-size: 16px;
+                  font-size: 16px;
             line-height: 19px;
             margin-left: 42px;
           }
@@ -4640,7 +4836,6 @@ button.slick-arrow.slick-next {
 
     .sv {
       font-style: normal;
-      font-weight: 500;
       font-size: 16px;
       line-height: 15px;
 
@@ -4688,8 +4883,7 @@ button.slick-arrow.slick-next {
 
           a {
             color: #FFFFFF;
-            font-weight: 500;
-            font-size: 16px;
+                  font-size: 16px;
             line-height: 19px;
             margin-left: 42px;
 
@@ -4750,8 +4944,7 @@ button.slick-arrow.slick-next {
       border-radius: 50%;
 
       span {
-        font-weight: 500;
-        font-size: 24px;
+          font-size: 24px;
         line-height: 28px;
       }
 
@@ -4778,7 +4971,6 @@ button.slick-arrow.slick-next {
 
     .sv {
       font-style: normal;
-      font-weight: 500;
       font-size: 16px;
       line-height: 15px;
 
@@ -4805,8 +4997,7 @@ button.slick-arrow.slick-next {
 
     .col-md-6 {
       h4 {
-        font-weight: 500;
-        font-size: 36px;
+          font-size: 36px;
         line-height: 42px;
         color: #101828;
         margin-top: 90px;
@@ -4844,8 +5035,7 @@ button.slick-arrow.slick-next {
 
     .col-md-6 {
       h4 {
-        font-weight: 500;
-        font-size: 36px;
+          font-size: 36px;
         line-height: 42px;
         color: #101828;
         margin-top: 90px;
@@ -5105,6 +5295,22 @@ button.slick-arrow.slick-next {
   position: absolute;
 }
 
+
+.line23_412 {
+  left: 0;
+  top: -200px;
+  position: absolute;
+}
+
+
+.line23_5 {
+  left: 0;
+  top: -200px;
+  position: absolute;
+}
+
+
+
 .line25 {
   position: absolute;
   left: 0;
@@ -5130,6 +5336,16 @@ button.slick-arrow.slick-next {
 
 
 }
+.line2812 {
+  position: absolute;
+  left: 35%;
+  bottom: -950px;
+
+  z-index: 0;
+
+}
+
+
 .installation-part-one-child {
   background-image: url("../images/installation.png");
   background-size: cover;
@@ -5139,6 +5355,7 @@ button.slick-arrow.slick-next {
   margin-top: 20px;
   border-radius: 18px;
 
+  margin-bottom: 90px;
   h3 {
     font-weight: 500;
     font-size: 35px;
@@ -5152,8 +5369,7 @@ button.slick-arrow.slick-next {
     .col-md-6 {
       margin-top: 10%;
       h4 {
-        font-weight: 500;
-        font-size: 36px;
+          font-size: 36px;
         line-height: 42px;
         color: #101828;
         margin-bottom: 20px;
@@ -5363,8 +5579,7 @@ button.slick-arrow.slick-next {
             margin-bottom: 37px;
           }
           h4{
-            font-weight: 500;
-            font-size: 24px;
+                  font-size: 24px;
             line-height: 28px;
           }
           p{
@@ -5405,8 +5620,7 @@ hr {
     .col-md-6 {
       margin-top: 10%;
       h4 {
-        font-weight: 500;
-        font-size: 36px;
+          font-size: 36px;
         line-height: 42px;
         color: #101828;
 
@@ -5446,8 +5660,7 @@ hr {
           margin-left: 15px;
 
           h4 {
-            font-weight: 500;
-            font-size: 20px;
+                  font-size: 20px;
             line-height: 28px;
             padding-top: 20px;
 
@@ -5844,121 +6057,20 @@ hr {
 }
 
 .forma-provider {
-  margin-top: 230px;
-
-  .line36 {
-    position: absolute;
-    right: 0;
-    top: -158px;
-
-    .line-insert {
 
 
-      .cls-1, .cls-3, .cls-4 {
-        fill: none;
-        stroke: #0086e7;
-        stroke-miterlimit: 10;
-        stroke-dasharray: 2300;
-        stroke-dashoffset: 2300;
-        animation-name: dash;
-      }
 
 
-      .cls-2 {
-        animation: change-background 4s;
-        fill: #0086e7;
-        animation-iteration-count: infinite;
+  h2{
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
 
-      }
+    color: #171717;
 
-      g {
-        fill: #0086e7;
-        background: #0086E7;
-        stroke: #0086e7;
-
-      }
-
-      @keyframes change-background {
-        0% {
-          fill: transparent;
-        }
-        25% {
-          fill: transparent;
-        }
-        50% {
-          fill: transparent;
-        }
-        75% {
-          fill: transparent;
-        }
-        100% {
-          fill: #0086e7;
-        }
-      }
-
-
-      .cls-1 {
-        stroke-width: 1.5px;
-      }
-
-
-      .cls-4 {
-        stroke-width: 0.5px;
-      }
-
-      path {
-        fill: none;
-        stroke: #298EEA;
-        stroke-width: 1;
-        stroke-dasharray: 2300;
-        stroke-dashoffset: 2300;
-        animation: dash 4s linear infinite;
-      }
-
-      svg {
-        path:nth-child(4) {
-          fill: #0086e7;
-          opacity: 0;
-          animation: dash2 4s linear infinite;
-
-        }
-      }
-
-      g {
-        path:nth-child(2) {
-          fill: #0086e7;
-          opacity: 0;
-          animation: dash2 4s linear infinite;
-
-        }
-      }
-
-      @keyframes dash {
-        60% {
-          stroke-dashoffset: 0;
-        }
-        90% {
-          //opacity: 0.5;
-
-        }
-        100% {
-          //opacity: 0;
-
-        }
-      }
-
-      @keyframes dash2 {
-
-        50% {
-          opacity: 1;
-
-        }
-        100% {
-          //opacity: 0;
-
-        }
-      }
-    }
+    margin-top: 39px;
+    margin-bottom: 47px;
   }
 
   .traffic-part-one-child {
@@ -6001,8 +6113,7 @@ hr {
           Size: 35px;
           padding-bottom: 0;
           box-sizing: border-box;
-          font-weight: 500;
-          font-size: 35px;
+              font-size: 35px;
           line-height: 41px;
           display: flex;
           align-items: center;
@@ -6193,7 +6304,10 @@ hr {
 
 .main-news{
 
-  margin-top: 500px;
+  padding-top: 250px;
+  margin-top: 250px;
+  margin-bottom:  350px;
+
   .news-main-title{
 
     display: flex;
@@ -6212,10 +6326,11 @@ hr {
         img{
           width: 100%;
           border-radius: 12px;
+
+          height: 268px;
         }
         h3{
-          font-weight: 500;
-          font-size: 24px;
+              font-size: 24px;
 
           color: #171717;
           margin-top: 32px;
@@ -6234,6 +6349,87 @@ hr {
         }
       }
     }
+  }
+}
+
+
+.news-list{
+  margin-top: 40px;
+  .container{
+    .row{
+      margin-top: 32px;
+      .col-md-4{
+
+        img{
+          width: 100%;
+
+        }
+      }
+
+      .col-md-8{
+        display: flex;
+        flex-direction: column;
+        h4{
+          font-style: normal;
+              font-size: 24px;
+          line-height: 28px;
+          color: #171717;
+        }
+
+        p{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 28px;
+          color: #101828;
+          a:hover{
+            text-decoration: none;
+          }
+        }
+        h6{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          color: #B0B0B0;
+          margin-top: auto;
+
+        }
+      }
+    }
+  }
+}
+
+
+.news-detail{
+  margin-top: 42px;
+  h2{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #171717;
+
+    margin-bottom: 10px;
+  }
+
+  span{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #878B93;
+
+  }
+  img{
+    margin-top: 24px;
+    width: 100%;
+  }
+  p{
+    line-height: 28px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #101828;
+    margin-top: 38px;
   }
 }
 
@@ -6580,8 +6776,7 @@ hr {
       padding-left: 40px;
 
       h1 {
-        font-weight: 500;
-        font-size: 36px;
+          font-size: 36px;
         line-height: 42px;
 
       }
@@ -6606,8 +6801,7 @@ hr {
           margin: 0;
 
           h4 {
-            font-weight: 500;
-            font-size: 28px;
+                  font-size: 28px;
             line-height: 33px;
           }
         }
@@ -6678,6 +6872,7 @@ hr {
   .line {
     display: none;
   }
+
   .iptelephony-part-seven {
 
     .iptelephony-part-seven-child {
@@ -6841,8 +7036,7 @@ hr {
         padding: 20px;
 
         h4 {
-          font-weight: 500;
-          font-size: 28px;
+              font-size: 28px;
           line-height: 33px;
         }
 
@@ -6914,8 +7108,7 @@ hr {
           margin: 0;
 
           h4 {
-            font-weight: 500;
-            font-size: 28px;
+                  font-size: 28px;
             line-height: 33px;
           }
         }
@@ -7118,8 +7311,7 @@ hr {
         margin: 0;
 
         h4 {
-          font-weight: 500;
-          font-size: 28px;
+              font-size: 28px;
           line-height: 33px;
         }
 
@@ -7258,8 +7450,7 @@ hr {
         }
 
         h1 {
-          font-weight: 500;
-          font-size: 28px;
+              font-size: 28px;
           line-height: 33px;
           width: 90%;
         }
@@ -7356,8 +7547,7 @@ hr {
 
     .iptelephony-part-seven-child {
       h4 {
-        font-weight: 500;
-        font-size: 28px;
+          font-size: 28px;
         line-height: 33px;
         margin: 200px 0 0 15px;
       }
@@ -7554,8 +7744,7 @@ hr {
       background-size: cover;
 
       h3 {
-        font-weight: 500;
-        font-size: 24px;
+          font-size: 24px;
         line-height: 28px;
         margin-bottom: 90px;
         margin-left: 15px;
@@ -7769,6 +7958,8 @@ hr {
 
   .tv-hidden {
     overflow: hidden;
+
+
   }
 
   .tv-footer {
@@ -7837,8 +8028,7 @@ hr {
           margin: 0;
 
           h4 {
-            font-weight: 500;
-            font-size: 28px;
+                  font-size: 28px;
             line-height: 33px;
           }
         }
@@ -7876,8 +8066,7 @@ hr {
         padding: 20px;
 
         h4 {
-          font-weight: 500;
-          font-size: 28px;
+              font-size: 28px;
           line-height: 33px;
         }
 
@@ -8195,12 +8384,12 @@ hr {
 
 .all-channels{
 
+  padding-bottom: 400px;
   .container{
     h2{
       margin-top: 39px;
     }
     .russian-channel, .HD-channel{
-      font-weight: 500;
       font-size: 35px;
       line-height: 41px;
       color: #101828;
@@ -8235,33 +8424,30 @@ hr {
   }
   .new-page-child{
 
-    &:hover {
-      box-shadow: 0px 0px 8px 2px rgba(0, 119, 228, 0.16);
       border: 2px solid #58B7FF;
-    }
-      width: 134px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 119, 228, 0.16);
 
+      width: 134px;
     text-align: center;
       height: 134px;
-      border: 2px solid transparent;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
 
-      margin-top: 90px;
+      margin-top: 110px;
       position: relative;
       h6{
         position: absolute;
-        bottom: -60px;
+        bottom: -70px;
         text-align: center;
         width: 230px;
 
 
-        font-weight: 500;
-        font-size: 18px;
+          font-size: 18px;
         line-height: 22px;
+
 
         color: #101828;
       }

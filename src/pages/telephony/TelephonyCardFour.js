@@ -1,10 +1,11 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const TelephonyCardFour = () => {
     return (
         <div className="telephony-card-four position-relative">
             <div className="telephony-card-four-child telephony-card-four-child container">
-                <h4>Новые поступления оборудования</h4>
+                <h4 className="font-family-medium">Новые поступления оборудования</h4>
                 <div className="row">
 
                     <div className="col-md-8 offset-2">
@@ -19,7 +20,7 @@ const TelephonyCardFour = () => {
                             Слот для microSD до 256 Гбайт</p>
                     </div>
                     <div className="third-arrow">
-                        <a href="#!">Перейти на сайт<img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                        <Link   to='/itequipment'>Перейти на сайт<img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
                     </div>
                 </div>
             </div>

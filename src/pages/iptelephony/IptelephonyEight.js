@@ -11,22 +11,22 @@ const IptelephonyEight = () => {
             <div className="container iptelephony-part-eight-child">
                 <div className="row">
                     <div className="col-md-3 col-sm-6 ">
-                       <NavLink to="/"> <img src="/images/icon/ipteight1.png" alt=""/></NavLink>
+                       <NavLink to="/"> <img src="/images/logo14.png" alt=""/></NavLink>
                     </div>
                     <div className="col-sm-6 col-md-3 ">
-                        <h4>Направление</h4>
+                        <h4  className="font-family-medium">Направление</h4>
                         <NavLink to="/home-internet">Интернет</NavLink>
                         <NavLink to="/video-monitoring">Видеонаблюдение</NavLink>
                         <NavLink to="/main-provider">Проектирование</NavLink>
                         <NavLink  to="Installation">Монтаж</NavLink>
                     </div>
                     <div className="col-md-3 col-sm-6 ">
-                        <h4>О компании</h4>
+                        <h4  className="font-family-medium">О компании</h4>
                         <a href="#company">О нас</a>
                         <a href="#partner">Партнеры</a>
                     </div>
                     <div className="col-md-3 col-sm-6 ">
-                        <h4>Локация</h4>
+                        <h4  className="font-family-medium">Локация</h4>
                         <p>
                             Ташкент, Чилонзор
                             Улица Сеула, дом 14
@@ -38,8 +38,8 @@ const IptelephonyEight = () => {
                 <div className="row ">
                     <div className="col-md-6"></div>
                     <div className="col-md-6 eight-right">
-                        <h5>Служба поддержки</h5>
-                        <p>+998 71 202 11 11</p>
+                        <h5  className="font-family-medium">Служба поддержки</h5>
+                        <p className="text-right">+998 71 202 11 11</p>
                     </div>
                 </div>
                 <hr/>
