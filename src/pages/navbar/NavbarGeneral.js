@@ -23,7 +23,7 @@ const NavbarGeneral = () => {
                         </h4>
                         <div className="third-arrow ml-3">
                             <NavLink to="/form">
-                                <p>Подключить</p>
+                                <p>Оставить заявку</p>
                                 <img src="/images/icon/arrow4.png" className="arrow-img-white" alt=""/>
                             </NavLink>
                         </div>
@@ -41,12 +41,14 @@ const NavbarGeneral = () => {
             <div className="container">
                 <div className="row">
                     <div>
-                        <NavLink to="/form">Тарифы</NavLink>
-                        <NavLink to="/contact">Контакт</NavLink>
+                        <NavLink to="/form">Главная</NavLink>
+                        <NavLink to="/contact">Услуги</NavLink>
+                        <a  href="#Installation" >Проекты</a>
 
                     </div>
                     <div className="Personal-Area">
-                        <NavLink to="/" >   Личный Кабинет</NavLink>
+                        <NavLink to="/contact">Контакты</NavLink>
+
                     </div>
                 </div>
 

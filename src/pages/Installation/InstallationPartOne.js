@@ -1,5 +1,6 @@
 import React from 'react';
 import {getText} from "../../locales";
+import {NavLink} from "react-router-dom";
 
 const DetailsPartOne = () => {
     return (
@@ -8,16 +9,24 @@ const DetailsPartOne = () => {
                 <div className="row">
 
                     <div className="col-md-6">
+
                         <div>
-                            <h4 className="font-family-medium">Монтаж </h4>
-                            <p>Сделать так, чтобы слайды партнёров свайпались для возможности дать информацию о всех партнерах.</p>
+                            <h4 className="font-family-medium">Монтажные работы </h4>
+                            <p>В строительстве для грамотной установки деталей наша компания использует уже готовые
+                                материалы. При это мы производим сборку и установку конструктивных элементов или
+                                оборудования. Монтажные работы в компании «CityNet» включают в себя внедрение различных
+                                коммуникаций, подключение средств автоматизации и контроля.</p>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div className="container  ">
-            <h3 className="font-family-medium">Монтаж в «CityNet IT Engineering»</h3>
+            <div className="container  sub-menu-global ">
+                <h2>Наши услуги</h2>
+               <div>
+                   <NavLink to="/Installation" activeClassName="sub-menu">Монтаж</NavLink>
+                   <NavLink to="/main-iptv-proekt" activeClassName="sub-menu">Проектирование</NavLink>
+               </div>
             </div>
             <div className="line29">
                 <div className="line-insert">

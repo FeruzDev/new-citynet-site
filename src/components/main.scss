@@ -40,6 +40,7 @@ html {
 body{
   font-family: "TTNorms-Regular", sans-serif !important;
 
+
 }
 a:hover{
   text-decoration: none;
@@ -1765,14 +1766,14 @@ nav {
         line-height: 42px;
 
 
-        width: 85%;
+        width: 80%;
       }
 
       p {
 
         font-size: 18px;
         line-height: 21px;
-        width: 60%;
+        width: 68%;
         color: #222222;
       }
 
@@ -1817,7 +1818,7 @@ nav {
 }
 
 .details-part-three {
-  background-color: #F8F8F8;
+  //background-color: #F8F8F8;
   margin-top: 100px;
   padding-bottom:  80px;
 
@@ -1834,18 +1835,26 @@ nav {
       width: 75%;
     }
 
+    h5{
+      font-size: 18px;
+      line-height: 28px;
+      color: #101828;
+      margin-top: 44px;
+      margin-bottom: 24px;
+    }
     p {
       font-weight: normal;
       font-size: 18px;
       line-height: 28px;
       color: #101828;
       height: auto;
-      padding-bottom: 20px;
+
     }
   }
 }
 
 .details-part-four {
+  background: #F8F8F8;
   .details-part-four-child {
     padding: 0;
     margin-bottom: 100px;
@@ -1858,6 +1867,7 @@ nav {
         .card {
           border: none;
 
+          background-color: transparent;
           img {
             box-sizing: border-box;
 
@@ -1871,7 +1881,107 @@ nav {
     }
   }
 }
+.trust{
+  margin-top: 185px;
+  position: relative;
 
+
+
+  .container{
+    h2{
+      font-size: 35px;
+      line-height: 46px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 28px;
+      margin-top: 44px;
+    }
+  }
+}
+.zona{
+
+  margin-top: 400px;
+
+
+
+
+  h1{
+    margin-bottom: 47px;
+    font-size: 36px;
+    color: #171717;
+
+  }
+
+  h2{
+    font-weight: 500;
+    font-size: 35px;
+    color: #101828;
+  }
+
+  p{
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #99A4AD;
+
+  }
+
+
+
+  .third-arrow {
+
+    margin-top: 39px;
+    display: block;
+    border-radius: 8px;
+    padding: 0;
+
+
+    a {
+      color: #fff;
+      position: relative;
+      background: #0086E7;
+      border-radius: 8px;
+      width: 252px;
+      height: 86px;
+      display: flex;
+      justify-content: space-between;
+
+      margin-top: 56px;
+      font-size: 15px;
+      padding-top: 38px;
+      padding-left: 11px;
+
+      &:hover {
+
+        text-decoration: none;
+      }
+
+      img {
+        position: absolute;
+        right: 10px;
+        bottom: 12px;
+        object-fit: none;
+      }
+    }
+  }
+}
+
+
+.clients{
+  margin-bottom: 400px;
+  h1{
+    font-size: 36px;
+    text-align: center;
+    color: #171717;
+    margin-top: 200px;
+    margin-bottom: 78px;
+
+  }
+  .child{
+    padding: 30px ;
+  }
+}
 .iptv-part-one {
   padding: 25px 0;
 
@@ -1949,6 +2059,26 @@ nav {
           }
         }
       }
+    }
+  }
+
+  .pr-content{
+    background: #F8F8F8;
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+    h2{
+      font-size: 32px;
+
+      margin-bottom: 44px;
+      color: #101828;
+
+    }
+    p{
+      font-size: 18px;
+      line-height: 28px;
+      color: #101828;
+
     }
   }
 }
@@ -2718,6 +2848,9 @@ button.slick-arrow.slick-next {
       content: url("../images/carouselstrelkanext.png");
     }
 
+    .slick-dots{
+      bottom: -58px;
+    }
     .slick-dots li.slick-active button:before {
       color: #53AFF7;
     }
@@ -3379,7 +3512,7 @@ button.slick-arrow.slick-next {
 }
 
 .tv-part-one {
-  padding: 25px 0;
+  padding:   32px 0;
 
   .tv-part-one-child {
     background-image: url("../images/tvone.png");
@@ -3580,6 +3713,10 @@ button.slick-arrow.slick-next {
 
 .tv-card {
 
+  position: relative;
+  background-color: #F8F8F8;
+
+  margin-bottom: 231px;
 
   .tv-card-child {
     margin-top: 20px;
@@ -3600,7 +3737,7 @@ button.slick-arrow.slick-next {
       padding-right: 60px;
       padding-top: 42px;
       box-sizing: border-box;
-      padding-bottom: 70px;
+      padding-bottom: 150px;
     }
 
   }
@@ -3659,7 +3796,8 @@ button.slick-arrow.slick-next {
 
 .tv-footer {
   margin-bottom: 223px;
-  margin-top:   60px;
+  margin-top:   239px;
+  position: relative;
 
   .tv-footer-child {
     padding: 0;
@@ -4489,6 +4627,54 @@ button.slick-arrow.slick-next {
 
 
 }
+.sub-menu-global{
+  text-align: center;
+
+  h2{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+
+    margin-bottom: 32px;
+  }
+
+  div{
+
+    background: #F3F3F4;
+
+    display: inline-block;
+
+    border-radius: 8px;
+
+
+    height: 56px;
+    a{
+
+      display: inline-block;
+      height: 56px;
+
+
+      padding-top: 14px;
+      padding-bottom: 16px;
+      padding-right: 39px;
+      padding-left: 38px;
+
+      border-radius: 8px;
+
+
+
+      color: #000000
+    }
+    .sub-menu{
+
+
+      background-color: $color-brand;
+      color: #FFFFFF;
+    }
+  }
+}
+
 
 .navbar-general {
   border-bottom: 1px solid #E8E8EA;
@@ -4512,11 +4698,7 @@ button.slick-arrow.slick-next {
 
       .third-arrow {
         display: block;
-        background: #0086E7;
-        border-radius: 0px 0px 8px 8px;
-        width: 252px;
-        height: 76px;
-        padding: 0 16px 24px 24px;
+
         margin-bottom: 20px;
 
         a {
@@ -4526,10 +4708,20 @@ button.slick-arrow.slick-next {
           background: #0086E7;
           display: flex;
           justify-content: space-between;
-          margin-bottom: 400px;
-          width: 200px;
-          height: 16px;
 
+          padding-left: 24px;
+          padding-right: 18px;
+          padding-bottom: 24px;
+
+          width: 252px;
+          border-bottom-right-radius: 8px;
+          border-bottom-left-radius: 8px;
+          height: 65px;
+
+
+          p{
+            margin-top: -5px;
+          }
           &:hover {
             text-decoration: none;
           }
@@ -4537,8 +4729,8 @@ button.slick-arrow.slick-next {
           img {
             position: absolute;
             right: 30px;
-            bottom: 12px;
-            top: 47px;
+
+            bottom: 10px;
           }
         }
       }
@@ -4987,7 +5179,7 @@ button.slick-arrow.slick-next {
 .monitoring-part-one-child {
   background-image: url("../images/kamera.png");
   background-size: cover;
-  height: 444px;
+  height: 440px;
   box-sizing: border-box;
   background-repeat: no-repeat;
   margin-top: 24px;
@@ -5027,13 +5219,13 @@ button.slick-arrow.slick-next {
   box-sizing: border-box;
   background-repeat: no-repeat;
   margin-top: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 69px;
   border-radius: 18px;
 
   .row {
     height: 100%;
 
-    .col-md-6 {
+    .col-md-7 {
       h4 {
           font-size: 36px;
         line-height: 42px;
@@ -5048,7 +5240,8 @@ button.slick-arrow.slick-next {
         line-height: 21px;
 
         color: #101828;
-        width: 430px;
+
+        padding-right: 40px;
 
       }
 
@@ -5349,26 +5542,28 @@ button.slick-arrow.slick-next {
 .installation-part-one-child {
   background-image: url("../images/installation.png");
   background-size: cover;
-  height: 444px;
+  height: 440px;
   box-sizing: border-box;
   background-repeat: no-repeat;
-  margin-top: 20px;
+  margin-top: 24px;
   border-radius: 18px;
 
-  margin-bottom: 90px;
+  margin-bottom: 69px;
   h3 {
     font-weight: 500;
     font-size: 35px;
     line-height: 46px;
     margin-top: 240px;
     margin-left: 104px;
+
   }
 
   .row {
 
     .col-md-6 {
-      margin-top: 10%;
+
       h4 {
+        margin-top: 90px;
           font-size: 36px;
         line-height: 42px;
         color: #101828;
@@ -5386,7 +5581,7 @@ button.slick-arrow.slick-next {
 
       }
 
-      margin-left: 50px;
+      margin-left: 79px;
 
     }
   }
@@ -5556,6 +5751,10 @@ button.slick-arrow.slick-next {
 .our-employees {
   margin-top: 200px;
 
+  background: #F8F8F8;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  margin-bottom: 200px;
   .container {
     padding: 0;
   }
@@ -5800,6 +5999,7 @@ hr {
   right: 0;
 }
 
+
 .line100 {
   position: absolute;
   right: 0;
@@ -5924,7 +6124,7 @@ hr {
 .line102 {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -100px;
 
 }
 
@@ -6294,6 +6494,32 @@ hr {
   top: -100px;
 }
 
+
+.line120w {
+  position: absolute;
+  top: -150px;
+  right: 0;
+}
+
+.line120w2 {
+  position: absolute;
+  bottom: -140px;
+  right: 0;
+}
+
+.line120w3 {
+  position: absolute;
+  bottom: -300px;
+  left: 0;
+}
+.line121 {
+  position: absolute;
+
+  right: 0;
+  top: -50px;
+}
+
+
 .home-nav {
   margin: 0;
   width: 100%;
@@ -6322,12 +6548,12 @@ hr {
   .container{
     .row{
       .col-md-4{
-        padding: 20px;
+
         img{
           width: 100%;
           border-radius: 12px;
 
-          height: 268px;
+
         }
         h3{
               font-size: 24px;
@@ -6760,6 +6986,7 @@ hr {
 
   }
   .one-inst {
+    height: 440px;
     h3 {
     }
 
@@ -6986,7 +7213,7 @@ hr {
       height: 191px;
 
       .row {
-        .col-md-6 {
+        .col-md-7 {
           margin: 0;
           padding: 20px;
 
@@ -7802,12 +8029,14 @@ hr {
   .monitoring-part-one {
     padding: 0 20px 20px 20px;
 
+
+
     .ip-part-one {
       background-size: 100%;
 
 
       .row {
-        .col-md-6 {
+        .col-md-7{
           margin: 0;
 
           h4 {
@@ -8384,7 +8613,9 @@ hr {
 
 .all-channels{
 
-  padding-bottom: 400px;
+
+  position: relative;
+
   .container{
     h2{
       margin-top: 39px;

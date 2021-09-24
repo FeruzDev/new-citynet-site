@@ -9,6 +9,7 @@ import WebApplication from "./WebApplication";
 import InstallationEnd from "./InstallationEnd";
 import DisplayNavbar from "../navbar/DisplayNavbar";
 import InstallationTwo from "./installationTwo";
+import IptelephonyEight from "../iptelephony/IptelephonyEight";
 
 const MainInstallation = () => {
     return (
@@ -21,6 +22,8 @@ const MainInstallation = () => {
             <OurEmployees/>
             {/*<InstallationEnd/>*/}
             <IptvPartFour/>
+            <IptelephonyEight/>
+
 
         </div>
     );

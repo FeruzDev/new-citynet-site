@@ -17,10 +17,8 @@ const HomeInternetChoose = () => {
                     </div>
                     <div className="col-md-6">
                         <div className="menus">
-                            <a href="#!">О нас</a>
-                            <a href="#!">Интернет</a>
-                            <a href="#!">Продукты</a>
-                            <a href="#!">Партнеры</a>
+                            <Link to="/contact">Контакты</Link>
+                            <a  >Личный кабинет</a>
                         </div>
                     </div>
                 </div>

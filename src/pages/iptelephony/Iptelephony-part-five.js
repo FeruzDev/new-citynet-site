@@ -39,8 +39,8 @@ const IptelephonyPartFive = () => {
                     <div className="box"><img src="images/PNG/rv2.png" alt=""/><h6 className="font-family-medium">  	Пожаротушение </h6></div>
                     <div className="box"><img src="images/PNG/po2.png" alt=""/><h6 className="font-family-medium">   Проектирование	 </h6></div>
                     <div className="box"><img src="images/PNG/dw2.png" alt=""/><h6 className="font-family-medium">  	Контроль качества </h6></div>
-                    <div className="box"><img src="images/PNG/cq2.png" alt=""/><h6 className="font-family-medium">  	Дисплей </h6></div>
-                    <div className="box"><img src="images/PNG/ec2.png" alt=""/><h6 className="font-family-medium">   	Экранные дисплеи</h6></div>
+                    <div className="box"><img src="images/PNG/cq2.png" alt=""/><h6 className="font-family-medium">  	Экранные дисплеи </h6></div>
+                    <div className="box"><img src="images/PNG/ec2.png" alt=""/><h6 className="font-family-medium">   	Речевое оповещение</h6></div>
 
                 </div>
                 <div className="line25">

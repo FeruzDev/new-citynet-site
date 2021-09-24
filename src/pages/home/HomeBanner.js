@@ -17,10 +17,11 @@ const HomeBanner = () => {
                     </div>
                     <div className="col-md-6">
                       <div className="menus">
-                          <a href="#company" >О нас</a>
+                          <Link   to="/main-provider">Интернет</Link>
                           <a href="#services">Услуги</a>
                           <a href="#news">Новости</a>
-                          <a href="#partner">Партнеры</a>
+                          <Link  to="/contact">Контакты</Link>
+                          <a href="#company" >Личный кабинет</a>
                       </div>
                     </div>
                 </div>
@@ -170,13 +171,14 @@ const HomeBanner = () => {
 
             <div className="chooses d-flex">
                 <Link className="smallChild font-family-medium" to="/Installation">
-                    <span>
-                        Монтаж
+                    <span className="text-center mt-4">
+                      проектирование
+                            монтаж
                     </span>
                 </Link>
-                <Link to="/main-iptv-proekt" className="mediumChild font-family-medium">
+                <Link to="/video-monitoring" className="mediumChild font-family-medium">
                     <span>
-                         Проектирование
+                         Видеонаблюдение
                     </span>
                 </Link>
                 <Link to="/home-internet" className="bigChild font-family-medium">

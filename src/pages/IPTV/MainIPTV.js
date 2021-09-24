@@ -5,15 +5,18 @@ import IptvPartThree from "./IPTVPartThree";
 import IptvPartFour from "./IPTVPartFour";
 import NavbarGeneral from "../navbar/NavbarGeneral";
 import DisplayNavbar from "../navbar/DisplayNavbar";
+import IptelephonyEight from "../iptelephony/IptelephonyEight";
 const MainIptv = () => {
     return (
         <div>
             <NavbarGeneral/>
             <DisplayNavbar/>
             <IPTVPartOne/>
-            <IptvPartTwo/>
             <IptvPartThree/>
+            <IptvPartTwo/>
             <IptvPartFour/>
+            <IptelephonyEight/>
+
         </div>
     );
 };

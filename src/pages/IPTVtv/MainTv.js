@@ -7,18 +7,23 @@ import TvCarousel from "./TVCarousel";
 import TvFooter from "./TVFooter";
 import NavbarGeneral from "../navbar/NavbarGeneral";
 import DisplayNavbar from "../navbar/DisplayNavbar";
+import SubMenuTwo from "../provider/SubMenuTwo";
+import IptelephonyEight from "../iptelephony/IptelephonyEight";
 
 const MainTv = () => {
     return (
         <div className="tv-hidden  ">
             <NavbarGeneral/>
             <DisplayNavbar/>
+
             <TvPartOne/>
-            <TvPartTwo/>
-            <TvCard/>
+            <SubMenuTwo/>
             <TvFooter/>
+            <TvCard/>
             <TvChennel/>
             <TvCarousel/>
+            <IptelephonyEight/>
+
         </div>
     );
 };

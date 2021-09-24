@@ -2,25 +2,18 @@ import React from 'react';
 
 const IptvPartFour = () => {
     return (
-        <div className="iptv-part-four position-relative">
-            <div className="line120">
+        <div id="installation"className="iptv-part-four position-relative">
+            <div className="line121">
                 <div className="line-insert">
-                    <svg width="445" height="47" viewBox="0 0 445 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M-408 1L-286.897 1.00001L-248.703 38.2624L-9.60279 38.2624L10.0376 18.6221L182.92 18.6221L208.415 42.0765L439.985 42.0765"
-                            stroke="#0086E7" stroke-width="1.5" stroke-miterlimit="10"></path>
-                        <path
-                            d="M439.754 46.4238C442.16 46.4238 444.101 44.4831 444.101 42.0765C444.101 39.67 442.16 37.7292 439.754 37.7292C437.347 37.7292 435.406 39.67 435.406 42.0765C435.406 44.4831 437.347 46.4238 439.754 46.4238Z"
-                            fill="#0086E7"></path>
+                    <svg width="635" height="58" viewBox="0 0 635 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M984.1 56.4238H862.997L824.803 19.1614H381.14L361.5 38.8018H249.5L224.005 15.3474H136.114" stroke="#0086E7" stroke-width="1.5" stroke-miterlimit="10"/>
+                        <path d="M136.346 11.0003C133.94 11.0003 131.999 12.941 131.999 15.3475C131.999 17.7541 133.94 19.6948 136.346 19.6948C138.753 19.6948 140.693 17.7541 140.693 15.3475C140.693 12.941 138.753 11.0003 136.346 11.0003Z" fill="#0086E7"/>
                         <g opacity="0.4">
-                            <path
-                                d="M-337.561 42.2625L-216.458 42.2625L-178.264 5.00005L59.0013 5.00005L80.6006 36.8027L192.6 36.8027L218.095 13.3483L305.985 13.3483"
-                                stroke="#0086E7" stroke-width="1.5" stroke-miterlimit="10"></path>
-                            <path
-                                d="M305.754 9.001C308.16 9.001 310.101 10.9417 310.101 13.3483C310.101 15.7548 308.16 17.6956 305.754 17.6956C303.347 17.6956 301.406 15.7548 301.406 13.3483C301.406 10.9417 303.347 9.001 305.754 9.001Z"
-                                fill="#0086E7"></path>
+                            <path d="M648.66 38.2625L527.557 38.2624L489.363 1.00004L252.098 1.00002L230.499 32.8026L118.5 32.8026L93.0045 9.34822L5.11426 9.34821" stroke="#0086E7" stroke-width="1.5" stroke-miterlimit="10"/>
+                            <path d="M5.3461 5.001C2.93957 5.001 0.998838 6.94174 0.998837 9.34827C0.998837 11.7548 2.93957 13.6956 5.3461 13.6956C7.75263 13.6956 9.69336 11.7548 9.69336 9.34827C9.69336 6.94174 7.75263 5.001 5.3461 5.001Z" fill="#0086E7"/>
                         </g>
                     </svg>
+
                 </div>
             </div>
             <div className="container iptv-part-four-child">
@@ -50,32 +43,7 @@ const IptvPartFour = () => {
                         <p>Сеть рынок</p>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-md-4 col-sm-6">
-                        <div className="boxed">
-
-                            <img src="images/icon/iptvpfour.png" alt=""/>
-                        </div>
-                        <h5 className="font-family-medium">Akfa Medline</h5>
-                        <p>Медцентр, клиника ∙ Медицинская лаборатория ∙ Диагностический центр</p>
-                    </div>
-                    <div className="col-md-4 col-sm-6">
-                        <div className="boxed">
-
-                            <img src="images/icon/iptvcardtwo.png" alt=""/>
-                        </div>
-                        <h5 className="font-family-medium">Tashkent City Park</h5>
-                        <p>Парк аттракционов: парк культуры и отдыха</p>
-                    </div>
-                    <div className="col-md-4 col-sm-6">
-                        <div className="boxed">
-
-                            <img src="/images/icon/iptvcardthree.png" alt=""/>
-                        </div>
-                        <h5 className="font-family-medium">Ecobozor</h5>
-                        <p>Сеть рынок</p>
-                    </div>
-                </div>
+              
             </div>
         </div>
     );

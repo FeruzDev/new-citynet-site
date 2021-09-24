@@ -1,6 +1,7 @@
 import React from 'react';
 import NavbarGeneral from "../navbar/NavbarGeneral";
 import DisplayNavbar from "../navbar/DisplayNavbar";
+import IptelephonyEight from "../iptelephony/IptelephonyEight";
 
 const AllChannels = () => {
     return (
@@ -546,6 +547,8 @@ const AllChannels = () => {
 
                 </div>
             </div>
+
+            <IptelephonyEight/>
 
         </div>
     );
