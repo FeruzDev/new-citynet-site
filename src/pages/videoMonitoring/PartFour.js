@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 const PartFour = () => {
     return (
-        <div className="telephony-card-four position-relative">
+        <div id="new2" className="telephony-card-four position-relative">
             <div className="telephony-card-four-child container">
                 <h3>Новые поступления оборудования</h3>
                 <div className="row">

@@ -114,7 +114,7 @@ a:hover{
     }
   }
 
-  margin: 32px auto;
+  margin: 60px auto;
 
 
   .slick-active {
@@ -1329,6 +1329,7 @@ nav {
             font-size: 14px;
             line-height: 17px;
 
+            color: #878B93;
 
           }
         }
@@ -1337,6 +1338,29 @@ nav {
   }
 }
 
+
+.tel-text{
+  background: #F8F8F8;
+
+  margin-top: 163px;
+  padding-bottom: 100px;
+  margin-bottom: 253px;
+
+  position: relative;
+  padding-top: 52px;
+  h2{
+    font-size: 35px;
+    color: #101828;
+
+  }
+  p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 32px;
+    color: #101828;
+
+  }
+}
 .telephony-card-three {
   margin-top: 200px;
   margin-bottom: 170px;
@@ -1489,7 +1513,7 @@ nav {
         padding: 20px;
 
         h4 {
-          margin-top: 40px;
+          margin-top: 10px;
           Size: 35px;
           Line-height: 46px;
           padding-x: 29px;
@@ -1504,6 +1528,7 @@ nav {
           padding-top: 0;
           box-sizing: border-box;
           padding-right: 62px;
+
         }
       }
     }
@@ -1904,7 +1929,13 @@ nav {
   margin-top: 400px;
 
 
+  .container:nth-child(2){
+    background: #FFFFFF;
+    box-shadow: 0px 0px 65px rgba(202, 202, 202, 0.5);
+    border-radius: 12px;
 
+    padding: 40px;
+  }
 
   h1{
     margin-bottom: 47px;
@@ -1949,8 +1980,8 @@ nav {
 
       margin-top: 56px;
       font-size: 15px;
-      padding-top: 38px;
-      padding-left: 11px;
+      padding-top: 47px;
+      padding-left: 24px;
 
       &:hover {
 
@@ -1959,8 +1990,8 @@ nav {
 
       img {
         position: absolute;
-        right: 10px;
-        bottom: 12px;
+        right: 24px;
+        bottom: 19px;
         object-fit: none;
       }
     }
@@ -2067,6 +2098,7 @@ nav {
     padding-top: 50px;
     padding-bottom: 70px;
 
+    margin-top: 130px;
     h2{
       font-size: 32px;
 
@@ -2374,6 +2406,12 @@ nav {
 
   .line120 {
     display: none;
+  }
+
+  .line120l2{
+    position: absolute;
+    bottom:  -100px;
+    right: 0;
   }
 
   .development-part-child {
@@ -2875,7 +2913,7 @@ button.slick-arrow.slick-next {
   .iptelephony-part-seven-child {
     padding: 0;
     margin-bottom:375px;
-    padding-top: 200px;
+    padding-top: 100px;
 
     h4 {
       margin-top: 0px;
@@ -2960,8 +2998,9 @@ button.slick-arrow.slick-next {
 
         p {
           font-size: 62px;
+
           line-height: 85px;
-          color: #A9A9A9;
+          color: #298EEA;
           letter-spacing: 0.04em;
         }
       }
@@ -2971,6 +3010,9 @@ button.slick-arrow.slick-next {
       display: flex;
       justify-content: space-between;
 
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      padding-top: 28px;
+      padding-bottom: 63px;
       img {
         margin-left: 20px;
 
@@ -3830,6 +3872,8 @@ button.slick-arrow.slick-next {
     padding: 0;
     margin-top: 62px;
 
+
+    position: relative;
     p {
       font-size: 15px;
       line-height: 21px;
@@ -4474,8 +4518,8 @@ button.slick-arrow.slick-next {
 }
 
 .Contact-forma {
-  margin-bottom: 150px;
 
+  padding-bottom: 333px;
   iframe {
     width: 100%;
     height: 600px;
@@ -4489,7 +4533,11 @@ button.slick-arrow.slick-next {
     bottom: 700px;
   }
 
-  padding: 20px;
+  .line999w2 {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+  }
 
   .container {
     padding: 0;
@@ -4769,10 +4817,11 @@ button.slick-arrow.slick-next {
 
 .home-banner {
   position: relative;
-  background-image: url("../images/backMain.png");
-  background-size: 100% 100%;
-  background-position: left;
+  background-image: url("../images/bg1.png");
+
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 100vh;
 
@@ -4889,6 +4938,7 @@ button.slick-arrow.slick-next {
       transition: 1s;
       background: rgba(0, 0, 0, 0.25);
 
+      text-transform: uppercase;
       border-radius: 50%;
       padding: 0;
       border: 5px solid #58B7FF;
@@ -4916,7 +4966,7 @@ button.slick-arrow.slick-next {
       height: 13.8vw;
 
       span {
-        font-size: 1.25vw;
+        font-size: 1.1vw;
       }
 
 
@@ -4941,7 +4991,7 @@ button.slick-arrow.slick-next {
       height: 19.16vw;
 
       span {
-        font-size: 1.66vw;
+        font-size: 1.85vw;
       }
 
     }
@@ -4979,6 +5029,7 @@ button.slick-arrow.slick-next {
                   font-size: 16px;
             line-height: 19px;
             margin-left: 42px;
+
           }
         }
       }
@@ -5107,6 +5158,7 @@ button.slick-arrow.slick-next {
       justify-content: center;
       transition: 1s;
       background: rgba(0, 0, 0, 0.54);
+      text-transform: uppercase;
 
       border-radius: 50%;
       padding: 0;
@@ -6120,13 +6172,32 @@ hr {
   right: 0;
   top: -140px;
 }
+.line120m4 {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+
+.line120m5 {
+  position: absolute;
+  right: 0;
+  bottom: -170px;
+}
 
 .line102 {
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: -100px;
 
 }
+
+.line103v2 {
+  position: absolute;
+  right: 0;
+  top: -177px;
+
+}
+
 
 .line103 {
   position: absolute;
@@ -6250,11 +6321,6 @@ hr {
   z-index: -2;
 }
 
-.line106 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
 
 .forma-provider {
 
@@ -6339,7 +6405,7 @@ hr {
 .line106 {
   position: absolute;
   right: 0;
-  bottom: -184px;
+  bottom: -250px;
 
   .line-insert {
 
@@ -6495,6 +6561,8 @@ hr {
 }
 
 
+
+
 .line120w {
   position: absolute;
   top: -150px;
@@ -6553,6 +6621,8 @@ hr {
           width: 100%;
           border-radius: 12px;
 
+          height: 262px;
+
 
         }
         h3{
@@ -6588,6 +6658,7 @@ hr {
 
         img{
           width: 100%;
+          height: 196px;
 
         }
       }
@@ -6660,7 +6731,19 @@ hr {
 }
 
 //////////////////////////////////////////media//////////////////////////////////////////
+
+@media only screen and (min-width: 1024px) and (max-width: 1550px) {
+
+
+  .home-banner {
+    background-image: url("../images/bg1.png") !important;
+  }
+
+}
+
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
+
+
   .navbar-expand-lg {
     display: none;
   }
@@ -8614,8 +8697,12 @@ hr {
 .all-channels{
 
 
-  position: relative;
 
+  .all-channels-childs{
+    padding-bottom: 300px;
+    position: relative;
+
+  }
   .container{
     h2{
       margin-top: 39px;
@@ -8648,6 +8735,7 @@ hr {
 
 .new-page{
 
+  position: relative;
 
   .col-md-4{
     display: flex;

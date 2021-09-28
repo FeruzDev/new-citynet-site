@@ -17,7 +17,7 @@ const IptvPartFour = () => {
                 </div>
             </div>
             <div className="container iptv-part-four-child">
-                <h4 className="font-family-medium">Объекты</h4>
+                <h4 className="font-family-medium">Проделанные работы</h4>
                 <div className="row">
                     <div className="col-md-4 col-sm-6">
                         <div className="boxed">

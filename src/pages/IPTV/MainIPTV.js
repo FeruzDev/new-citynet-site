@@ -6,10 +6,11 @@ import IptvPartFour from "./IPTVPartFour";
 import NavbarGeneral from "../navbar/NavbarGeneral";
 import DisplayNavbar from "../navbar/DisplayNavbar";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
+import NavbarGeneralTwo from "../navbar/NavbarGeneralTwo";
 const MainIptv = () => {
     return (
         <div>
-            <NavbarGeneral/>
+            <NavbarGeneralTwo/>
             <DisplayNavbar/>
             <IPTVPartOne/>
             <IptvPartThree/>

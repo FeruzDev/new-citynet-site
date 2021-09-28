@@ -4,8 +4,14 @@ import {Link} from "react-router-dom";
 const Zona = () => {
     return (
         <div className="zona">
+
+
+
             <div className="container">
                 <h1 className="font-family-medium">Зона покрытия</h1>
+            </div>
+            <div className="container">
+
                 <div className="row">
                     <div className="col-md-6">
                         <img src="/images/icon/internettraffic.png" alt=""/>
@@ -15,7 +21,7 @@ const Zona = () => {
 
                         <p>Узнайте, какие услуги можно подключить по вашему адресу</p>
                         <div className="third-arrow">
-                            <Link to="/mainInternet/traffic"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
+                            <Link to="/mainInternet/traffic"  className="font-family-medium">Перейти <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
                         </div>
                     </div>
 

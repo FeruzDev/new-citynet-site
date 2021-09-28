@@ -5,16 +5,20 @@ import Popular from "./Popular";
 import EquipmentNew from "./EquipmentNew";
 import NavbarGeneral from "../navbar/NavbarGeneral";
 import DisplayNavbar from "../navbar/DisplayNavbar";
+import IptelephonyEight from "../iptelephony/IptelephonyEight";
+import NavbarGeneralSeven from "../navbar/NavbarGeneralSeven";
 
 const MainItEquipment = () => {
     return (
         <div className="overflow-hidden">
-            <NavbarGeneral/>
+            <NavbarGeneralSeven/>
             <DisplayNavbar/>
             <HeaderEquipment/>
             <EquipmentParttTwo/>
             <Popular/>
             <EquipmentNew/>
+            <IptelephonyEight/>
+
         </div>
     );
 };

@@ -9,6 +9,9 @@ import PartSix from "./PartSix";
 import PartFive from "./PartFive";
 import NavbarGeneral from "../navbar/NavbarGeneral";
 import DisplayNavbar from "../navbar/DisplayNavbar";
+import IptelephonyEight from "../iptelephony/IptelephonyEight";
+import NavbarGeneralSix from "../navbar/NavbarGeneralSix";
+import IptvPartFour from "../IPTV/IPTVPartFour";
 
 
 const VideoMonitoring = () => {
@@ -18,15 +21,20 @@ const VideoMonitoring = () => {
     }, [])
     return (
         <div>
-            <NavbarGeneral/>
+            <NavbarGeneralSix/>
             <PartOne/>
             <PartSecond/>
             <PartThree/>
             <PartFour/>
             <PartFive/>
-            <PartSix/>
+            {/*<PartSix/>          */}
+            <IptvPartFour/>
+
+
             {/*<Objects/>*/}
             {/*<Footer/>*/}
+            <IptelephonyEight/>
+
         </div>
     )
 }

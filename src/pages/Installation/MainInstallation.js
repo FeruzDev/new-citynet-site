@@ -10,11 +10,12 @@ import InstallationEnd from "./InstallationEnd";
 import DisplayNavbar from "../navbar/DisplayNavbar";
 import InstallationTwo from "./installationTwo";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
+import NavbarGeneralTwo from "../navbar/NavbarGeneralTwo";
 
 const MainInstallation = () => {
     return (
         <div>
-            <NavbarGeneral/>
+            <NavbarGeneralTwo/>
             <DisplayNavbar/>
             <InstallationPartOne/>
             <InstallationPartThree/>

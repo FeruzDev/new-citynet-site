@@ -46,7 +46,7 @@ const EquipmentNew = () => {
     }
     return (
         <div>
-            <div className="provider container">
+            <div id="new23" className="provider container">
 
                 <h1>Новинки</h1>
                 <Slider {...settings}>

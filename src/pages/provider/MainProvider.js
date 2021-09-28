@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import NavbarProvider from "./NavbarProvider";
 import BannerCarousel from "./BannerCarousel";
 import CategoryProvider from "./CategoryProvider";
@@ -20,10 +20,12 @@ import Clients from "./Clients";
 import SubMenuTwo from "./SubMenuTwo";
 
 const MainProvider = () => {
+
+
     return (
         <div className="provider-hidden">
 
-            <NavbarGeneral/>
+            <NavbarGeneral   />
             <DisplayNavbar/>
             <BannerCarousel/>
             {/*<Notification/>*/}

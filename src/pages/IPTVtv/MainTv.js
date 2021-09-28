@@ -9,11 +9,12 @@ import NavbarGeneral from "../navbar/NavbarGeneral";
 import DisplayNavbar from "../navbar/DisplayNavbar";
 import SubMenuTwo from "../provider/SubMenuTwo";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
+import NavbarGeneralThree from "../navbar/NavbarGeneralThree";
 
 const MainTv = () => {
     return (
         <div className="tv-hidden  ">
-            <NavbarGeneral/>
+            <NavbarGeneralThree  />
             <DisplayNavbar/>
 
             <TvPartOne/>

@@ -3,19 +3,27 @@ import TelephonyCardOne from "./TelephonyCardOne";
 import TelephonyCardTwo from "./TelephonyCardTwo";
 import TelephonyCardThree from "./TelephonyCardThree"
 import TelephonyCardFour from "./TelephonyCardFour";
-import NavbarGeneral from "../navbar/NavbarGeneral";
 import DisplayNavbar from "../navbar/DisplayNavbar";
 import PriceCards from "./PriceCards";
+import TelText from "./TelText";
+import IptelephonyEight from "../iptelephony/IptelephonyEight";
+import NavbarGeneralFour from "../navbar/NavbarGeneralFour";
+
 const MainTelephony = () => {
     return (
-        <div><NavbarGeneral/>
+        <div>
+            <NavbarGeneralFour/>
             <DisplayNavbar/>
             <TelephonyCardOne/>
             <PriceCards/>
 
-            <TelephonyCardTwo/>
             <TelephonyCardThree/>
+            <TelephonyCardTwo/>
+            <TelText/>
             <TelephonyCardFour/>
+            <IptelephonyEight/>
+
+
         </div>
     );
 };

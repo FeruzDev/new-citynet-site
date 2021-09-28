@@ -21,8 +21,8 @@ const DetailsPartOne = () => {
                 </div>
 
             </div>
-            <div className="container  sub-menu-global ">
-                <h2>Наши услуги</h2>
+            <div id="servicesThree" className="container  sub-menu-global ">
+                <h2 className="font-family-medium">Наши услуги</h2>
                <div>
                    <NavLink to="/Installation" activeClassName="sub-menu">Монтаж</NavLink>
                    <NavLink to="/main-iptv-proekt" activeClassName="sub-menu">Проектирование</NavLink>

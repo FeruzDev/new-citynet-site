@@ -8,16 +8,20 @@ import WebApplication from "../Installation/WebApplication";
 import IptvPartFour from "../IPTV/IPTVPartFour";
 import DevelopmentPart from "./DevelopmentPart";
 import DisplayNavbar from "../navbar/DisplayNavbar";
+import IptelephonyEight from "../iptelephony/IptelephonyEight";
+import NavbarGeneralFive from "../navbar/NavbarGeneralFive";
 
 const ItDevelopment = () => {
     return (
         <div>
-            <NavbarGeneral/>
+            <NavbarGeneralFive/>
             <DisplayNavbar/>
             <DevelopmentPartOne/>
-            <InstallationPartFour/>
             <WebApplication/>
+            <InstallationPartFour/>
             <DevelopmentPart/>
+            <IptelephonyEight/>
+
         </div>
     );
 };

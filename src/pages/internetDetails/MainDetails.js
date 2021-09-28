@@ -8,6 +8,7 @@ import DisplayNavbar from "../navbar/DisplayNavbar";
 import Trust from "./Trust";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import Clients from "../provider/Clients";
+
 const MainDetails = () => {
     return (
         <div className="details-hidden">

@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Slider from "react-slick";
 import {Link} from "react-router-dom";
+import axios from "axios";
+import {API_PATH_RU} from "../../tools/constants";
 
 
 
 const PriceProvider = () => {
 
+    const [priceList, setPriceList] = useState([])
 
     const settings = {
         className: "center",
@@ -50,9 +53,22 @@ const PriceProvider = () => {
 
     }
 
+    useEffect(() => {
+
+
+
+        axios.get(API_PATH_RU + "provider/v1/internet/tariffs/")
+            .then(res => {
+                setPriceList(res.data)
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+
+    }, [])
 
     return (
-        <div className="position-relative">
+        <div id="tariffs" className="position-relative">
             <div className="line56">
                 <div className="line-insert">
                     <svg width="704" height="101" viewBox="0 0 704 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,244 +107,61 @@ const PriceProvider = () => {
 
 
 
+                {
+                    priceList.map(item =>(
 
-                <div className='price-item'>
-                    <div className="price-item-child">
-                        <h2 className="font-family-medium">OPTIMUM</h2>
-                        <div className='speed-list'>
-                            <div><img src="/images/icon/speed.png" alt=""/></div>
-                            <h3>
-                                <span className="font-family-medium">10 Мб/с</span>
-                                <span>Скорость </span>
-                            </h3>
-                        </div>
+                        <div className='price-item'>
+                            <div className="price-item-child">
+                                <h2 className="font-family-medium">{item.title}</h2>
+                                <div className='speed-list'>
+                                    <div><img src="/images/icon/speed.png" alt=""/></div>
+                                    <h3>
+                                        <span className="font-family-medium">{item.speed}</span>
+                                        <span>Скорость </span>
+                                    </h3>
+                                </div>
 
-                        <div className='speed-list'>
-                            <div> <img src="/images/icon/tas.png" alt=""/></div>
-                            <h3>
-                                <span className="font-family-medium">100 Мб/с</span>
-                                <span>TAS-IX</span>
-                            </h3>
-                        </div>
-
-
-
-
-                        <h1  className="font-family-medium">
-                            115 000
-                        </h1>
-                        <h5>
-                            Сум / Месяц
-                        </h5>
-
-
-                        <div className="sale">
-                            <h4>103 500 Сум</h4>
-                            <span>6 месяцев скидка 10%</span>
-                        </div>
-                        <div className="sale">
-                            <h4>92 000 Сум</h4>
-                            <span>1 год скидка 10%</span>
-
-                        </div>
-                        <div className="third-arrow">
-                            <Link to="/form"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
-                        </div>
-                    </div>
-                </div>
+                                <div className='speed-list'>
+                                    <div> <img src="/images/icon/tas.png" alt=""/></div>
+                                    <h3>
+                                        <span className="font-family-medium"> {item.tas_ix} </span>
+                                        <span>TAS-IX</span>
+                                    </h3>
+                                </div>
 
 
 
 
-                <div className='price-item'>
-                    <div className="price-item-child">
-                        <h2 className="font-family-medium">EXCLUSIVE</h2>
-                        <div className='speed-list'>
-                            <div><img src="/images/icon/speed.png" alt=""/></div>
-                            <h3>
-                                <span className="font-family-medium">30 Мб/с</span>
-                                <span>Скорость </span>
-                            </h3>
-                        </div>
+                                <h1  className="font-family-medium">
+                                    {item.price}
+                                </h1>
+                                <h5>
+                                    Сум / Месяц
+                                </h5>
 
-                        <div className='speed-list'>
-                            <div> <img src="/images/icon/tas.png" alt=""/></div>
-                            <h3>
-                                <span className="font-family-medium">100 Мб/с</span>
-                                <span>TAS-IX</span>
-                            </h3>
+
+                                <div className="sale">
+                                    <h4>{item.price_cash6}</h4>
+                                    <span>6 месяцев скидка 10%</span>
+                                </div>
+                                <div className="sale">
+                                    <h4>{item.price_cash12}</h4>
+                                    <span>1 год скидка 10%</span>
+
+                                </div>
+                                <div className="third-arrow">
+                                    <Link to="/form"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
+                                </div>
+                            </div>
                         </div>
 
 
-
-
-                        <h1  className="font-family-medium">
-                            195 000
-                        </h1>
-                        <h5>
-                            Сум / Месяц
-                        </h5>
-
-
-                        <div className="sale">
-                            <h4>175 500 Сум</h4>
-                            <span>6 месяцев скидка 10%</span>
-                        </div>
-                        <div className="sale">
-                            <h4>156 000 Сум</h4>
-                            <span>1 год скидка 10%</span>
-
-                        </div>
-                        <div className="third-arrow">
-                            <Link to="/form"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className='price-item'>
-                    <div className="price-item-child">
-                        <h2 className="font-family-medium">PREMIUM</h2>
-                        <div className='speed-list'>
-                            <div><img src="/images/icon/speed.png" alt=""/></div>
-                            <h3>
-                                <span className="font-family-medium">30 Мб/с</span>
-                                <span>Скорость </span>
-                            </h3>
-                        </div>
-
-                        <div className='speed-list'>
-                            <div> <img src="/images/icon/tas.png" alt=""/></div>
-                            <h3>
-                                <span className="font-family-medium">100 Мб/с</span>
-                                <span>TAS-IX</span>
-                            </h3>
-                        </div>
+                    ))
+                }
 
 
 
 
-                        <h1  className="font-family-medium">
-                            249 000
-                        </h1>
-                        <h5>
-                            Сум / Месяц
-                        </h5>
-
-
-                        <div className="sale">
-                            <h4>224 100 Сум</h4>
-                            <span>6 месяцев скидка 10%</span>
-                        </div>
-                        <div className="sale">
-                            <h4>199 200 Сум</h4>
-                            <span>1 год скидка 10%</span>
-
-                        </div>
-                        <div className="third-arrow">
-                            <Link to="/form"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-                <div className='price-item'>
-                    <div className="price-item-child">
-                        <h2 className="font-family-medium">NEXT</h2>
-                        <div className='speed-list'>
-                            <div><img src="/images/icon/speed.png" alt=""/></div>
-                            <h3>
-                                <span className="font-family-medium">6 Мб/с</span>
-                                <span>Скорость </span>
-                            </h3>
-                        </div>
-
-                        <div className='speed-list'>
-                            <div> <img src="/images/icon/tas.png" alt=""/></div>
-                            <h3>
-                                <span className="font-family-medium">100 Мб/с</span>
-                                <span>TAS-IX</span>
-                            </h3>
-                        </div>
-
-
-
-
-                        <h1  className="font-family-medium">
-                             95 000
-                        </h1>
-                        <h5>
-                            Сум / Месяц
-                        </h5>
-
-
-                        <div className="sale">
-                            <h4>85 500 Сум</h4>
-                            <span>6 месяцев скидка 10%</span>
-                        </div>
-                        <div className="sale">
-                            <h4>76 000 Сум</h4>
-                            <span>1 год скидка 10%</span>
-
-                        </div>
-                        <div className="third-arrow">
-                            <Link to="/form"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div className='price-item'>
-                    <div className="price-item-child">
-                        <h2 className="font-family-medium">COMFORT</h2>
-                        <div className='speed-list'>
-                            <div><img src="/images/icon/speed.png" alt=""/></div>
-                            <h3>
-                                <span className="font-family-medium">20 Мб/с</span>
-                                <span>Скорость </span>
-                            </h3>
-                        </div>
-
-                        <div className='speed-list'>
-                            <div> <img src="/images/icon/tas.png" alt=""/></div>
-                            <h3>
-                                <span className="font-family-medium">100 Мб/с</span>
-                                <span>TAS-IX</span>
-                            </h3>
-                        </div>
-
-
-
-
-                        <h1  className="font-family-medium">
-                            145 000
-                        </h1>
-                        <h5>
-                            Сум / Месяц
-                        </h5>
-
-
-                        <div className="sale">
-                            <h4>130 500 Сум</h4>
-                            <span>6 месяцев скидка 10%</span>
-                        </div>
-                        <div className="sale">
-                            <h4>116 000 Сум</h4>
-                            <span>1 год скидка 10%</span>
-
-                        </div>
-                        <div className="third-arrow">
-                            <Link to="/form"  className="font-family-medium">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
-                        </div>
-                    </div>
-                </div>
 
 
 

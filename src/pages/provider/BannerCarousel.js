@@ -28,7 +28,7 @@ const BannerCarousel = () => {
                         </p>
                         <div className="third-arrow">
                             <a href="#!">Перейти <img className="arrow-img-white" src="/images/icon/Arrow4.png"
-                                                        alt=""/></a>
+                                                      alt=""/></a>
                         </div>
 
 

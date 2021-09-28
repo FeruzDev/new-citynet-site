@@ -3,27 +3,20 @@ import React from 'react';
 const DevelopmentPart= () => {
     return (
         <div className="development-part position-relative">
-            <div className="line120">
+            <div className="line120l2">
                 <div className="line-insert">
-                    <svg width="445" height="47" viewBox="0 0 445 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M-408 1L-286.897 1.00001L-248.703 38.2624L-9.60279 38.2624L10.0376 18.6221L182.92 18.6221L208.415 42.0765L439.985 42.0765"
-                            stroke="#0086E7" stroke-width="1.5" stroke-miterlimit="10"></path>
-                        <path
-                            d="M439.754 46.4238C442.16 46.4238 444.101 44.4831 444.101 42.0765C444.101 39.67 442.16 37.7292 439.754 37.7292C437.347 37.7292 435.406 39.67 435.406 42.0765C435.406 44.4831 437.347 46.4238 439.754 46.4238Z"
-                            fill="#0086E7"></path>
+                    <svg width="581" height="52" viewBox="0 0 581 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M959.1 45.4241H837.997L799.803 8.16167H356.14L336.5 27.8021H224.5L199.005 4.34764H111.114" stroke="#0086E7" stroke-width="1.5" stroke-miterlimit="10"/>
+                        <path d="M111.347 2.19345e-05C108.941 2.19345e-05 107 1.94076 107 4.34729C107 6.75383 108.941 8.69458 111.347 8.69458C113.754 8.69458 115.694 6.75383 115.694 4.34729C115.694 1.94076 113.754 2.19345e-05 111.347 2.19345e-05Z" fill="#0086E7"/>
                         <g opacity="0.4">
-                            <path
-                                d="M-337.561 42.2625L-216.458 42.2625L-178.264 5.00005L59.0013 5.00005L80.6006 36.8027L192.6 36.8027L218.095 13.3483L305.985 13.3483"
-                                stroke="#0086E7" stroke-width="1.5" stroke-miterlimit="10"></path>
-                            <path
-                                d="M305.754 9.001C308.16 9.001 310.101 10.9417 310.101 13.3483C310.101 15.7548 308.16 17.6956 305.754 17.6956C303.347 17.6956 301.406 15.7548 301.406 13.3483C301.406 10.9417 303.347 9.001 305.754 9.001Z"
-                                fill="#0086E7"></path>
+                            <path d="M647.661 50.2625L526.558 50.2624L488.364 13L251.099 12.9999L229.5 44.8026L117.501 44.8025L92.0055 21.3481L4.11524 21.3481" stroke="#0086E7" stroke-width="1.5" stroke-miterlimit="10"/>
+                            <path d="M4.34707 17.001C1.94054 17.001 -0.000186926 18.9417 -0.000186924 21.3483C-0.000186922 23.7548 1.94054 25.6956 4.34707 25.6956C6.7536 25.6956 8.69434 23.7548 8.69434 21.3483C8.69434 18.9417 6.7536 17.001 4.34707 17.001Z" fill="#0086E7"/>
                         </g>
                     </svg>
+
                 </div>
             </div>
-            <div className="container development-part-child">
+            <div  id="objects23 " className="container development-part-child">
                 <h4 className="font-family-medium">Проекты</h4>
                 <div className="row">
                     <div className="col-md-4 col-sm-6">

@@ -19,9 +19,7 @@ const DevelopmentPartOne = () => {
                 </div>
 
             </div>
-            <div className="container">
-                <h2 className="mt-5 font-family-medium">Монтаж в «CityNet IT Engineering»</h2>
-            </div>
+
 
         </div>
     );

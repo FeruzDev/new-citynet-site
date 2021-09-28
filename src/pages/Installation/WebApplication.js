@@ -1,11 +1,31 @@
 import React from 'react';
 
-const WebApplication = () => {
+const   WebApplication = () => {
     return (
         <div>
 
 
-            <div className="installation-part-three position-relative">
+            <div id="" className="installation-part-three position-relative">
+
+
+
+
+                <div className="line103v2">
+                    <div className="line-insert">
+                        <svg width="798" height="106" viewBox="0 0 798 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M852.1 1H730.997L692.803 38.2624H453.702L434.062 18.622H261.18L235.685 42.0764H4.11438" stroke="#0086E7" stroke-width="1.5" stroke-miterlimit="10"/>
+                            <path d="M4.34707 46.4236C1.94054 46.4236 -0.00018692 44.4828 -0.00018692 42.0763C-0.00018692 39.6698 1.94054 37.729 4.34707 37.729C6.7536 37.729 8.69434 39.6698 8.69434 42.0763C8.69434 44.4828 6.7536 46.4236 4.34707 46.4236Z" fill="#0086E7"/>
+                            <path d="M1189.1 99.4238H1068L1029.8 62.1614H586.14L566.5 81.8018H454.5L429.005 58.3474H341.114" stroke="#0086E7" stroke-width="1.5" stroke-miterlimit="10"/>
+                            <path d="M341.347 54.0003C338.941 54.0003 337 55.941 337 58.3475C337 60.7541 338.941 62.6948 341.347 62.6948C343.754 62.6948 345.694 60.7541 345.694 58.3475C345.694 55.941 343.754 54.0003 341.347 54.0003Z" fill="#0086E7"/>
+                            <g opacity="0.4">
+                                <path d="M877.661 104.262L756.558 104.262L718.364 67L481.099 67L459.5 98.8026L347.501 98.8026L322.005 75.3482L234.115 75.3482" stroke="#0086E7" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M234.347 71.001C231.941 71.001 230 72.9418 230 75.3483C230 77.7548 231.941 79.6956 234.347 79.6956C236.754 79.6956 238.694 77.7548 238.694 75.3483C238.694 72.9418 236.754 71.001 234.347 71.001Z" fill="#0086E7"/>
+                            </g>
+                        </svg>
+
+                    </div>
+                </div>
+
                 <div className="container installation-part-three-child">
                     <div className="row">
                         <div className="col-md-5">

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const TelephonyCardFour = () => {
     return (
-        <div className="telephony-card-four position-relative">
+        <div id="news" className="telephony-card-four position-relative">
             <div className="telephony-card-four-child telephony-card-four-child container">
                 <h4 className="font-family-medium">Новые поступления оборудования</h4>
                 <div className="row">

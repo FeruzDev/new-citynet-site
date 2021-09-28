@@ -2,7 +2,7 @@ import React from 'react';
 
 const PriceCards = () => {
     return (
-        <div className="price-cards  ">
+        <div id="tariffis2" className="price-cards  ">
 
             <div className="container">
                 <h1 className='font-family-medium'>Тарифый планы</h1>

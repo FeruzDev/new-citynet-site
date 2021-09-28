@@ -2,11 +2,13 @@ import React from 'react';
 import NavbarGeneral from "../navbar/NavbarGeneral";
 import {NavLink} from "react-router-dom";
 import DisplayNavbar from "../navbar/DisplayNavbar";
+import IptelephonyEight from "../iptelephony/IptelephonyEight";
+import NavbarGeneralEight from "../navbar/NavbarGeneralEight";
 
 const MainForm = () => {
     return (
         <div>
-            <NavbarGeneral/>
+            <NavbarGeneralEight/>
             <DisplayNavbar/>
             <div className="main-form">
                 <div className="container ">
@@ -71,6 +73,10 @@ const MainForm = () => {
                     </div>
                 </div>
             </div>
+
+
+            <IptelephonyEight/>
+
         </div>
     );
 };

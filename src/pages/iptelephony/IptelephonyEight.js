@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {Navbar} from "reactstrap";
 
 const IptelephonyEight = () => {
@@ -18,19 +18,26 @@ const IptelephonyEight = () => {
                         <NavLink to="/home-internet">Интернет</NavLink>
                         <NavLink to="/video-monitoring">Видеонаблюдение</NavLink>
                         <NavLink to="/main-provider">Проектирование</NavLink>
-                        <NavLink  to="Installation">Монтаж</NavLink>
+                        <NavLink  to="/Installation">Монтаж</NavLink>
+                        <NavLink  to="/itequipment">IT оборудование</NavLink>
+                        <NavLink  to="/ItDevelopment">IT разработка</NavLink>
                     </div>
                     <div className="col-md-3 col-sm-6 ">
                         <h4  className="font-family-medium">О компании</h4>
                         <a href="#company">О нас</a>
-                        <a href="#partner">Партнеры</a>
+                        <a href="#news">Новости</a>
+                        <a href="#services">Услуги</a>
+                        <Link  to="/contact">Контакты</Link>
                     </div>
                     <div className="col-md-3 col-sm-6 ">
                         <h4  className="font-family-medium">Локация</h4>
                         <p>
-                            Ташкент, Чилонзор
+                            Ташкент, Чилонзор  <br/>
                             Улица Сеула, дом 14
-                            info@citynet.uz
+
+                        </p>
+                        <p>
+                            info@citynet.uz <br/>
                             +998 71 202 1111
                         </p>
                     </div>

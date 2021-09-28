@@ -1,7 +1,24 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
+import axios from "axios";
+import {API_PATH_RU} from "../../tools/constants";
 
 const NewsList = () => {
+    const [allNews, setAllNews] = useState([])
+
+    useEffect(() => {
+        axios.get(API_PATH_RU + "index/v1/news-list/")
+            .then(res => {
+                setAllNews(res.data)
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+
+
+    } , [])
+
+
     return (
         <div className="news-list">
 
@@ -9,134 +26,32 @@ const NewsList = () => {
                 <h2 className="font-family-medium">Новости</h2>
 
 
-                <div className="row">
-
-                    <div className="col-md-4">
-                        <img src="/images/e1.png" alt="123"/>
-                    </div>
-                    <div className="col-md-8">
-                    <div>
-                        <h4 className="font-family-medium">CityNet предлагает решения в области IT</h4>
 
 
+                {
+                    allNews.map(item => (
+                        <div className="row">
 
-                        <p>  CityNet — это одна из ведущих компаний в области информационных и инновационных технологий в
-                            Узбекистане. Компания представляет широкий ассортимент товаров и таких услуг, ка... <Link href="#!">Читать дальше</Link>
-                        </p>
-
-
-                    </div>
-
-                        <h6>11: 24,   12.02.2021</h6>
-                    </div>
-                </div>
-
-                <div className="row">
-
-                    <div className="col-md-4">
-                        <img src="/images/e1.png" alt="123"/>
-                    </div>
-                    <div className="col-md-8">
-                        <div>
-                            <h4 className="font-family-medium">CityNet предлагает решения в области IT</h4>
+                            <div className="col-md-4">
+                                <img src={item.image} alt="123"/>
+                            </div>
+                            <div className="col-md-8">
+                                <div>
+                                    <h4 className="font-family-medium">{item.title}</h4>
 
 
 
-                            <p>  CityNet — это одна из ведущих компаний в области информационных и инновационных технологий в
-                                Узбекистане. Компания представляет широкий ассортимент товаров и таких услуг, ка... <a href="#!">Читать дальше</a>
-                            </p>
+                                    <p>  {item.content}<Link className="ml-2" href="#!">Читать дальше</Link>
+                                    </p>
 
 
+                                </div>
+
+                                <h6><span className="mr-2">{item.date_created.slice(11, 16)},</span>  {item.date_created.slice(0, 10) }     </h6>
+                            </div>
                         </div>
-
-                        <h6>11: 24,   12.02.2021</h6>
-                    </div>
-                </div>
-                <div className="row">
-
-                    <div className="col-md-4">
-                        <img src="/images/e1.png" alt="123"/>
-                    </div>
-                    <div className="col-md-8">
-                        <div>
-                            <h4 className="font-family-medium">CityNet предлагает решения в области IT</h4>
-
-
-
-                            <p>  CityNet — это одна из ведущих компаний в области информационных и инновационных технологий в
-                                Узбекистане. Компания представляет широкий ассортимент товаров и таких услуг, ка... <a href="#!">Читать дальше</a>
-                            </p>
-
-
-                        </div>
-
-                        <h6>11: 24,   12.02.2021</h6>
-                    </div>
-                </div>
-                <div className="row">
-
-                    <div className="col-md-4">
-                        <img src="/images/e1.png" alt="123"/>
-                    </div>
-                    <div className="col-md-8">
-                        <div>
-                            <h4 className="font-family-medium">CityNet предлагает решения в области IT</h4>
-
-
-
-                            <p>  CityNet — это одна из ведущих компаний в области информационных и инновационных технологий в
-                                Узбекистане. Компания представляет широкий ассортимент товаров и таких услуг, ка... <a href="#!">Читать дальше</a>
-                            </p>
-
-
-                        </div>
-
-                        <h6>11: 24,   12.02.2021</h6>
-                    </div>
-                </div>
-
-                <div className="row">
-
-                    <div className="col-md-4">
-                        <img src="/images/e1.png" alt="123"/>
-                    </div>
-                    <div className="col-md-8">
-                        <div>
-                            <h4 className="font-family-medium">CityNet предлагает решения в области IT</h4>
-
-
-
-                            <p>  CityNet — это одна из ведущих компаний в области информационных и инновационных технологий в
-                                Узбекистане. Компания представляет широкий ассортимент товаров и таких услуг, ка... <a href="#!">Читать дальше</a>
-                            </p>
-
-
-                        </div>
-
-                        <h6>11: 24,   12.02.2021</h6>
-                    </div>
-                </div>
-                <div className="row">
-
-                    <div className="col-md-4">
-                        <img src="/images/e1.png" alt="123"/>
-                    </div>
-                    <div className="col-md-8">
-                        <div>
-                            <h4 className="font-family-medium">CityNet предлагает решения в области IT</h4>
-
-
-
-                            <p>  CityNet — это одна из ведущих компаний в области информационных и инновационных технологий в
-                                Узбекистане. Компания представляет широкий ассортимент товаров и таких услуг, ка... <a href="#!">Читать дальше</a>
-                            </p>
-
-
-                        </div>
-
-                        <h6>11: 24,   12.02.2021</h6>
-                    </div>
-                </div>
+                    ))
+                }
             </div>
 
 

@@ -6,11 +6,12 @@ import MainNewForDetail from "./MainNewForDetail";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import NewsDetailPair from "./NewsDetailPair";
 
+
 const NewsDetail = () => {
     return (
         <div>
 
-            <NavbarGeneral/>
+            <NavbarGeneral />
             <DisplayNavbar/>
             <NewsDetailPair/>
             <MainNewForDetail/>

@@ -5,6 +5,7 @@ import DisplayNavbar from "../navbar/DisplayNavbar";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import MainNewForDetail from "./MainNewForDetail";
 
+
 const AllNews = () => {
     return (
         <div>

@@ -1,10 +1,10 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import MainInternetTraffic from "../InternetTraffic/MainInternetTraffic";
 import {getLanguage, getText} from "../../locales";
 import {LANGUAGE} from "../../tools/constants";
 
-const NavbarGeneral = () => {
+const NavbarGeneral = (props) => {
     const changeLang =(lang)=>{
         localStorage.setItem(LANGUAGE, (lang))
         window.location.reload()
@@ -41,13 +41,17 @@ const NavbarGeneral = () => {
             <div className="container">
                 <div className="row">
                     <div>
-                        <NavLink to="/form">Главная</NavLink>
-                        <NavLink to="/contact">Услуги</NavLink>
-                        <a  href="#Installation" >Проекты</a>
+
+                        <Link to="/">Главная</Link>
+
+                        <a href="#services">Сервисы</a>
+                        <a href="#tariffs">Тарифы</a>
+                        <a href="#servicesTwo">Услуги</a>
 
                     </div>
                     <div className="Personal-Area">
-                        <NavLink to="/contact">Контакты</NavLink>
+                        <NavLink className="mr-4" to="/contact">Контакты</NavLink>
+                        <NavLink to="/ ">Личный кабинет</NavLink>
 
                     </div>
                 </div>

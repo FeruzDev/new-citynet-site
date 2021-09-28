@@ -6,6 +6,7 @@ import TrafficServices from "./TrafficServices";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import NavbarGeneral from "../navbar/NavbarGeneral";
 
+
 const MainInternetTraffic = () => {
 
     useEffect(() => {
@@ -13,7 +14,7 @@ const MainInternetTraffic = () => {
     }, [])
     return (
         <div>
-           <NavbarGeneral/>
+            <NavbarGeneral />
 
             <TrafficOne/>
             <TrafficTablisa/>

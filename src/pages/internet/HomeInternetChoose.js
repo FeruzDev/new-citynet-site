@@ -25,18 +25,18 @@ const HomeInternetChoose = () => {
             </div>
 
             <div className="chooses d-flex">
-
+                <Link to="/maintv"  className="mediumChild">
+                    <span className="font-family-medium">
+                       IP TV
+                    </span>
+                </Link>
                 <Link to="/main-provider" className="mediumChild">
                     <span className="font-family-medium">
                       Интернет
                     </span>
                 </Link>
 
-                <Link to="/maintv"  className="mediumChild">
-                    <span className="font-family-medium">
-                       IP TV
-                    </span>
-                </Link>
+
 
                 <Link to="/telifaniya" className="mediumChild">
                     <span className="font-family-medium">
