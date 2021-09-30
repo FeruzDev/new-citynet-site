@@ -38,7 +38,7 @@ const MainNews = () => {
 
 
                             <div className="col-md-4">
-                                <img src={item.image} alt=""/>
+                                <img src={item.get_img_url} alt=""/>
 
                                 <h3 className="font-family-medium">{item.title}</h3>
                                 <p>{item.content}<Link href="#!">Читать дальше</Link></p>

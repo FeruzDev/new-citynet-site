@@ -2929,6 +2929,7 @@ button.slick-arrow.slick-next {
       margin-top: 100px;
 
       .col-md-3 {
+
       }
     }
   }
@@ -3515,6 +3516,8 @@ button.slick-arrow.slick-next {
           img {
             width: 100%;
             transition: 1.5s;
+
+            height: 384px;
 
             &:hover {
               transform: scale(1.2);
@@ -4437,12 +4440,13 @@ button.slick-arrow.slick-next {
             padding-right: 24px;
             padding-left: 24px;
 
-            a {
+            button  {
               padding-bottom: 0;
               padding-left: 0;
               margin: 0;
               color: #fff;
               padding-right: 24px;
+              border: none;
 
               position: relative;
               padding-top: 51px;

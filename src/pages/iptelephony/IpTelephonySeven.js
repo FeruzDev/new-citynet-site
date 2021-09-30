@@ -1,6 +1,28 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import axios from "axios";
+import {API_PATH_RU} from "../../tools/constants";
 
 const IpTelephonySeven = () => {
+
+    const [partners ,setPartners] = useState([])
+
+
+    useEffect(() => {
+
+
+
+        axios.get(API_PATH_RU + "index/v1/partners/")
+            .then(res => {
+                setPartners(res.data)
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+
+    }, [])
+
+
+
     return (
         <div className="iptelephony-part-seven position-relative">
 
@@ -20,34 +42,38 @@ const IpTelephonySeven = () => {
             <div id='partner' className="container iptelephony-part-seven-child ">
                 <h4 className="font-family-medium">Наши партнеры</h4>
 
-                <div className="row d-flex justify-content-between m-0">
-                    <div className="row">
-                        <img src="images/icon/iptseven1.png" alt=""/>
-                    </div>
-                    <div className="row">
-                        <img src="images/icon/iptseven2.png" alt=""/>
-                    </div>
-                    <div className="row">
-                        <img src="images/icon/iptseven3.png" alt=""/>
-                    </div>
-                    <div className="row">
-                        <img src="images/icon/iptseven4.png" alt=""/>
-                    </div>
-                </div>
-                <div className="row d-flex justify-content-between m-0 mb-5">
-                    <div className="row">
-                        <img src="images/icon/iptseven51.png" alt=""/>
-                    </div>
-                    <div className="row">
-                        <img src="images/icon/014.png" alt=""/>
-                    </div>
-                    <div className="row">
-                        <img src="images/icon/iptvseven7.png" alt=""/>
-                    </div>
-                    <div className="row">
-                        <img src="images/icon/iptseven8.png" alt=""/>
-                    </div>
-                </div>
+
+
+                {
+
+                    partners.slice(0, 3).map(item =>(
+                        <div className="row d-flex justify-content-between m-0">
+                            <div className="row">
+                                <img src={item.get_img_url} alt=""/>
+                            </div>
+
+
+                        </div>
+
+                    ))
+                }
+
+
+                {
+
+                    partners.slice(4, 8).map(item =>(
+                        <div className="row d-flex justify-content-between m-0">
+                            <div className="row">
+                                <img src={item.get_img_url} alt=""/>
+                            </div>
+
+
+                        </div>
+
+                    ))
+                }
+
+
             </div>
 
             <div className="line2812">

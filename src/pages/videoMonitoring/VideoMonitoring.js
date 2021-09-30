@@ -26,7 +26,7 @@ const VideoMonitoring = () => {
             <PartSecond/>
             <PartThree/>
             <PartFour/>
-            <PartFive/>
+            {/*<PartFive/>*/}
             {/*<PartSix/>          */}
             <IptvPartFour/>
 

@@ -17,7 +17,7 @@ const MainInternetTraffic = () => {
             <NavbarGeneral />
 
             <TrafficOne/>
-            <TrafficTablisa/>
+            {/*<TrafficTablisa/>*/}
             <TrafficServices/>
             <IptelephonyEight/>
         </div>

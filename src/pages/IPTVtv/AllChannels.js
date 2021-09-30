@@ -47,7 +47,7 @@ const AllChannels = () => {
                                       item.channels?.map(item2=>(
 
                                           <div className="col-md-2">
-                                              <img src={item2.image} alt=""/>
+                                              <img src={item2.get_img_url} alt=""/>
 
                                               <h4>    {item2.title}      </h4>
                                           </div>

@@ -1,23 +1,49 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {NavLink} from "react-router-dom";
+import axios from "axios";
+import {API_PATH_RU} from "../../tools/constants";
 
 const PartFour = () => {
+
+    const [camera ,setCamera] = useState([])
+
+
+    useEffect(() => {
+
+
+        window.scrollTo(0, 0)
+
+        axios.get(API_PATH_RU + "device/v1/product/latest-camera/")
+            .then(res => {
+                setCamera(res.data)
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+
+
+
+
+
+    }, [])
+
+
+
+
+
     return (
         <div id="new2" className="telephony-card-four position-relative">
+
             <div className="telephony-card-four-child container">
-                <h3>Новые поступления оборудования</h3>
+                <h3 className="font-family-medium"> Новые поступления оборудования</h3>
                 <div className="row">
 
                     <div className="col-md-8 offset-2">
-                        <img src="images/icon/hikvixon.png" alt=""/>
+                        <img  src={camera[0]?.images[0].get_img_url} alt=""/>
 
-                        <h3>АТС VoIP Auerswald COMfortel 3600  </h3>
+                        <h3>  {camera[0]?.title} </h3>
                         <div className="line"></div>
-                        <p>Дистанция измерения 2 ~ 7 м <br/>
-                            4 Мп <br/>
-                            Встроенный микрофон <br/>
-                            Smart ИК-подсветка до 50 м <br/>
-                            Слот для microSD до 256 Гбайт</p>
+                        <p> {camera[0]?.main_content}</p>
                     </div>
                     <div className="third-arrow">
                         <NavLink to="/">Перейти на сайт<img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></NavLink>

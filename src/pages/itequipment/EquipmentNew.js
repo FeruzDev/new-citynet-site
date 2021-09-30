@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Slider from "react-slick";
 import {NavLink} from "react-router-dom";
+import axios from "axios";
+import {API_PATH_RU} from "../../tools/constants";
 
 const EquipmentNew = () => {
     const settings = {
@@ -44,108 +46,52 @@ const EquipmentNew = () => {
         // }
 
     }
+
+
+
+    const [pop ,setPop] = useState([])
+
+
+    useEffect(() => {
+
+
+
+        axios.get(API_PATH_RU + "device/v1/product/new/")
+            .then(res => {
+                setPop(res.data)
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+
+    }, [])
+
+
     return (
         <div>
             <div id="new23" className="provider container">
 
                 <h1>Новинки</h1>
                 <Slider {...settings}>
-                    <div className="popular">
-                        <div className="popular-child">
-                            <div className="card-body">
-                                <img src="images/icon/stock .png" alt=""/>
-                                <span><img src="images/icon/itcPartone.png" alt=""/></span>
-                                <h4>IP Аудио</h4>
-                                <p>ITC Audio T-6708 Сетевой аудио адаптер,
-                                    x
-                                </p>
+                    {
+                        pop.map(item => (
+                            <div className="popular">
+                                <div className="popular-child">
+                                    <div className="card-body">
+                                        <img src="images/icon/stock .png" alt=""/>
+                                        <span><img src={item.images[0].get_img_url} alt=""/></span>
+                                        <h4>{item.category_name}</h4>
+                                        <p>{item.main_content}
+                                        </p>
 
-                                <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
-                                <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
-                                </NavLink></div>                            </div>
-                        </div>
-                    </div>
-                    <div className='popular'>
-                        <div className="popular-child">
-                            <div className="card-body">
-                                <img src="images/icon/stock .png" alt=""/>
-                                <span><img src="images/icon/itcpartwo.png" alt=""/></span>
-                                <h4>IP Аудио</h4>
-                                <p>ITC Audio T-6708 Сетевой аудио адаптер,
-                                    x
-                                </p>
-
-                                <h3  className="font-family-medium"><del>3 703 197 сум</del><br/>3 703 197 сум</h3>
-                                <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
-                                </NavLink></div>                            </div>
-                        </div>
-                    </div>
-                    <div className='popular'>
-                        <div className="popular-child">
-                            <div className="card-body">
-                                <img src="images/icon/stock .png" alt=""/>
-                                <span><img src="images/icon/itcpartree.png" alt=""/></span>
-                                <h4>IP Аудио</h4>
-                                <p>ITC Audio T-6708 Сетевой аудио адаптер,
-                                    x
-                                </p>
-
-                                <h3  className="font-family-medium" ><del></del><br/>3 703 197 сум</h3>
-                                <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
-                                </NavLink></div>                            </div>
-                        </div>
-                    </div>
-                    <div className='popular'>
-                        <div className="popular-child">
-                            <div className="card-body">
-                                <img src="images/icon/stock .png" alt=""/>
-                                <span><img src="images/icon/itcpartfour.png" alt=""/></span>
-                                <h4>IP Аудио</h4>
-                                <p>ITC Audio T-6708 Сетевой аудио адаптер,
-                                    x
-                                </p>
-
-                                <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
-                                <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
-                                </NavLink></div>                            </div>
-                        </div>
-                    </div>
-                    <div className="popular">
-                        <div className="popular-child">
-                            <div className="card-body">
-                                <img src="images/icon/stock .png" alt=""/>
-                                <span><img src="images/icon/itcPartone.png" alt=""/></span>
-                                <h4>IP Аудио</h4>
-                                <p>ITC Audio T-6708 Сетевой аудио адаптер,
-                                    x
-                                </p>
-
-                                <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
-                                <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
-                                </NavLink></div>                            </div>
-                        </div>
-                    </div>
-                    <div className="popular">
-                        <div className="popular-child">
-                            <div className="card-body">
-                                <img src="images/icon/stock .png" alt=""/>
-                                <span><img src="images/icon/itcPartone.png" alt=""/></span>
-                                <h4>IP Аудио</h4>
-                                <p>ITC Audio T-6708 Сетевой аудио адаптер,
-                                    x
-                                </p>
-
-                                <h3  className="font-family-medium"><del></del><br/>3 703 197 сум</h3>
-                                <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                    <button type="button" className="btn btn-primary font-family-medium">Подробнее</button>
-                                </NavLink></div>                            </div>
-                        </div>
-                    </div>
+                                        <h3  className="font-family-medium"><del></del><br/>{item.price}</h3>
+                                        <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
+                                            <button type="button" className="btn btn-primary   font-family-medium" >Подробнее</button>
+                                        </NavLink></div>                        </div>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </Slider>
             </div>
         </div>

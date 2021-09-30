@@ -33,7 +33,7 @@ const NewsList = () => {
                         <div className="row">
 
                             <div className="col-md-4">
-                                <img src={item.image} alt="123"/>
+                                <img src={item.get_img_url} alt="123"/>
                             </div>
                             <div className="col-md-8">
                                 <div>

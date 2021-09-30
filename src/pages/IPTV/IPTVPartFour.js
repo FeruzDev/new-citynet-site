@@ -1,6 +1,30 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import axios from "axios";
+import {API_PATH_RU} from "../../tools/constants";
 
 const IptvPartFour = () => {
+
+
+    const [ins ,setIns] = useState([])
+
+
+    useEffect(() => {
+
+
+
+        axios.get(API_PATH_RU + "index/v1/objects/")
+            .then(res => {
+                setIns(res.data)
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+
+    }, [])
+
+
+
+
     return (
         <div id="installation"className="iptv-part-four position-relative">
             <div className="line121">
@@ -19,29 +43,24 @@ const IptvPartFour = () => {
             <div className="container iptv-part-four-child">
                 <h4 className="font-family-medium">Проделанные работы</h4>
                 <div className="row">
-                    <div className="col-md-4 col-sm-6">
-                        <div className="boxed">
-                            <img src="images/icon/iptvpfour.png" alt=""/>
-                        </div>
-                        <h5 className="font-family-medium">Akfa Medline</h5>
-                        <p>Медцентр, клиника ∙ Медицинская лаборатория ∙ Диагностический центр</p>
-                    </div>
-                    <div className="col-md-4 col-sm-6">
-                        <div className="boxed">
 
-                            <img src="images/icon/iptvcardtwo.png" alt=""/>
-                        </div>
-                        <h5 className="font-family-medium">Tashkent City Park</h5>
-                        <p>Парк аттракционов: парк культуры и отдыха</p>
-                    </div>
-                    <div className="col-md-4 col-sm-6">
-                        <div className="boxed">
+                    {
+                        ins.slice(0, 3).map(item => (
+                            <div className="col-md-4 col-sm-6">
+                                <div className="boxed">
+                                    <img src={item.get_img_url} alt=""/>
+                                </div>
+                                <h5 className="font-family-medium">{item.title}</h5>
+                                <p>{item.content}</p>
+                            </div>
 
-                            <img src="/images/icon/iptvcardthree.png" alt=""/>
-                        </div>
-                        <h5 className="font-family-medium">Ecobozor</h5>
-                        <p>Сеть рынок</p>
-                    </div>
+
+                        ))
+                    }
+
+
+
+
                 </div>
               
             </div>

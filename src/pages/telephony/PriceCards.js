@@ -1,6 +1,27 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import axios from "axios";
+import {API_PATH_RU} from "../../tools/constants";
 
 const PriceCards = () => {
+
+    const [tarif ,setTarif] = useState([])
+
+
+    useEffect(() => {
+
+
+
+        axios.get(API_PATH_RU + "provider/v1/telephony/tariffs/")
+            .then(res => {
+                setTarif(res.data)
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+
+    }, [])
+
+
     return (
         <div id="tariffis2" className="price-cards  ">
 
@@ -8,105 +29,45 @@ const PriceCards = () => {
                 <h1 className='font-family-medium'>Тарифый планы</h1>
 
                 <div className="row">
-                    <div className="col-md-4">
-                        <div className="box">
-                            <h3  className='font-family-medium'>SIMPLE</h3>
 
-                            <div className="watch-box">
-                                <img src="/images/icon/watch.svg" alt=""/>
 
-                                <div>
-                                    <h6 className='font-family-medium'>500 Минут</h6>
-                                    <span>Количество минутов</span>
+
+                    {
+                        tarif.map(item => (
+                            <div className="col-md-4">
+                                <div className="box">
+                                    <h3  className='font-family-medium'>{item.title}</h3>
+
+                                    <div className="watch-box">
+                                        <img src="/images/icon/watch.svg" alt=""/>
+
+                                        <div>
+                                            <h6 className='font-family-medium'>{item.minutes}</h6>
+                                            <span>Количество минутов</span>
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+
+                                    <h4  className='font-family-medium'>{item.price}</h4>
+                                    <h5>Сум / Месяц</h5>
+
+
+                                    <div className="third-arrow">
+                                        <a   className='font-family-medium' href="#!">
+                                            Подключить
+                                            <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/>
+                                        </a>
+
+                                    </div>
                                 </div>
-
-
-
-
-
                             </div>
-
-
-                            <h4  className='font-family-medium'>20 000</h4>
-                            <h5>Сум / Месяц</h5>
-
-
-                            <div className="third-arrow">
-                                <a   className='font-family-medium' href="#!">
-                                    Подключить
-                                    <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/>
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-md-4">
-                        <div className="box">
-                            <h3  className='font-family-medium'>LITE</h3>
-
-                            <div className="watch-box">
-                                <img src="/images/icon/watch.svg" alt=""/>
-
-                                <div>
-                                    <h6  className='font-family-medium'>1 000 Минут</h6>
-                                    <span>Количество минутов</span>
-                                </div>
-
-
-
-
-
-                            </div>
-
-
-                            <h4  className='font-family-medium'>30 000</h4>
-                            <h5>Сум / Месяц</h5>
-
-
-                            <div className="third-arrow">
-                                <a  className='font-family-medium' href="#!">
-                                    Подключить
-                                    <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/>
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="col-md-4">
-                        <div className="box">
-                            <h3  className='font-family-medium'>PRO</h3>
-
-                            <div className="watch-box">
-                                <img src="/images/icon/watch.svg" alt=""/>
-
-                                <div>
-                                    <h6  className='font-family-medium'>Без лимит</h6>
-                                    <span>Количество минутов</span>
-                                </div>
-
-
-
-
-
-                            </div>
-
-
-                            <h4  className='font-family-medium'>60 000</h4>
-                            <h5>Сум / Месяц</h5>
-
-
-                            <div className="third-arrow">
-                                <a  className='font-family-medium' href="#!">
-                                    Подключить
-                                    <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/>
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
+                        ))
+                    }
 
                 </div>
             </div>
