@@ -1,45 +1,54 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import axios from "axios";
+import {API_PATH_RU} from "../../tools/constants";
+import NavbarGeneral from "../navbar/NavbarGeneral";
+import DisplayNavbar from "../navbar/DisplayNavbar";
+import MainNewForDetail from "./MainNewForDetail";
+import IptelephonyEight from "../iptelephony/IptelephonyEight";
 
-const NewsDetailPair = () => {
+const NewsDetailPair = (props) => {
+
+
+    const [newsItem , setNewsItem] = useState({})
+    useEffect(() =>{
+
+        window.scrollTo(0, 0)
+
+
+        axios.get(API_PATH_RU + "index/v1/news-list/" + props.match.params.id)
+            .then(res => {
+                setNewsItem(res.data)
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+
+    },[props.match.params.id])
     return (
+
+
+        <div>
+
+        <NavbarGeneral />
+     <DisplayNavbar/>
         <div className="news-detail container">
 
 
-            <h2>CityNet предлагает решения в области IT</h2>
-            <span>12.02.2021</span>
+            <h2>{newsItem.title}</h2>
+            <span>{newsItem.date_created?.slice(0, 10)}</span>
 
-            <img src="/images/banimg.png" alt="123"/>
+            <img src={newsItem.get_img_url} alt="123"/>
 
-            <p>CityNet — это одна из ведущих компаний в области информационных и
-                инновационных технологий в Узбекистане. Компания представляет широкий
-                ассортимент товаров и таких услуг, как:
+            <p dangerouslySetInnerHTML={{ __html: newsItem.content } }>
 
-                <br/>
-                интеллектуальное видеонаблюдение;        <br/>   <br/>
-                IP- и аналоговая телефония;        <br/>
-                охранно-пожарная сигнализация;        <br/>
-                система пожаротушения;        <br/>
-                системы контроля и управления доступом;        <br/>
-                парковочная система;        <br/>
-                интернет-провайдер;
-                огнезащитная обработка конструкций;        <br/>
-                звуковое оповещение и управление эвакуацией;        <br/>
-                поставка специализированного оборудования для слаботочных систем;        <br/>
-                центр обработки вызовов;        <br/>
-                автоматизация инженерных систем;        <br/>
-                структурирование кабельных сетей (ЛВС, ВОЛС, телефония);        <br/>
-                системы конференц связи;        <br/>
-                проектирование слаботочных систем.        <br/>  <br/>
-
-                омпания CityNet представляет сервисный робот для бизнеса — Promobot V4.
-                Он общается с людьми, отвечает на вопросы, свободно передвигается и
-                подключается к внешним системам и сервисам. Его можно применять в качестве
-                консультанта, промоутера, администратора, экскурсовода и так далее. Владелец
-                робота может легко добавлять в программу Promobot V4 новые фразы, создавать
-                собственные движения, эмоции.        <br/>
             </p>
 
         </div>
+    <MainNewForDetail/>
+    <IptelephonyEight/>
+
+        </div>
+
     );
 };
 

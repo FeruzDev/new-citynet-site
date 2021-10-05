@@ -41,7 +41,7 @@ const MainNews = () => {
                                 <img src={item.get_img_url} alt=""/>
 
                                 <h3 className="font-family-medium">{item.title}</h3>
-                                <p>{item.content}<Link href="#!">Читать дальше</Link></p>
+                                <p>{item.content}<Link  to={"/all-news/news-detail/" + item.id}>Читать дальше</Link></p>
                             </div>
 
 

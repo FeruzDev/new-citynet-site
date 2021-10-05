@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import NewsList from "./NewsList";
 import NavbarGeneral from "../navbar/NavbarGeneral";
 import DisplayNavbar from "../navbar/DisplayNavbar";
@@ -7,6 +7,11 @@ import MainNewForDetail from "./MainNewForDetail";
 
 
 const AllNews = () => {
+
+    useEffect(() =>{
+        window.scrollTo(0, 0)
+
+    })
     return (
         <div>
             <NavbarGeneral/>

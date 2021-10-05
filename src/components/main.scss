@@ -98,7 +98,9 @@ a:hover{
     }
   }
 }
-
+option[value=""][disabled] {
+  display: none;
+}
 .banner-carousel {
   padding: 0;
   overflow: hidden;
@@ -3462,7 +3464,10 @@ button.slick-arrow.slick-next {
           }
         }
 
-        a {
+        button {
+
+          border: none;
+          background-color: transparent;
               font-size: 18px;
           line-height: 17px;
           text-decoration: none;
@@ -3869,8 +3874,25 @@ button.slick-arrow.slick-next {
     }
   }
 }
+.saidbar {
+
+  button {
+    border: none;
+    background-color: transparent;
+    margin-top: 10px;
+
+  }
+
+  .btn-category-list{
+    margin-left: 10px;
+  }
+
+}
 
 .equipment {
+  .slick-arrow{
+    display: none !important;
+  }
   .equipment-child {
     padding: 0;
     margin-top: 62px;
@@ -3886,6 +3908,11 @@ button.slick-arrow.slick-next {
     .row {
       .col-md-3 {
         .saidbar {
+
+          button{
+            border: none;
+            background-color: transparent;
+          }
           h4 {
             font-size: 18px;
             line-height: 21px;
@@ -4092,6 +4119,7 @@ button.slick-arrow.slick-next {
 
 
         .row {
+
           .col-lg-4, .col-xl-3, .col-md-4, col-sm-6 {
             box-sizing: border-box;
             padding: 15px;
@@ -4104,7 +4132,7 @@ button.slick-arrow.slick-next {
               padding: 16px;
               height: 440px;
               transition: 0.5s;
-
+              width: 100%;
               &:hover {
 
                 box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.08), 0px 4px 20px rgba(0, 0, 0, 0.08);
@@ -4623,11 +4651,13 @@ button.slick-arrow.slick-next {
             padding-right: 24px;
             padding-left: 24px;
 
-            a {
+            button {
               padding-bottom: 0;
               padding-left: 0;
               margin: 0;
               color: #fff;
+              border: none;
+
               padding-right: 24px;
 
               position: relative;
@@ -5258,7 +5288,8 @@ button.slick-arrow.slick-next {
         line-height: 21px;
 
         color: #101828;
-        width: 430px;
+
+        padding-right: 50px;
 
       }
 
@@ -6735,701 +6766,701 @@ hr {
 }
 
 //////////////////////////////////////////media//////////////////////////////////////////
-
-@media only screen and (min-width: 1024px) and (max-width: 1550px) {
-
-
-  .home-banner {
-    background-image: url("../images/bg1.png") !important;
-  }
-
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-
-
-  .navbar-expand-lg {
-    display: none;
-  }
-  .telephony-card-four-child {
-    .line {
-      display: none;
-    }
-
-    .third-arrow {
-      display: none;
-    }
-  }
-}
-
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  .traffic-services {
-    .line40 {
-      bottom: -227px;
-    }
-  }
-  .banner-carousel {
-    .slick-slider {
-      .slick-list {
-        border-radius: 18px;
-        .carousel-item-img {
-          .banner-title {
-            padding-left: 0;
-
-            .third-arrow {
-              margin-top: 20px;
-            }
-          }
-        }
-      }
-    }
-
-    .for-call-center {
-      display: block;
-
-      img {
-        margin-left: 20px;
-      }
-    }
-  }
-  .traffic-part-one {
-    .traffic-part-one-child {
-      .row {
-        padding: 20px;
-
-        .col-md-6 {
-          img {
-            padding: 0;
-          }
-
-          .row {
-            padding: 20px;
-
-            .form-group {
-              .form-control {
-                width: 100%;
-                padding: 0;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .home-internet-choose {
-    .home-navbar {
-      display: none !important;
-    }
-  }
-  .navbar-expand-lg {
-    z-index: 5555;
-  }
-  .navbar-nav {
-
-    background-color: #364652 !important;
-
-    .nav-item {
-      text-align: center;
-      color: white;
-
-      a {
-        color: white !important;
-        margin: auto;
-      }
-    }
-  }
-  .line33 {
-    width: 50px;
-  }
-  .line32 {
-    display: none !important;
-  }
-  .home-internet-choose {
-    .home-navbar {
-      display: none;
-    }
-
-    .navbar-b {
-      background: transparent !important;
-    }
-  }
-  .home-banner {
-    background-image: url("../images/to.png");
-    height: 900px;
-
-    .home-navbar {
-      display: none;
-    }
-
-    .navbar-b {
-      background-color: transparent !important;
-      z-index: 5555;
-
-    }
-
-    hr {
-      display: none !important;
-    }
-
-    .chooses {
-      flex-direction: column;
-      margin-bottom: 188px;
-
-      .smallChild {
-        width: 200px;
-        height: 61px;
-        background: rgba(0, 0, 0, 0.54);
-        margin-bottom: 38px;
-        box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
-        border-radius: 18px;
-        border: 1px solid #58B7FF;
-
-        span {
-          color: #58B7FF;
-          font-size: 26px;
-          line-height: 31px;
-        }
-      }
-
-      .mediumChild {
-        width: 275px;
-        height: 61px;
-        border-radius: 18px;
-        margin-bottom: 38px;
-        box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
-        background: rgba(0, 0, 0, 0.54);
-        border: 1px solid #58B7FF;
-
-        span {
-          color: #58B7FF;
-          font-size: 26px;
-          line-height: 31px;
-        }
-      }
-
-      .bigChild {
-        width: 200px;
-        height: 61px;
-        margin-bottom: 38px;
-        box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
-        border-radius: 18px;
-        border: 1px solid #58B7FF;
-        background: rgba(0, 0, 0, 0.54);
-
-        span {
-          color: #58B7FF;
-          font-size: 26px;
-          line-height: 31px;
-        }
-      }
-    }
-
-    .contact-footer-home {
-      align-items: center;
-      padding-right: 30px;
-      padding-left: 30px;
-      display: flex;
-
-      .mouse {
-        display: none;
-      }
-
-      .sv {
-        span {
-          display: none;
-        }
-      }
-    }
-
-  }
-  .navbar-general {
-    display: none;
-
-  }
-  .navbar-nav {
-    background-color: #364652;
-
-    .nav-item {
-      text-align: center;
-      color: white;
-
-      a {
-        color: white !important;
-        margin: auto;
-      }
-    }
-  }
-  .navbar-general-one {
-    display: none;
-  }
-  .navbar-b {
-    width: 100%;
-    border-radius: 0;
-    margin: 0;
-  }
-  .development-part-one {
-
-    .development-part-one-child {
-      background-size: cover;
-      background-repeat: no-repeat;
-
-      height: 440px;
-      border-bottom-right-radius: 20px;
-      border-bottom-left-radius: 20px;
-      background-image: url("../images/klavish.png");
-
-
-      .row {
-        padding: 15px;
-
-        .col-md-6 {
-          margin: 0;
-
-          h4 {
-            font-size: 28px;
-            margin: 0;
-            margin-top: 20px;
-          }
-
-          p {
-            font-size: 16px;
-            margin-top: 20px;
-          }
-        }
-      }
-    }
-  }
-  .Installation-Part-Four {
-    margin-top: 30px;
-
-    .line31 {
-      svg {
-        width: 537px;
-      }
-    }
-  }
-  .navbar-general {
-    display: block;
-    margin-bottom: 20px;
-
-    .prev {
-      h4 {
-        font-size: 22px;
-      }
-
-      .third-arrow {
-        margin-top: -30px;
-        margin-left: 90px !important;
-      }
-    }
-  }
-  .navbar-b {
-    display: none;
-
-  }
-  hr {
-    display: none !important;
-  }
-
-  .telephony-card-one {
-    padding: 0 20px 20px 20px;
-
-    .telephony-card-one-child {
-      border-bottom-right-radius: 18px;
-      border-bottom-left-radius: 18px;
-      background-image: url("../images/kabe.png");
-
-      .row {
-        padding: 0;
-
-        .col-md-8 {
-          margin: 0;
-          padding: 20px;
-
-          h4 {
-            font-size: 28px;
-          }
-
-          p {
-            font-size: 18px;
-          }
-        }
-      }
-    }
-  }
-  .installation-part-one-child {
-    background-size: 100% 250px;
-    height: 311px;
-
-
-    .row {
-      height: 270px;
-
-      .col-md-6 {
-        margin-left: 20px !important;
-        margin-top: -20px !important;
-      }
-    }
-
-  }
-  .one-inst {
-    height: 440px;
-    h3 {
-    }
-
-    .line29 {
-      svg {
-        width: 540px;
-      }
-    }
-  }
-  .banner-carousel {
-    background-size: cover;
-
-    .banner-title {
-      padding-left: 40px;
-
-      h1 {
-          font-size: 36px;
-        line-height: 42px;
-
-      }
-
-      p {
-        font-size: 18px;
-        line-height: 21px;
-
-        color: #FFFFFF
-      }
-    }
-  }
-  .tv-part-one {
-    padding: 0 20px 20px 20px;
-
-    .tv-part-one-child {
-      background-image: url("../images/kabe.png");
-
-      .row {
-
-        .col-md-6 {
-          margin: 0;
-
-          h4 {
-                  font-size: 28px;
-            line-height: 33px;
-          }
-        }
-      }
-    }
-  }
-  .iptelephony-part-eight {
-    margin-top: 0;
-
-    .iptelephony-part-eight-child {
-      .row {
-        padding-top: 40px;
-
-        .eight-right {
-          p {
-            font-size: 60px;
-          }
-
-          h5 {
-            text-align: center;
-            font-size: 24px;
-          }
-        }
-
-        .col-md-3:nth-child(1) {
-          margin-bottom: 0;
-        }
-
-        .col-md-3:nth-child(2) {
-          padding-left: 16px;
-        }
-
-        .col-md-3 {
-          margin-bottom: 30px;
-        }
-      }
-    }
-  }
-  .monitoring-part-one {
-    .monitoring-part-one-child {
-      background-size: 100% 250px;
-
-      .col-md-6 {
-        margin-left: 10px !important;
-
-        h4 {
-          margin-top: 20px !important;
-        }
-      }
-    }
-  }
-  .telephony-card-four {
-    .telephony-card-four-child {
-      .row {
-        .col-md-8 {
-          margin: 0 !important;
-        }
-      }
-
-      .third-arrow {
-        display: none;
-      }
-    }
-  }
-  .line50 {
-    display: none;
-  }
-  .line {
-    display: none;
-  }
-
-  .iptelephony-part-seven {
-
-    .iptelephony-part-seven-child {
-      padding: 0 15px;
-
-      h4 {
-        margin: 0 !important;
-      }
-
-      .row {
-        margin-top: 80px;
-
-        img {
-          width: 115px;
-          object-fit: contain;
-        }
-      }
-    }
-  }
-  .ipt-corousel {
-    .line26 {
-      display: none;
-    }
-
-    .line27 {
-      display: none;
-    }
-
-    .ipt-corousel-child {
-      .slick-slider {
-        .slick-next, .slick-prev {
-          display: none !important;
-
-        }
-
-        .slick-list {
-          img {
-            object-fit: contain;
-          }
-        }
-      }
-    }
-  }
-  .iptelephony-part-five {
-    .iptelephony-part-five-child {
-
-      h4 {
-        margin-top: 80px !important;
-
-      }
-
-      .line25 {
-        bottom: 80px;
-      }
-
-      .line23_4 {
-        bottom: -50px;
-      }
-
-      .box {
-        margin-right: 2px !important;
-      }
-    }
-  }
-  .iptelephony-part-four {
-    .iptelephony-part-four-child {
-      .row {
-        .col-md-7 {
-          padding: 30px;
-        }
-
-        .col-md-5 {
-          img {
-            padding: 30px;
-          }
-        }
-      }
-    }
-  }
-  .telephony-card-three {
-    .telephony-card-two-child {
-
-      .row {
-        .col-md-5 {
-          img {
-            padding: 20px;
-          }
-        }
-
-        .col-md-7 {
-          padding: 20px;
-        }
-      }
-    }
-  }
-  .iptv-part-two {
-    .card-imageses {
-      h4 {
-        font-size: 28px !important;
-      }
-    }
-
-    .line100 {
-      svg {
-        width: 520px;
-      }
-    }
-  }
-  .monitoring-part-one {
-    .ip-part-one {
-      height: 191px;
-
-      .row {
-        .col-md-7 {
-          margin: 0;
-          padding: 20px;
-
-          h4 {
-            margin: 0 0 10px 0;
-            font-size: 28px;
-
-
-          }
-
-          p {
-            font-size: 18px;
-          }
-        }
-      }
-    }
-  }
-  .details-part-four {
-    .details-part-four-child {
-      .row {
-        .col-md-6:nth-child(2) {
-          margin-top: 0;
-
-        }
-      }
-    }
-  }
-  .details-part-two {
-    .details-part-two-child {
-      .row {
-        .col-md-4 {
-          margin-top: 20px;
-        }
-      }
-    }
-  }
-  .details-part-one {
-    padding: 0 20px 20px 20px;
-
-    .details-part-one-child {
-      border-bottom-right-radius: 18px;
-      border-bottom-left-radius: 18px;
-      background-image: url("../images/kabe.png");
-      background-size: cover;
-
-      .col-md-8 {
-        padding: 20px;
-
-        h4 {
-              font-size: 28px;
-          line-height: 33px;
-        }
-
-        p {
-          font-size: 18px;
-          line-height: 21px;
-          margin-top: 30px;
-        }
-      }
-    }
-  }
-  .home-internet-choose {
-    overflow: hidden;
-    background-image: url("../images/internet.png");
-    height: 900px;
-    background-size: cover;
-
-    hr {
-      display: none !important;
-    }
-
-    .chooses {
-      flex-direction: column;
-      margin-bottom: 188px;
-
-      .mediumChild {
-        width: 200px;
-        height: 61px;
-        background: rgba(0, 0, 0, 0.54);
-        margin-bottom: 38px;
-        box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
-        border-radius: 18px;
-        border: 1px solid #58B7FF;
-
-        span {
-          color: #58B7FF;
-          font-size: 26px;
-          line-height: 31px;
-        }
-      }
-    }
-
-    .contact-footer-home {
-      align-items: center;
-      padding-right: 30px;
-      padding-left: 30px;
-      display: flex;
-
-      .mouse {
-        display: none;
-      }
-
-      .sv {
-        span {
-          display: none;
-        }
-      }
-    }
-  }
-  .tv-part-one {
-    padding: 0 20px 20px 20px;
-
-    .tv-part-one-child {
-      background-image: url("../images/kabe.png");
-
-      .row {
-
-        .col-md-6 {
-          margin: 0;
-
-          h4 {
-                  font-size: 28px;
-            line-height: 33px;
-          }
-        }
-      }
-    }
-  }
-}
+//
+//@media only screen and (min-width: 1024px) and (max-width: 1550px) {
+//
+//
+//  .home-banner {
+//    background-image: url("../images/bg1.png") !important;
+//  }
+//
+//}
+//
+//@media only screen and (min-width: 769px) and (max-width: 1200px) {
+//
+//
+//  .navbar-expand-lg {
+//    display: none;
+//  }
+//  .telephony-card-four-child {
+//    .line {
+//      display: none;
+//    }
+//
+//    .third-arrow {
+//      display: none;
+//    }
+//  }
+//}
+//
+//@media only screen and (min-width: 577px) and (max-width: 768px) {
+//  .traffic-services {
+//    .line40 {
+//      bottom: -227px;
+//    }
+//  }
+//  .banner-carousel {
+//    .slick-slider {
+//      .slick-list {
+//        border-radius: 18px;
+//        .carousel-item-img {
+//          .banner-title {
+//            padding-left: 0;
+//
+//            .third-arrow {
+//              margin-top: 20px;
+//            }
+//          }
+//        }
+//      }
+//    }
+//
+//    .for-call-center {
+//      display: block;
+//
+//      img {
+//        margin-left: 20px;
+//      }
+//    }
+//  }
+//  .traffic-part-one {
+//    .traffic-part-one-child {
+//      .row {
+//        padding: 20px;
+//
+//        .col-md-6 {
+//          img {
+//            padding: 0;
+//          }
+//
+//          .row {
+//            padding: 20px;
+//
+//            .form-group {
+//              .form-control {
+//                width: 100%;
+//                padding: 0;
+//              }
+//            }
+//          }
+//        }
+//      }
+//    }
+//  }
+//  .home-internet-choose {
+//    .home-navbar {
+//      display: none !important;
+//    }
+//  }
+//  .navbar-expand-lg {
+//    z-index: 5555;
+//  }
+//  .navbar-nav {
+//
+//    background-color: #364652 !important;
+//
+//    .nav-item {
+//      text-align: center;
+//      color: white;
+//
+//      a {
+//        color: white !important;
+//        margin: auto;
+//      }
+//    }
+//  }
+//  .line33 {
+//    width: 50px;
+//  }
+//  .line32 {
+//    display: none !important;
+//  }
+//  .home-internet-choose {
+//    .home-navbar {
+//      display: none;
+//    }
+//
+//    .navbar-b {
+//      background: transparent !important;
+//    }
+//  }
+//  .home-banner {
+//    background-image: url("../images/mob.png");
+//    height: 900px;
+//
+//    .home-navbar {
+//      display: none;
+//    }
+//
+//    .navbar-b {
+//      background-color: transparent !important;
+//      z-index: 5555;
+//
+//    }
+//
+//    hr {
+//      display: none !important;
+//    }
+//
+//    .chooses {
+//      flex-direction: column;
+//      margin-bottom: 188px;
+//
+//      .smallChild {
+//        width: 200px;
+//        height: 61px;
+//        background: rgba(0, 0, 0, 0.54);
+//        margin-bottom: 38px;
+//        box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
+//        border-radius: 18px;
+//        border: 1px solid #58B7FF;
+//
+//        span {
+//          color: #58B7FF;
+//          font-size: 26px;
+//          line-height: 31px;
+//        }
+//      }
+//
+//      .mediumChild {
+//        width: 275px;
+//        height: 61px;
+//        border-radius: 18px;
+//        margin-bottom: 38px;
+//        box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
+//        background: rgba(0, 0, 0, 0.54);
+//        border: 1px solid #58B7FF;
+//
+//        span {
+//          color: #58B7FF;
+//          font-size: 26px;
+//          line-height: 31px;
+//        }
+//      }
+//
+//      .bigChild {
+//        width: 200px;
+//        height: 61px;
+//        margin-bottom: 38px;
+//        box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
+//        border-radius: 18px;
+//        border: 1px solid #58B7FF;
+//        background: rgba(0, 0, 0, 0.54);
+//
+//        span {
+//          color: #58B7FF;
+//          font-size: 26px;
+//          line-height: 31px;
+//        }
+//      }
+//    }
+//
+//    .contact-footer-home {
+//      align-items: center;
+//      padding-right: 30px;
+//      padding-left: 30px;
+//      display: flex;
+//
+//      .mouse {
+//        display: none;
+//      }
+//
+//      .sv {
+//        span {
+//          display: none;
+//        }
+//      }
+//    }
+//
+//  }
+//  .navbar-general {
+//    display: none;
+//
+//  }
+//  .navbar-nav {
+//    background-color: #364652;
+//
+//    .nav-item {
+//      text-align: center;
+//      color: white;
+//
+//      a {
+//        color: white !important;
+//        margin: auto;
+//      }
+//    }
+//  }
+//  .navbar-general-one {
+//    display: none;
+//  }
+//  .navbar-b {
+//    width: 100%;
+//    border-radius: 0;
+//    margin: 0;
+//  }
+//  .development-part-one {
+//
+//    .development-part-one-child {
+//      background-size: cover;
+//      background-repeat: no-repeat;
+//
+//      height: 440px;
+//      border-bottom-right-radius: 20px;
+//      border-bottom-left-radius: 20px;
+//      background-image: url("../images/klavish.png");
+//
+//
+//      .row {
+//        padding: 15px;
+//
+//        .col-md-6 {
+//          margin: 0;
+//
+//          h4 {
+//            font-size: 28px;
+//            margin: 0;
+//            margin-top: 20px;
+//          }
+//
+//          p {
+//            font-size: 16px;
+//            margin-top: 20px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  .Installation-Part-Four {
+//    margin-top: 30px;
+//
+//    .line31 {
+//      svg {
+//        width: 537px;
+//      }
+//    }
+//  }
+//  .navbar-general {
+//    display: block;
+//    margin-bottom: 20px;
+//
+//    .prev {
+//      h4 {
+//        font-size: 22px;
+//      }
+//
+//      .third-arrow {
+//        margin-top: -30px;
+//        margin-left: 90px !important;
+//      }
+//    }
+//  }
+//  .navbar-b {
+//    display: none;
+//
+//  }
+//  hr {
+//    display: none !important;
+//  }
+//
+//  .telephony-card-one {
+//    padding: 0 20px 20px 20px;
+//
+//    .telephony-card-one-child {
+//      border-bottom-right-radius: 18px;
+//      border-bottom-left-radius: 18px;
+//      background-image: url("../images/kabe.png");
+//
+//      .row {
+//        padding: 0;
+//
+//        .col-md-8 {
+//          margin: 0;
+//          padding: 20px;
+//
+//          h4 {
+//            font-size: 28px;
+//          }
+//
+//          p {
+//            font-size: 18px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  .installation-part-one-child {
+//    background-size: 100% 250px;
+//    height: 311px;
+//
+//
+//    .row {
+//      height: 270px;
+//
+//      .col-md-6 {
+//        margin-left: 20px !important;
+//        margin-top: -20px !important;
+//      }
+//    }
+//
+//  }
+//  .one-inst {
+//    height: 440px;
+//    h3 {
+//    }
+//
+//    .line29 {
+//      svg {
+//        width: 540px;
+//      }
+//    }
+//  }
+//  .banner-carousel {
+//    background-size: cover;
+//
+//    .banner-title {
+//      padding-left: 40px;
+//
+//      h1 {
+//          font-size: 36px;
+//        line-height: 42px;
+//
+//      }
+//
+//      p {
+//        font-size: 18px;
+//        line-height: 21px;
+//
+//        color: #FFFFFF
+//      }
+//    }
+//  }
+//  .tv-part-one {
+//    padding: 0 20px 20px 20px;
+//
+//    .tv-part-one-child {
+//      background-image: url("../images/kabe.png");
+//
+//      .row {
+//
+//        .col-md-6 {
+//          margin: 0;
+//
+//          h4 {
+//                  font-size: 28px;
+//            line-height: 33px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  .iptelephony-part-eight {
+//    margin-top: 0;
+//
+//    .iptelephony-part-eight-child {
+//      .row {
+//        padding-top: 40px;
+//
+//        .eight-right {
+//          p {
+//            font-size: 60px;
+//          }
+//
+//          h5 {
+//            text-align: center;
+//            font-size: 24px;
+//          }
+//        }
+//
+//        .col-md-3:nth-child(1) {
+//          margin-bottom: 0;
+//        }
+//
+//        .col-md-3:nth-child(2) {
+//          padding-left: 16px;
+//        }
+//
+//        .col-md-3 {
+//          margin-bottom: 30px;
+//        }
+//      }
+//    }
+//  }
+//  .monitoring-part-one {
+//    .monitoring-part-one-child {
+//      background-size: 100% 250px;
+//
+//      .col-md-6 {
+//        margin-left: 10px !important;
+//
+//        h4 {
+//          margin-top: 20px !important;
+//        }
+//      }
+//    }
+//  }
+//  .telephony-card-four {
+//    .telephony-card-four-child {
+//      .row {
+//        .col-md-8 {
+//          margin: 0 !important;
+//        }
+//      }
+//
+//      .third-arrow {
+//        display: none;
+//      }
+//    }
+//  }
+//  .line50 {
+//    display: none;
+//  }
+//  .line {
+//    display: none;
+//  }
+//
+//  .iptelephony-part-seven {
+//
+//    .iptelephony-part-seven-child {
+//      padding: 0 15px;
+//
+//      h4 {
+//        margin: 0 !important;
+//      }
+//
+//      .row {
+//        margin-top: 80px;
+//
+//        img {
+//          width: 115px;
+//          object-fit: contain;
+//        }
+//      }
+//    }
+//  }
+//  .ipt-corousel {
+//    .line26 {
+//      display: none;
+//    }
+//
+//    .line27 {
+//      display: none;
+//    }
+//
+//    .ipt-corousel-child {
+//      .slick-slider {
+//        .slick-next, .slick-prev {
+//          display: none !important;
+//
+//        }
+//
+//        .slick-list {
+//          img {
+//            object-fit: contain;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  .iptelephony-part-five {
+//    .iptelephony-part-five-child {
+//
+//      h4 {
+//        margin-top: 80px !important;
+//
+//      }
+//
+//      .line25 {
+//        bottom: 80px;
+//      }
+//
+//      .line23_4 {
+//        bottom: -50px;
+//      }
+//
+//      .box {
+//        margin-right: 2px !important;
+//      }
+//    }
+//  }
+//  .iptelephony-part-four {
+//    .iptelephony-part-four-child {
+//      .row {
+//        .col-md-7 {
+//          padding: 30px;
+//        }
+//
+//        .col-md-5 {
+//          img {
+//            padding: 30px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  .telephony-card-three {
+//    .telephony-card-two-child {
+//
+//      .row {
+//        .col-md-5 {
+//          img {
+//            padding: 20px;
+//          }
+//        }
+//
+//        .col-md-7 {
+//          padding: 20px;
+//        }
+//      }
+//    }
+//  }
+//  .iptv-part-two {
+//    .card-imageses {
+//      h4 {
+//        font-size: 28px !important;
+//      }
+//    }
+//
+//    .line100 {
+//      svg {
+//        width: 520px;
+//      }
+//    }
+//  }
+//  .monitoring-part-one {
+//    .ip-part-one {
+//      height: 191px;
+//
+//      .row {
+//        .col-md-7 {
+//          margin: 0;
+//          padding: 20px;
+//
+//          h4 {
+//            margin: 0 0 10px 0;
+//            font-size: 28px;
+//
+//
+//          }
+//
+//          p {
+//            font-size: 18px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  .details-part-four {
+//    .details-part-four-child {
+//      .row {
+//        .col-md-6:nth-child(2) {
+//          margin-top: 0;
+//
+//        }
+//      }
+//    }
+//  }
+//  .details-part-two {
+//    .details-part-two-child {
+//      .row {
+//        .col-md-4 {
+//          margin-top: 20px;
+//        }
+//      }
+//    }
+//  }
+//  .details-part-one {
+//    padding: 0 20px 20px 20px;
+//
+//    .details-part-one-child {
+//      border-bottom-right-radius: 18px;
+//      border-bottom-left-radius: 18px;
+//      background-image: url("../images/kabe.png");
+//      background-size: cover;
+//
+//      .col-md-8 {
+//        padding: 20px;
+//
+//        h4 {
+//              font-size: 28px;
+//          line-height: 33px;
+//        }
+//
+//        p {
+//          font-size: 18px;
+//          line-height: 21px;
+//          margin-top: 30px;
+//        }
+//      }
+//    }
+//  }
+//  .home-internet-choose {
+//    overflow: hidden;
+//    background-image: url("../images/internet.png");
+//    height: 900px;
+//    background-size: cover;
+//
+//    hr {
+//      display: none !important;
+//    }
+//
+//    .chooses {
+//      flex-direction: column;
+//      margin-bottom: 188px;
+//
+//      .mediumChild {
+//        width: 200px;
+//        height: 61px;
+//        background: rgba(0, 0, 0, 0.54);
+//        margin-bottom: 38px;
+//        box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
+//        border-radius: 18px;
+//        border: 1px solid #58B7FF;
+//
+//        span {
+//          color: #58B7FF;
+//          font-size: 26px;
+//          line-height: 31px;
+//        }
+//      }
+//    }
+//
+//    .contact-footer-home {
+//      align-items: center;
+//      padding-right: 30px;
+//      padding-left: 30px;
+//      display: flex;
+//
+//      .mouse {
+//        display: none;
+//      }
+//
+//      .sv {
+//        span {
+//          display: none;
+//        }
+//      }
+//    }
+//  }
+//  .tv-part-one {
+//    padding: 0 20px 20px 20px;
+//
+//    .tv-part-one-child {
+//      background-image: url("../images/kabe.png");
+//
+//      .row {
+//
+//        .col-md-6 {
+//          margin: 0;
+//
+//          h4 {
+//                  font-size: 28px;
+//            line-height: 33px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
 
 @media only screen and (min-width: 360px) and (max-width: 576px) {
   .text-plus{
@@ -7455,9 +7486,10 @@ hr {
     display: none;
   }
   .home-banner {
-    background-image: url("../images/to.png");
-    height: 900px;
+    background-image: url("../images/mob.png");
+    //height: 900px;
 
+    background-size: 100% 100%;
     .home-navbar {
       display: none;
     }
@@ -7481,13 +7513,19 @@ hr {
         height: 61px;
         background: rgba(0, 0, 0, 0.54);
         margin-bottom: 38px;
-        box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
+        box-shadow:  none;
         border-radius: 18px;
-        border: 1px solid #58B7FF;
+        border: 1px solid transparent;
 
+
+        &:hover{
+          box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
+          border: 1px solid #58B7FF;
+
+        }
         span {
           color: #58B7FF;
-          font-size: 26px;
+          font-size: 22px;
           line-height: 31px;
         }
       }
@@ -7497,10 +7535,15 @@ hr {
         height: 61px;
         border-radius: 18px;
         margin-bottom: 38px;
-        box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
-        background: rgba(0, 0, 0, 0.54);
-        border: 1px solid #58B7FF;
+        box-shadow: none;
 
+        background: rgba(0, 0, 0, 0.54);
+        border: 1px solid transparent;
+        &:hover{
+          box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
+          border: 1px solid #58B7FF;
+
+        }
         span {
           color: #58B7FF;
           font-size: 26px;
@@ -7512,10 +7555,15 @@ hr {
         width: 200px;
         height: 61px;
         margin-bottom: 38px;
-        box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
+        box-shadow: none;
+        &:hover{
+          box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
+          border: 1px solid #58B7FF;
+
+        }
         border-radius: 18px;
-        border: 1px solid #58B7FF;
-        background: rgba(0, 0, 0, 0.54);
+        border: 1px solid transparent;
+        //background: rgba(0, 0, 0, 0.54);
 
         span {
           color: #58B7FF;
@@ -7732,6 +7780,25 @@ hr {
           .card-body {
             margin-right: 0;
           }
+        }
+      }
+    }
+  }
+
+
+  .monitoring-part-one-child{
+
+    background-image: url("../images/dv.png");
+    //background-color: rgba(156, 156, 156, 0.2);/
+    border-radius: 8px;
+    .row{
+      .col-md-6{
+        margin-left:  0px;
+        h4{
+          font-size: 26px;
+        }
+        p{
+
         }
       }
     }
@@ -8054,6 +8121,11 @@ hr {
 
     .installation-part-one-child {
 
+
+      h4{
+        margin-top: 0!important;
+      }
+
       background-image: url("../images/im.png") !important;
       background-size: cover;
 
@@ -8067,6 +8139,13 @@ hr {
     }
   }
 
+
+    .sub-menu-global{
+
+      div{
+        background-color: transparent !important;
+    }
+  }
   .telephony-card-three {
     margin: 0;
     margin-top: 120px;

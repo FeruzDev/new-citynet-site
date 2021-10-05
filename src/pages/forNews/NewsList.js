@@ -41,7 +41,7 @@ const NewsList = () => {
 
 
 
-                                    <p>  {item.content}<Link className="ml-2" href="#!">Читать дальше</Link>
+                                    <p>  {item.content}<Link className="ml-2"  to={"/all-news/news-detail/" + item.id}>Читать дальше</Link>
                                     </p>
 
 

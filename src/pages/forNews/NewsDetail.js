@@ -8,6 +8,8 @@ import NewsDetailPair from "./NewsDetailPair";
 
 
 const NewsDetail = () => {
+
+
     return (
         <div>
 

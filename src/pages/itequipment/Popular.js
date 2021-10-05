@@ -82,7 +82,7 @@ const PriceProvider = () => {
                             <div className="popular-child">
                                 <div className="card-body">
                                     <img src="images/icon/stock .png" alt=""/>
-                                    <span><img src={item.images[0].get_img_url} alt=""/></span>
+                                    <span><img src={item.images[0]?.get_img_url} alt=""/></span>
                                     <h4>{item.category_name}</h4>
                                     <p>{item.main_content}
                                     </p>

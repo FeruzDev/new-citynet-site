@@ -1,13 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState  } from 'react';
 import axios from "axios";
 import {API_PATH_RU} from "../../tools/constants";
+import {useHistory} from "react-router-dom";
+import MainForm from "../TarifForma/MainForm";
 
-const IptvPartThree = () => {
+const IptvPartThree = (props) => {
 
 
     const [city, setCity] = useState([])
 
     const [district, setDistrick] = useState([])
+    const [districtId, setDistrickId] = useState([])
 
     const [street, setStreet] = useState([])
     const [home, setHome] = useState([])
@@ -42,8 +45,8 @@ const IptvPartThree = () => {
 
     }
     const selectDistrick = (value) =>{
-
-        axios.get(API_PATH_RU + "provider/v1/street-list/?street="  + value)
+        setDistrickId(value)
+        axios.get(API_PATH_RU + "provider/v1/street-list/?district="  + value)
             .then(res => {
                 setStreet(res.data)
             })
@@ -56,13 +59,21 @@ const IptvPartThree = () => {
 
     const selectStreet = (value) =>{
 
+        console.log(value)
 
 
-        let   newArr = street.filter(item => item.id === value)
-
-        console.log(newArr)
     }
 
+    const history = useHistory();
+
+
+    const sendDataConnect =(value)=>{
+
+
+        <MainForm data={value}/>
+
+     history.push("/form")
+    }
 
     return (
         <>
@@ -145,51 +156,32 @@ const IptvPartThree = () => {
             <table className="table-sm ">
                 <tr>
                     <th className="font-family-medium">Район</th>
-                    <th className="font-family-medium">Микрорайон</th>
+
                     <th className="font-family-medium">Улица</th>
                     <th className="font-family-medium">Дома</th>
                     <th className="font-family-medium">Технология</th>
                 </tr>
-                <tr>
-                    <td>Шайхантахурский район</td>
-                    <td>Караташ</td>
-                    <td>А.Ходжаева</td>
-                    <td>1, 2, 3, 4,</td>
-                    <td><div className="technology"><p>FTTB</p></div></td>
-                    <td><a href="#">Подключить</a></td>
-                </tr>
-                <tr>
-                    <td>Шайхантахурский район</td>
-                    <td>Караташ</td>
-                    <td>А.Ходжаева</td>
-                    <td>1, 2, 3, 4,</td>
-                    <td><div className="technology"><p>FTTB</p></div></td>
-                    <td><a href="#">Подключить</a></td>
-                </tr>
-                <tr>
-                    <td>Шайхантахурский район</td>
-                    <td>Караташ</td>
-                    <td>А.Ходжаева</td>
-                    <td>1, 2, 3, 4,</td>
-                    <td><div className="technology"><p>FTTB</p></div></td>
-                    <td><a href="#">Подключить</a></td>
-                </tr>
-                <tr>
-                    <td>Шайхантахурский район</td>
-                    <td>Караташ</td>
-                    <td>А.Ходжаева</td>
-                    <td>1, 2, 3, 4,</td>
-                    <td><div className="technology"><p>FTTB</p></div></td>
-                    <td><a href="#">Подключить</a></td>
-                </tr>
-                <tr>
-                    <td>Шайхантахурский район</td>
-                    <td>Караташ</td>
-                    <td>А.Ходжаева</td>
-                    <td>1, 2, 3, 4,</td>
-                    <td><div className="technology"><p>FTTB</p></div></td>
-                    <td><a href="#">Подключить</a></td>
-                </tr>
+
+
+                {
+                    street.map(item => (
+                        <tr>
+                            <td>{item.district_name}</td>
+                            <td>{item.title}</td>
+
+                            <td>
+                                {
+                                   item.flats?.map(( item2) => (
+                                       <span   >  { item2.title + " "} </span>
+                                   )
+                            )}
+
+                            </td>
+                            <td><div className="technology"><p>{item.tech_name}</p></div></td>
+                            <td><button onClick={ () => sendDataConnect(item)}>Подключить</button></td>
+                        </tr>
+                    ))
+                }
             </table>
         </div>
         <div className="line60">

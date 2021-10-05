@@ -1,7 +1,41 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import axios from "axios";
+import {API_PATH_RU} from "../../tools/constants";
+import {toast} from "react-toastify";
 
 const ContactForma = () => {
+
+    const send =(value)=>{
+
+
+
+        let bigData = new FormData();
+        bigData.append("full_name", document.getElementById('fullNameC').value)
+        bigData.append("email", document.getElementById('emailC').value)
+        bigData.append("phone", document.getElementById('numberC').value)
+        bigData.append("message", document.getElementById('messageC').value)
+
+
+        axios.post(API_PATH_RU + "device/v1/request/" , bigData)
+            .then(res => {
+                toast.success("Успешно отправлен")
+              document.getElementById('fullNameC').value= ""
+              document.getElementById('emailC').value= ""
+              document.getElementById('numberC').value= ""
+              document.getElementById('messageC').value= ""
+
+            })
+            .catch(err =>{
+                toast.error("Oшибка")
+            })
+
+
+    }
+
+
+
+
     return (
         <div>
             <div className="Contact-forma position-relative">
@@ -32,19 +66,18 @@ const ContactForma = () => {
                             <div className=" col-md-6 ">
                                 <h4 className="font-family-medium">Свяжитесь с нами</h4>
                                 <div className="row">
-                                    <div className="col-md-6">
-                                        <input type="text" className="form-control" placeholder="Имя"/>
-                                        <input type="text" className="form-control" placeholder="Почта"/>
-                                    </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-12 w-100">
+                                        <input type="text" className="form-control" id="fullNameC" placeholder="Полное имя"/>
 
-                                        <input type="text" className="form-control" placeholder="Фамилия"/>
-                                        <input type="text" className="form-control" placeholder="Контакный телефон"/>
                                     </div>
-                                    <input type="text" className="form-control m-3 text" placeholder="Сообшения"/>
+                                    <div className="col-md-12">
+                                        <input type="email" className="form-control "  id="emailC" placeholder="Почта"/>
+                                        <input type="text" className="form-control" id="numberC" placeholder="Контакный телефон"/>
+                                    </div>
+                                    <input type="text" className="form-control m-3 text"  id="messageC"placeholder="Сообшения"/>
                                     <div className="third-arrow ml-3">
-                                        <a href="#!" className="font-family-medium"> <img className="arrow-img-white" src="/images/icon/Arrow4.png"
-                                                           alt=""/>Отправить заявку</a>
+                                        <button onClick={send}  className="font-family-medium"> <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                                           alt=""/>Отправить заявку</button>
                                     </div>
                                 </div>
                             </div>

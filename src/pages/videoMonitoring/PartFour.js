@@ -39,7 +39,7 @@ const PartFour = () => {
                 <div className="row">
 
                     <div className="col-md-8 offset-2">
-                        <img  src={camera[0]?.images[0].get_img_url} alt=""/>
+                        <img  src={camera[0]?.images[0]?.get_img_url} alt=""/>
 
                         <h3>  {camera[0]?.title} </h3>
                         <div className="line"></div>
