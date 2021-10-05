@@ -53,7 +53,7 @@ const MainNewForDetail = () => {
                                 <img src={item.get_img_url} alt=""/>
 
                                 <h3 className="font-family-medium">{item.title}</h3>
-                                <p> {item.content} <Link className="ml-2"  to={"/all-news/news-detail/" + item.id}>Читать дальше</Link></p>
+                                <p> {item.content.length > 60  ? item.content.slice(0, 60) + "..." : item.content } <Link className="ml-2"  to={"/all-news/news-detail/" + item.id}>Читать дальше</Link></p>
                             </div>
                         ))
                     }

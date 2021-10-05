@@ -5,6 +5,7 @@ import TrafficTablisa from "./TrafficTablisa";
 import TrafficServices from "./TrafficServices";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import NavbarGeneral from "../navbar/NavbarGeneral";
+import DisplayNavbar from "../navbar/DisplayNavbar";
 
 
 const MainInternetTraffic = () => {
@@ -15,6 +16,7 @@ const MainInternetTraffic = () => {
     return (
         <div>
             <NavbarGeneral />
+            <DisplayNavbar/>
 
             <TrafficOne/>
             {/*<TrafficTablisa/>*/}

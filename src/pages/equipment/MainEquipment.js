@@ -17,6 +17,9 @@ const MainEquipment = (props) => {
 
 
     useEffect(()=>{
+        window.scrollTo(0, 0)
+
+
         axios.get(API_PATH_RU + "device/v1/product/" + props.match.params.id)
             .then(res =>{
                 setProduct(res.data)
