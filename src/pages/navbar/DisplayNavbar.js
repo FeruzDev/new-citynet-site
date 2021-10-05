@@ -14,19 +14,37 @@ const DisplayNavbar = () => {
                 </button>
                 <div className="collapse navbar-collapse " id="navbarNav">
                     <ul className="navbar-nav ">
+
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Контакты <span className="sr-only">(current)</span></a>
+                            <Link  className="nav-link w-auto" to="/all-news">Новости</Link>
+
                         </li>
+
+
                         <li className="nav-item active">
-                            <a className="nav-link active" href="#">Бизнесу</a>
+                            <Link  className="nav-link w-auto" to="/main-provider">Интернет</Link>
+
                         </li>
+
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Услуги</a>
+                            <Link  className="nav-link w-auto" to="/itequipment">  IT оборудование</Link>
+
                         </li>
+
+
                         <li className="nav-item active">
-                            <a className="nav-link disabled" href="#">Личный кабинет</a>
+                            <Link  className="nav-link w-auto" to="/ItDevelopment">IT разработка</Link>
+
                         </li>
-                        <li className="nav-item">
+
+
+
+
+                        <li className="nav-item active">
+                            <Link  className="nav-link w-auto" to="/contact">Контакты</Link>
+
+                        </li>
+                        <li className="nav-item mb-5 mt-5">
                             <h4>
                                 +998 71 202 11 11
                             </h4>

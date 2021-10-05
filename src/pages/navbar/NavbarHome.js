@@ -14,17 +14,35 @@ const NavbarHome = () => {
                 </button>
                 <div className="collapse navbar-collapse " id="navbarNavv">
                     <ul className="navbar-nav ">
+
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Контакты <span className="sr-only">(current)</span></a>
+                            <Link  className="nav-link" to="/all-news">Новости</Link>
+
                         </li>
+
+
                         <li className="nav-item active">
-                            <a className="nav-link active" href="#">Бизнесу</a>
+                            <Link  className="nav-link" to="/main-provider">Интернет</Link>
+
                         </li>
+
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Услуги</a>
+                            <Link  className="nav-link" to="/itequipment">  IT оборудование</Link>
+
                         </li>
+
+
                         <li className="nav-item active">
-                            <a className="nav-link disabled" href="#">Личный кабинет</a>
+                            <Link  className="nav-link" to="/ItDevelopment">IT разработка</Link>
+
+                        </li>
+
+
+
+
+                        <li className="nav-item active">
+                            <Link  className="nav-link" to="/contact">Контакты</Link>
+
                         </li>
                         <li className="nav-item">
                             <h4>
