@@ -43,35 +43,36 @@ const IpTelephonySeven = () => {
                 <h4 className="font-family-medium">Наши партнеры</h4>
 
 
+                <div className="row d-flex justify-content-between m-0">
 
                 {
 
-                    partners.slice(0, 3).map(item =>(
-                        <div className="row d-flex justify-content-between m-0">
+                    partners.slice(0, 4).map(item =>(
                             <div className="row">
-                                <img src={item.get_img_url} alt=""/>
+                                <a href={item.link}> <img src={item.get_img_url} alt=""/></a>
                             </div>
 
 
-                        </div>
 
                     ))
                 }
+                </div>
 
+                <div className="row d-flex justify-content-between m-0">
 
                 {
 
                     partners.slice(4, 8).map(item =>(
-                        <div className="row d-flex justify-content-between m-0">
                             <div className="row">
-                                <img src={item.get_img_url} alt=""/>
+                                <a href={item.link}> <img src={item.get_img_url} alt=""/></a>
+
                             </div>
 
 
-                        </div>
 
                     ))
                 }
+                </div>
 
 
             </div>

@@ -66,7 +66,7 @@ const MainEquipment = (props) => {
 
                         </div>
                         <div className="col-md-9">
-                            <p>Главная > Каталог > ITC Audio T-6708 Сетевой аудио адаптер, без встроенного усилителя</p>
+                            {/*<p>Главная > Каталог > ITC Audio T-6708 Сетевой аудио адаптер, без встроенного усилителя</p>*/}
                             <div className="row">
                                 <div className="col-md-5">
 

@@ -44,7 +44,7 @@ const NavbarGeneralSeven = (props) => {
 
                             <Link to="/">Главная</Link>
 
-                            <a href="#">Каталог</a>
+                            <a href="#catalog">Каталог</a>
                             <a href="#new23">Новинки</a>
 
                         </div>

@@ -60,7 +60,7 @@ const EquipmentParttTwo = (props) => {
     }
     return (
         <div className="equipment-part-two">
-                            <div className="container equipment-part-two-child">
+                            <div id="catalog" className="container equipment-part-two-child">
                                  <div className="row">
                                      <div className="col-md-3 ">
                                          <div className="saidbar">
@@ -90,24 +90,24 @@ const EquipmentParttTwo = (props) => {
                             </div>
                         </div>
                         <div className="col-md-9">
-                            <div className="d-flex eqment">
-                                <div className="input-group ml-3">
-                                    <input type="text" className="form-control" placeholder="Поиск товара..."/>
-                                    <div className="search">
-                                        <a href="https://www.google.com/"><img src="images/icon/search.png" alt=""/></a>
-                                    </div>
-                                </div>
-                                <div className="form-group ">
-                                    <select className="form-control" id="exampleFormControlSelect1">
-                                        <option>Сортировка</option>
-                                        <option>Сортировка</option>
-                                        <option>Сортировка</option>
-                                        <option>Сортировка</option>
-                                        <option>Сортировка</option>
-                                    </select>
-                                </div>
-                                <div><img src="images/icon/align.png" alt=""/></div>
-                            </div>
+                            {/*<div className="d-flex eqment">*/}
+                            {/*    <div className="input-group ml-3">*/}
+                            {/*        <input type="text" className="form-control" placeholder="Поиск товара..."/>*/}
+                            {/*        <div className="search">*/}
+                            {/*            <a href="https://www.google.com/"><img src="images/icon/search.png" alt=""/></a>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*    <div className="form-group ">*/}
+                            {/*        <select className="form-control" id="exampleFormControlSelect1">*/}
+                            {/*            <option>Сортировка</option>*/}
+                            {/*            <option>Сортировка</option>*/}
+                            {/*            <option>Сортировка</option>*/}
+                            {/*            <option>Сортировка</option>*/}
+                            {/*            <option>Сортировка</option>*/}
+                            {/*        </select>*/}
+                            {/*    </div>*/}
+                            {/*    <div><img src="images/icon/align.png" alt=""/></div>*/}
+                            {/*</div>*/}
 
                             <div className="row mb-4">
 
