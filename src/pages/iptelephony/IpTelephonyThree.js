@@ -10,10 +10,12 @@ const IpTelephonyThree = () => {
 
                 <div className="iptelephony-part-three-child container">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div data-aos="fade-right"  data-aos-easing="linear"
+                             data-aos-duration="1000" className="col-md-6">
                             <img src="/images/icon/iptelephonyfour.png" alt=""/>
                         </div>
-                        <div className="col-md-6">
+                        <div data-aos="fade-left"  data-aos-easing="linear"
+                             data-aos-duration="1000" className="col-md-6">
                             <h4 className="font-family-medium   mb-3">Наши преимущества:</h4>
                             <p style={{lineHeight: "24px"}}>
                                 • Компания является признанным лидером в области информационных технологий в Узбекистане

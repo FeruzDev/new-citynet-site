@@ -5,12 +5,21 @@ const IptvPartThree = () => {
         <div className="telephony-card-three position-relative ">
             <div className="container telephony-card-two-child">
                 <div className="row">
-                    <div className="col-md-5">
-                        <img src="images/icon/1.png" alt=""/>
+                    <div className="col-md-5" data-aos="flip-left"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="1500">
+                        <img  src="images/icon/1.png" alt=""/>
                     </div>
                     <div className="col-md-7">
-                        <h4>Системы видеонаблюдения </h4>
-                        <p>Видеонаблюдение – это система, включающая в себя сочетание оборудования и программного
+                        <h4 data-aos="fade-up"
+                            data-aos-duration="1500"
+                            data-aos-anchor-placement="top-bottom"
+                        >Системы видеонаблюдения  </h4>
+                        <p data-aos="fade-up"
+                           data-aos-anchor-placement="top-bottom"
+                           data-aos-delay="300"
+                           data-aos-duration="1500"
+                        >Видеонаблюдение – это система, включающая в себя сочетание оборудования и программного
                             обеспечения, предназначенного для визуального контроля за территорией, действиями и
                             ситуацией. На сегодняшний день, это самая востребованная система для охранных и
                             мониторинговых целей. Развитие систем видеонаблюдения позволяет открывать новые возможности

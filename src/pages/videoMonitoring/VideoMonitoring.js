@@ -12,10 +12,11 @@ import DisplayNavbar from "../navbar/DisplayNavbar";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import NavbarGeneralSix from "../navbar/NavbarGeneralSix";
 import IptvPartFour from "../IPTV/IPTVPartFour";
+import AOS from "aos";
 
 
 const VideoMonitoring = () => {
-
+    AOS.init();
     useEffect(()=>{
         window.scrollTo(0, 0)
     }, [])

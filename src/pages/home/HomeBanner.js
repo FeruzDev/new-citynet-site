@@ -12,16 +12,27 @@ const HomeBanner = () => {
 
                 <div className="row">
 
-                    <div className="col-md-6">
+                    <div className="col-md-6 " data-aos="flip-up"
+                         data-aos-duration="1500">
                         <NavLink to="/"><img src="/images/logo12.png" alt=""/></NavLink>
                     </div>
                     <div className="col-md-6">
                       <div className="menus">
-                          <Link   to="/main-provider">Интернет</Link>
-                          <a href="#services">Услуги</a>
-                          <a href="#news">Новости</a>
-                          <Link  to="/contact">Контакты</Link>
-                          <a href="#company" >Личный кабинет</a>
+                          <Link  data-aos="fade-down"
+                                 data-aos-easing="linear"
+                                 data-aos-duration="1000"  data-aos-delay="300" to="/main-provider">Интернет</Link>
+                          <a  data-aos="fade-down"
+                              data-aos-easing="linear"
+                              data-aos-duration="1000" data-aos-delay="250" href="#services">Услуги</a>
+                          <a  data-aos="fade-down"
+                              data-aos-easing="linear"
+                              data-aos-duration="1000" data-aos-delay="200" href="#news">Новости</a>
+                          <Link  data-aos="fade-down"
+                                 data-aos-easing="linear"
+                                 data-aos-duration="1000" data-aos-delay="150" to="/contact">Контакты</Link>
+                          <a  data-aos="fade-down"
+                              data-aos-easing="linear"
+                              data-aos-duration="1000" data-aos-delay="100" href="#company" >Личный кабинет</a>
                       </div>
                     </div>
                 </div>
@@ -170,28 +181,28 @@ const HomeBanner = () => {
 
 
             <div className="chooses d-flex">
-                <Link className="smallChild font-family-medium" to="/Installation">
+                <Link  data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom" className="smallChild font-family-medium" to="/Installation">
                     <span className="text-center mt-4">
                       проектирование
                             монтаж
                     </span>
                 </Link>
-                <Link to="/video-monitoring" className="mediumChild font-family-medium">
+                <Link  data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom" to="/video-monitoring" className="mediumChild font-family-medium">
                     <span>
                          Видеонаблюдение
                     </span>
                 </Link>
-                <Link to="/home-internet" className="bigChild font-family-medium">
+                <Link  data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" to="/home-internet" className="bigChild font-family-medium">
                     <span>
                         Интернет
                     </span>
                 </Link>
-                <Link to="/itequipment" className="mediumChild font-family-medium">
+                <Link  data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom" to="/itequipment" className="mediumChild font-family-medium">
                     <span>
                         IT оборудование
                     </span>
                 </Link>
-                <Link className="smallChild font-family-medium" to="/ItDevelopment">
+                <Link  data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom" className="smallChild font-family-medium" to="/ItDevelopment">
                     <span>
                         IT разработка
                     </span>
@@ -199,7 +210,8 @@ const HomeBanner = () => {
 
             </div>
 
-            <div className="contact-footer-home">
+            <div className="contact-footer-home" data-aos="fade-up"
+                 data-aos-duration="1500">
                 <div className="sot-set-list">
                     <a href="https://www.instagram.com/citynet.uz/" target="_blank" ><img src="/images/icon/instagramlogo1.png" alt=""/></a>
                     <a href="https://t.me/citynet_uzb" target="_blank"><img src="/images/icon/telegram1.png" alt=""/></a>

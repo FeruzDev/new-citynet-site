@@ -22,25 +22,25 @@ const IptelephonyPartFive = () => {
                     </div>
                 </div>
                 <div className="row position-relative">
-                    <div className="box"><img src="images/PNG/vd2.png" alt=""/> <h6 className="font-family-medium">Видеонаблюдение</h6></div>
-                    <div className="box"><img src="images/PNG/sc2.png" alt=""/><h6 className="font-family-medium">  Системы конференцсвязи </h6></div>
-                    <div className="box"><img src="images/PNG/ps2.png" alt=""/><h6 className="font-family-medium">  	Охранная и пожарная сигнализация </h6></div>
-                    <div className="box"><img src="images/PNG/sk2.png" alt=""/><h6 className="font-family-medium">  Система контроля и управления доступом </h6></div>
-                    <div className="box"><img src="images/PNG/ipd2.png" alt=""/><h6 className="font-family-medium"> 	IP-домофония  </h6></div>
-                    <div className="box"><img src="images/PNG/set2.png" alt=""/><h6 className="font-family-medium"> Структурирование кабельных сетей </h6></div>
-                    <div className="box"><img src="images/PNG/ipt2.png" alt=""/><h6 className="font-family-medium">  	IP-телефония </h6></div>
-                    <div className="box"><img src="images/PNG/eek2.png" alt=""/><h6 className="font-family-medium">  Электромонтажные работы</h6></div>
-                    <div className="box"><img src="images/PNG/tv2.png" alt=""/><h6 className="font-family-medium">  	Телевидение   </h6></div>
-                    <div className="box"><img src="images/PNG/bm2.png" alt=""/><h6 className="font-family-medium">  	BMS и RMS</h6></div>
-                    <div className="box"><img src="images/PNG/web2.png" alt=""/><h6 className="font-family-medium">  Разработка веб-приложений </h6></div>
-                    <div className="box"><img src="images/PNG/sb2.png" alt=""/><h6 className="font-family-medium">   	Автоматическая парковка </h6></div>
-                    <div className="box"><img src="images/PNG/net2.png" alt=""/><h6 className="font-family-medium "> 	Интернет-провайдер </h6></div>
-                    <div className="box"><img src="images/PNG/pt2.png" alt=""/><h6 className="font-family-medium">  	Противопожарная обработка </h6></div>
-                    <div className="box"><img src="images/PNG/rv2.png" alt=""/><h6 className="font-family-medium">  	Пожаротушение </h6></div>
-                    <div className="box"><img src="images/PNG/po2.png" alt=""/><h6 className="font-family-medium">   Проектирование	 </h6></div>
-                    <div className="box"><img src="images/PNG/dw2.png" alt=""/><h6 className="font-family-medium">  	Контроль качества </h6></div>
-                    <div className="box"><img src="images/PNG/cq2.png" alt=""/><h6 className="font-family-medium">  	Экранные дисплеи </h6></div>
-                    <div className="box"><img src="images/PNG/ec2.png" alt=""/><h6 className="font-family-medium">   	Речевое оповещение</h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/vd2.png" alt=""/> <h6 className="font-family-medium">Видеонаблюдение</h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/sc2.png" alt=""/><h6 className="font-family-medium">  Системы конференцсвязи </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/ps2.png" alt=""/><h6 className="font-family-medium">  	Охранная и пожарная сигнализация </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/sk2.png" alt=""/><h6 className="font-family-medium">  Система контроля и управления доступом </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/ipd2.png" alt=""/><h6 className="font-family-medium"> 	IP-домофония  </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/set2.png" alt=""/><h6 className="font-family-medium"> Структурирование кабельных сетей </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/ipt2.png" alt=""/><h6 className="font-family-medium">  	IP-телефония </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/eek2.png" alt=""/><h6 className="font-family-medium">  Электромонтажные работы</h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/tv2.png" alt=""/><h6 className="font-family-medium">  	Телевидение   </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/bm2.png" alt=""/><h6 className="font-family-medium">  	BMS и RMS</h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/web2.png" alt=""/><h6 className="font-family-medium">  Разработка веб-приложений </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/sb2.png" alt=""/><h6 className="font-family-medium">   	Автоматическая парковка </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/net2.png" alt=""/><h6 className="font-family-medium "> 	Интернет-провайдер </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/pt2.png" alt=""/><h6 className="font-family-medium">  	Противопожарная обработка </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/rv2.png" alt=""/><h6 className="font-family-medium">  	Пожаротушение </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/po2.png" alt=""/><h6 className="font-family-medium">   Проектирование	 </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/dw2.png" alt=""/><h6 className="font-family-medium">  	Контроль качества </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/cq2.png" alt=""/><h6 className="font-family-medium">  	Экранные дисплеи </h6></div>
+                    <div className="box"  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><img src="images/PNG/ec2.png" alt=""/><h6 className="font-family-medium">   	Речевое оповещение</h6></div>
 
                 </div>
                 <div className="line25">

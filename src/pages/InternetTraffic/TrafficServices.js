@@ -39,7 +39,7 @@ const TrafficServices = () => {
                                         <img src={item.get_img_url} alt=""/>
                                     </div>
                                     <h4   className="font-family-medium">{item.title} </h4>
-                                    <p>{item.content}</p>
+                                    <p>{item.content.length > 50 ? item.content.slice(0, 50) + "...": item.content }</p>
                                 </div>
                             ))
                         }

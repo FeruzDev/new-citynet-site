@@ -20,9 +20,16 @@ const BannerCarousel = () => {
                     <div className="row banner-title">
 
 
-                        <h1>
+                        <h1 data-aos="fade-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                        >
                             «CityNet» - универсальный оператор связи для бизнеса </h1>
-                        <p>
+                        <p data-aos="fade-left"
+                           data-aos-easing="linear"
+                           data-aos-duration="1500"
+                           data-aos-delay="300"
+                        >
                             Компания помогает оперативно провести Интернет сетевым и государственным компаниям,
                             индивидуальным предпринимателям и частным лицам.
                         </p>

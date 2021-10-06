@@ -16,24 +16,34 @@ const NavbarHome = () => {
                     <ul className="navbar-nav ">
 
                         <li className="nav-item active">
-                            <Link  className="nav-link" to="/all-news">Новости</Link>
+                            <Link  className="nav-link" data-aos="fade-down"
+                                   data-aos-easing="linear"
+                                   data-aos-duration="1000" to="/all-news">Новости</Link>
 
                         </li>
 
 
                         <li className="nav-item active">
-                            <Link  className="nav-link" to="/main-provider">Интернет</Link>
+                            <Link  className="nav-link"  data-aos="fade-down"
+                                   data-aos-easing="linear"
+                                   data-aos-duration="1000" to="/main-provider">Интернет</Link>
 
                         </li>
 
                         <li className="nav-item active">
-                            <Link  className="nav-link" to="/itequipment">  IT оборудование</Link>
+                            <Link  className="nav-link"
+                                   data-aos="fade-down"
+                                   data-aos-easing="linear"
+                                   data-aos-duration="1000" to="/itequipment">  IT оборудование</Link>
 
                         </li>
 
 
                         <li className="nav-item active">
-                            <Link  className="nav-link" to="/ItDevelopment">IT разработка</Link>
+                            <Link  className="nav-link"
+                                   data-aos="fade-down"
+                                   data-aos-easing="linear"
+                                   data-aos-duration="1000" to="/ItDevelopment">IT разработка</Link>
 
                         </li>
 
@@ -41,7 +51,10 @@ const NavbarHome = () => {
 
 
                         <li className="nav-item active">
-                            <Link  className="nav-link" to="/contact">Контакты</Link>
+                            <Link  className="nav-link"
+                                   data-aos="fade-down"
+                                   data-aos-easing="linear"
+                                   data-aos-duration="1000" to="/contact">Контакты</Link>
 
                         </li>
                         <li className="nav-item">
