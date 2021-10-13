@@ -32,7 +32,7 @@ const HomeBanner = () => {
                                  data-aos-duration="1000" data-aos-delay="150" to="/contact">Контакты</Link>
                           <a  data-aos="fade-down"
                               data-aos-easing="linear"
-                              data-aos-duration="1000" data-aos-delay="100" href="#company" >Личный кабинет</a>
+                              data-aos-duration="1000" data-aos-delay="100"  href="https://cab.citynet.uz/" target="_blank">Личный кабинет</a>
                       </div>
                     </div>
                 </div>

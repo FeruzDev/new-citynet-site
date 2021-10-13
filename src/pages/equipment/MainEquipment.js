@@ -6,6 +6,7 @@ import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import axios from "axios";
 import {API_PATH_RU} from "../../tools/constants";
 import Slider from "react-slick";
+import {Link} from "react-router-dom";
 
 
 
@@ -91,7 +92,7 @@ const MainEquipment = (props) => {
                                     <h3  className="font-family-medium">{product.price} сум</h3>
                                     <span><img src="images/icon/stock .png" alt=""/></span>
                                     <p>Запросить дилерскую цену</p>
-                                    <button type="button" className="btn btn-primary"><span>Инфо</span></button>
+                                    <Link to="/contact" type="button" className="btn btn-primary"><span>заказать</span></Link>
                                 </div>
                             </div>
                             <div className="equipment-footer">
@@ -109,33 +110,16 @@ const MainEquipment = (props) => {
                                 </ul>
 
                                 <div className="tab-content" id="myTabContent">
-                                    <div className="tab-pane fade show active" id="home" role="tabpanel"
-                                         aria-labelledby="home-tab">
+                                    <div className="tab-pane pt-3 fade show active" id="home" role="tabpanel"
+                                         aria-labelledby="home-tab ">
 
-                                        <h4 className="mt-5">ОПИСАНИЕ ITC Audio T-6708 Сетевой аудио адаптер, без встроенного усилителя</h4>
-                                        <p className="mt-4">IP акустическая система используется для приема цифровых (TCP/IP) аудио сигналов с целью
-                                            усиления и дальнейшего воспроизведения
-                                        </p>
-                                        <p className="mt-4">
-                                            Используется для построения систем автоматического аварийного оповещения и музыкальной трансляции на базе дополнительного оборудования
-                                        </p>
-                                        <p className="mt-4">
-                                            Работает в составе IP системы при включенном сервере (компьютере). Номер акустической системы настраивается с помощью программного обеспечения ITC T-6700R
-                                        </p>
+
+                                        <p dangerouslySetInnerHTML={{__html: product.main_content}}></p>
                                     </div>
-                                    <div className="tab-pane fade" id="profile" role="tabpanel"
+                                    <div className="tab-pane pt-3 fade" id="profile" role="tabpanel"
                                          aria-labelledby="profile-tab">
-                                        <h4 className="mt-5">ОПИСАНИЕ ITC Audio T-6708 Сетевой аудио адаптер, без встроенного усилителя</h4>
+                                        <p dangerouslySetInnerHTML={{__html: product.secondary_content}}></p>
 
-                                        <p className="mt-4">IP акустическая система используется для приема цифровых (TCP/IP) аудио сигналов с целью
-                                            усиления и дальнейшего воспроизведения
-                                        </p>
-                                        <p className="mt-4">
-                                            Используется для построения систем автоматического аварийного оповещения и музыкальной трансляции на базе дополнительного оборудования
-                                        </p>
-                                        <p className="mt-4">
-                                            Работает в составе IP системы при включенном сервере (компьютере). Номер акустической системы настраивается с помощью программного обеспечения ITC T-6700R
-                                        </p>
                                     </div>
 
                                 </div>

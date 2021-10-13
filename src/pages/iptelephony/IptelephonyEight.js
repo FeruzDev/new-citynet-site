@@ -32,8 +32,9 @@ const IptelephonyEight = () => {
                     <div className="col-md-3 col-sm-6 ">
                         <h4  className="font-family-medium">Локация</h4>
                         <p>
-                            Ташкент, Чилонзор  <br/>
-                            Улица Сеула, дом 14
+                            город Ташкент, Шайхантахурский р-н,<br/>
+                            ул. Кичик Халка Йули, 2А.
+
 
                         </p>
                         <p>

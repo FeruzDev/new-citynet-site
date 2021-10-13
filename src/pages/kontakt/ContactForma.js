@@ -62,21 +62,21 @@ const ContactForma = () => {
                 </div>
                 <div className="container ">
                     <div className="Contact-forma-child">
-                        <div className="row">
+                        <form className="row">
                             <div className=" col-md-6 ">
                                 <h4 className="font-family-medium">Свяжитесь с нами</h4>
                                 <div className="row">
                                     <div className="col-md-12 w-100">
-                                        <input type="text" className="form-control" id="fullNameC" placeholder="Полное имя"/>
+                                        <input required type="text" className="form-control" id="fullNameC" placeholder="Полное имя"/>
 
                                     </div>
                                     <div className="col-md-12">
-                                        <input type="email" className="form-control "  id="emailC" placeholder="Почта"/>
-                                        <input type="text" className="form-control" id="numberC" placeholder="Контакный телефон"/>
+                                        <input required  type="email" className="form-control "  id="emailC" placeholder="Почта"/>
+                                        <input required type="text" className="form-control" id="numberC" placeholder="Контакный телефон"/>
                                     </div>
-                                    <input type="text" className="form-control m-3 text"  id="messageC"placeholder="Сообшения"/>
+                                    <input type="text"  required  className="form-control m-3 text"  id="messageC"placeholder="Сообшения"/>
                                     <div className="third-arrow ml-3">
-                                        <button onClick={send}  className="font-family-medium"> <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                        <button onClick={() => send()}  className="font-family-medium"> <img className="arrow-img-white" src="/images/icon/Arrow4.png"
                                                            alt=""/>Отправить заявку</button>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@ const ContactForma = () => {
                                         ул. Кичик халка йули, 2</a>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                     <iframe className="gmap_iframe" frameBorder="0" scrolling="no" marginHeight="0"
                             marginWidth="0"

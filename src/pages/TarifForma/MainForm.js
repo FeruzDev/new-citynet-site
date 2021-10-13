@@ -140,10 +140,10 @@ const MainForm = (props) => {
                             <div className=" col-md-6  ">
                                 <h4 className="font-family-medium">Заявка на подключение</h4>
                                 <p>Заполните заявку и наши специалисты свяжутся с Вами в течение 24 часов!</p>
-                                <div className="row">
+                                <form className="row">
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <select className="form-control"  id="Cityn" onChange={e => selectCity(e.target.value)}  >
+                                            <select required  className="form-control"  id="Cityn" onChange={e => selectCity(e.target.value)}  >
                                                 <option value="" disabled selected>Ваш город</option>
                                                 {
                                                     city.map(item => (
@@ -158,7 +158,7 @@ const MainForm = (props) => {
 
 
 
-                                        <select id="Streetn" id="Districkn" className="form-control" onChange={e => selectHome(e.target.value)}    >
+                                        <select  required id="Streetn" id="Districkn" className="form-control" onChange={e => selectHome(e.target.value)}    >
 
                                             <option value="" disabled selected>Улица</option>
                                             {
@@ -174,7 +174,7 @@ const MainForm = (props) => {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <select  id="Districkn" className="form-control" onChange={e => selectDistrick(e.target.value)}   >
+                                            <select  required id="Districkn" className="form-control" onChange={e => selectDistrick(e.target.value)}   >
                                                 <option value="" disabled selected>Ваш район</option>
                                                 {
                                                 district.map(item => (
@@ -193,7 +193,7 @@ const MainForm = (props) => {
                                                 {/*         className="form-control"*/}
                                                 {/*         id="Homen" placeholder="Дом"/>*/}
 
-                                                <select  id="Homen" onChange={e => selectHomeNumber(e.target.value)} className="form-control"   >
+                                                <select required  id="Homen" onChange={e => selectHomeNumber(e.target.value)} className="form-control"   >
                                                     <option value="" disabled selected>Дом</option>
                                                     {
                                                     home.map(item => (
@@ -208,18 +208,18 @@ const MainForm = (props) => {
 
 
                                             </div>
-                                            <div className="col-md-6"><input type="number" id="Flatn" className="form-control pr-0"
+                                            <div className="col-md-6"><input  required type="number" id="Flatn" className="form-control pr-0"
                                                                              placeholder="Квартира"/></div>
                                         </div>
 
                                     </div>
-                                    <input type="text" id="FullNamen" className="form-control m-3" placeholder="Полное имя"/>
-                                    <input type="number" className="form-control mx-3" id="Phonen" placeholder="Контакный телефон"/>
+                                    <input required type="text" id="FullNamen" className="form-control m-3" placeholder="Полное имя"/>
+                                    <input required type="number" className="form-control mx-3" id="Phonen" placeholder="Контакный телефон"/>
                                     <div className="third-arrow ml-3">
-                                        <button  onClick={send} className="font-family-medium"> <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                        <button  onClick={() =>send()} className="font-family-medium"> <img className="arrow-img-white" src="/images/icon/Arrow4.png"
                                                            alt=""/>Отправить заявку</button>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>

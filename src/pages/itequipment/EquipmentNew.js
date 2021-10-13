@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Slider from "react-slick";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import axios from "axios";
 import {API_PATH_RU} from "../../tools/constants";
 
@@ -81,13 +81,16 @@ const EquipmentNew = () => {
                                         <img src="images/icon/stock .png" alt=""/>
                                         <span><img src={item.images[0]?.get_img_url} alt=""/></span>
                                         <h4>{item.category_name}</h4>
-                                        <p>{item.main_content}
+                                        <p dangerouslySetInnerHTML={{__html: item.main_content.length > 50 ? item.main_content.slice(0, 50) : item.main_content }}>
                                         </p>
 
                                         <h3  className="font-family-medium"><del></del><br/>{item.price}</h3>
-                                        <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
-                                            <button type="button" className="btn btn-primary   font-family-medium" >Подробнее</button>
-                                        </NavLink></div>                        </div>
+                                        <div className="d-flex justify-content-center mt-3">
+
+                                            <Link  to={"/itequipment/equipment/" + item.id} className="btn btn-primary font-family-medium">Подробнее</Link>
+
+
+                                        </div>                        </div>
                                 </div>
                             </div>
                         ))

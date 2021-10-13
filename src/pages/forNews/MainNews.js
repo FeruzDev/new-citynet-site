@@ -41,38 +41,20 @@ const MainNews = () => {
                                 <img src={item.get_img_url} alt=""/>
 
                                 <h3 className="font-family-medium">{item.title}</h3>
-                                <p>{item.content.length > 60 ? item.content.slice(0, 60) + "  " : item.content + "  "  }<Link  to={"/all-news/news-detail/" + item.id}>Читать дальше</Link></p>
+
+
+
+
+                                    <p className="d-inline mb-0 " dangerouslySetInnerHTML={{__html: item.content.length > 70 ? item.content.slice(0, 70) + "  " : item.content + "  "   }} />
+                                <Link  to={"/all-news/news-detail/" + item.id}>Читать дальше</Link>
+
+
+
                             </div>
 
 
                         ))
                     }
-
-
-                    {/*<div className="col-md-4">*/}
-                    {/*    <img src="/images/e3.png" alt=""/>*/}
-
-                    {/*    <h3 className="font-family-medium">CityNet предлагает решения в области IT</h3>*/}
-                    {/*    <p>Компания CityNet предоставит современное и эффективное решение в IT-сфере, а также*/}
-                    {/*        разработает и внедрит его с учетом специфики проекта. <Link href="#!">Читать дальше</Link></p>*/}
-                    {/*</div>*/}
-
-
-                    {/*<div className="col-md-4">*/}
-                    {/*    <img src="/images/e2.png" alt=""/>*/}
-
-                    {/*    <h3 className="font-family-medium">Cервисный робот для бизнеса — Promobot V4</h3>*/}
-                    {/*    <p>Компания CityNet представляет сервисный робот для бизнеса — Promobot V4. <Link href="#!">Читать дальше</Link></p>*/}
-                    {/*</div>*/}
-
-
-                    {/*<div className="col-md-4">*/}
-                    {/*    <img src="/images/e1.png" alt=""/>*/}
-
-                    {/*    <h3 className="font-family-medium">Системы контроля и управления доступом (СКУД)</h3>*/}
-                    {/*    <p>СКУД предназначена для автоматического гибкого управления доступом людей в здания и помещения*/}
-                    {/*        организации, въездом и выездом автотранспорта на охраняемую территорию <Link href="#!">Читать дальше</Link></p>*/}
-                    {/*</div>*/}
 
 
                 </div>

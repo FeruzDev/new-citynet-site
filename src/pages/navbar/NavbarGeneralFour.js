@@ -51,7 +51,7 @@ const NavbarGeneralFour = (props) => {
                         </div>
                         <div className="Personal-Area">
                             <NavLink className="mr-4" to="/contact">Контакты</NavLink>
-                            <NavLink to="/ ">Личный кабинет</NavLink>
+                            <a href="https://cab.citynet.uz/" target="_blank">Личный кабинет</a>
 
                         </div>
                     </div>

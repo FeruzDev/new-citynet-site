@@ -53,7 +53,8 @@ const MainNewForDetail = () => {
                                 <img src={item.get_img_url} alt=""/>
 
                                 <h3 className="font-family-medium">{item.title}</h3>
-                                <p> {item.content.length > 60  ? item.content.slice(0, 60) + "..." : item.content } <Link className="ml-2"  to={"/all-news/news-detail/" + item.id}>Читать дальше</Link></p>
+                                <p className="d-inline" dangerouslySetInnerHTML={{__html: item.content.length > 60  ? item.content.slice(0, 60) + "..." : item.content }}></p>
+                                <Link className="ml-2"  to={"/all-news/news-detail/" + item.id}>Читать дальше</Link>
                             </div>
                         ))
                     }

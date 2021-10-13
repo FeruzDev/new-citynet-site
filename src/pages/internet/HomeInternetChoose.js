@@ -30,12 +30,15 @@ const HomeInternetChoose = () => {
                                 to="/contact">Контакты</Link>
                             <a        data-aos="fade-down"
                          data-aos-duration="1000"
-
+                                      href="https://cab.citynet.uz/" target="_blank"
                             >Личный кабинет</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
 
             <div className="chooses d-flex">
                 <Link         data-aos="fade-left"

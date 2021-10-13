@@ -49,13 +49,13 @@ export default class SimpleSlider extends Component {
                     </div>
                     <Slider {...settings}>
                         <div>
-                            <img src="images/icon/iptcarousel.png" alt=""/>
+                            <img src="images/s1.jpg" alt=""/>
                         </div>
                         <div>
-                            <img src="images/icon/iptcarousel.png" alt=""/>
+                            <img src="images/s2.jpg" alt=""/>
                         </div>
                         <div>
-                            <img src="images/icon/iptcarousel.png" alt=""/>
+                            <img src="images/s3.jpg" alt=""/>
                         </div>
                     </Slider>
                 </div>

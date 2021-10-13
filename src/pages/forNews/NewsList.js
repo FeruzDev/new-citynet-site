@@ -41,9 +41,10 @@ const NewsList = () => {
 
 
 
-                                    <p>  {item.content.length > 250 ? item.content.slice(0, 250) + "..." : item.content}<Link className="ml-2"  to={"/all-news/news-detail/" + item.id}>Читать дальше</Link>
+                                    <p  className="d-inline" dangerouslySetInnerHTML={{__html :  item.content.length > 90 ? item.content.slice(0, 90) + "..." : item.content}}>
                                     </p>
 
+                                    <Link className="ml-2 d-inline"  to={"/all-news/news-detail/" + item.id}>Читать дальше</Link>
 
                                 </div>
 

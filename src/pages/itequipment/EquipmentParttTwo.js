@@ -77,8 +77,8 @@ const EquipmentParttTwo = (props) => {
                                                      <div>
                                                          <button >{item.title}</button>
                                                          <div className="btn-category-list  ">
-                                                             <span>{item.children?.map(item2 => (
-                                                                 <button  onClick={ (e) => getProduct(item2.id)} >  {item2.title } </button>
+                                                             <span className="pl-3 d-block">{item.children?.map(item2 => (
+                                                                 <button   onClick={ (e) => getProduct(item2.id)} >  {item2.title } </button>
                                                              ))}</span>
                                                          </div>
                                                      </div>
