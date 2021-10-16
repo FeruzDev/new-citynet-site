@@ -29,7 +29,7 @@ const BannerCarousel = () => {
                             обеспечения, предназначенного для визуального контроля за территорией, действиями и
                             ситуацией. </p>
                         <div className="third-arrow">
-                            <NavLink  className="font-family-medium" to="/equipment">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                            <NavLink  className="font-family-medium" to="/video-monitoring">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
                                                     alt=""/></NavLink>
                         </div>
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import NavbarGeneral from "../navbar/NavbarGeneral";
 import InstallationPartOne from "../Installation/InstallationPartOne";
 import DevelopmentPartOne from "./DevelopmentPartOne";
@@ -12,6 +12,9 @@ import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import NavbarGeneralFive from "../navbar/NavbarGeneralFive";
 
 const ItDevelopment = () => {
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
             <NavbarGeneralFive/>

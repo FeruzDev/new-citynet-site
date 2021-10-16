@@ -111,9 +111,7 @@ option[value=""][disabled] {
     .slick-prev, .slick-next::before {
       display: none;
     }
-    .slick-list{
-      border-radius: 18px;
-    }
+
   }
 
   margin: 60px auto;
@@ -132,6 +130,7 @@ option[value=""][disabled] {
     background-color: transparent !important;
     border: 1px solid transparent !important;
 
+    height: 100%;
   }
 
   .slick-dots {
@@ -169,10 +168,15 @@ option[value=""][disabled] {
     height: 440px;
 
     position: relative;
+    border-radius: 18px;
+
+    overflow: hidden;
 
     img {
       object-fit: none !important;
 
+      height: 100%;
+      width: 100%;
     }
 
     .banner-title {
@@ -188,53 +192,20 @@ option[value=""][disabled] {
 
           font-size: 36px;
         line-height: 42px;
-        width: 50%;
+        width: 60%;
         color: white;
       }
 
       p {
         font-weight: normal;
         font-size: 18px;
-        line-height: 21px;;
-        width: 42%;
+        margin-top: 10px;
+        line-height: 26px;;
+        width: 50%;
         height: 63px;
         color: #FFFFFF;
       }
 
-      .third-arrow {
-
-        margin-top: 51px;
-
-        a {
-          background: #0086E7;
-          border-radius: 8px;
-          width: 252px;
-          height: 87px;
-
-          padding-left: 24px;
-          position: relative;
-          padding-top: 50px;
-          color: #FFFFFF;
-
-
-          padding-bottom: 19px;
-          display: flex;
-          justify-content: space-between;
-
-          align-items: center;
-          &:hover {
-            text-decoration: none;
-          }
-
-          img {
-
-
-
-            margin-right: 24px;
-
-          }
-        }
-      }
 
 
     }
@@ -1710,46 +1681,50 @@ nav {
           line-height: 24px;
           color: #222222;
         }
-      }
 
-      .third-arrow {
-        background: #0086E7;
-        border-radius: 8px;
-        width: 252px;
-        height: 96px;
-        padding: 0;
-        padding-bottom: 16px;
-        padding-right: 24px;
-        padding-left: 24px;
-        position: relative;
-        left: 780px;
-        bottom: 400px;
-
-        a {
-          padding: 0;
-          margin: 0;
-          color: #fff;
-          padding-right: 24px;
-          position: relative;
-          padding-top: 49px;
+        .third-arrow {
           background: #0086E7;
           border-radius: 8px;
           width: 252px;
           height: 96px;
-          display: flex;
-          justify-content: space-between;;
+          padding: 0;
+          padding-bottom: 16px;
+          padding-right: 24px;
+          padding-left: 24px;
+          position: absolute;
+          //left: 780px;
+          //bottom: 430px;
 
-          &:hover {
-            text-decoration: none;
-          }
+          bottom:  50px;
+          right: -50px;
+          a {
+            padding: 0;
+            margin: 0;
+            color: #fff;
+            padding-right: 24px;
+            position: relative;
+            padding-top: 49px;
+            background: #0086E7;
+            border-radius: 8px;
+            width: 252px;
+            height: 96px;
+            display: flex;
+            justify-content: space-between;;
 
-          img {
-            position: absolute;
-            right: 30px;
-            bottom: 25px;
+            &:hover {
+              text-decoration: none;
+            }
+
+            img {
+              position: absolute;
+              right: 30px;
+              width: auto;
+              bottom: 25px;
+            }
           }
         }
       }
+
 
 
     }
@@ -3521,7 +3496,7 @@ button.slick-arrow.slick-next {
             width: 100%;
             transition: 1.5s;
 
-            height: 384px;
+            //height: 384px;
 
             &:hover {
               transform: scale(1.2);
@@ -4530,7 +4505,9 @@ button.slick-arrow.slick-next {
   .form-back {
     display: flex;
 
-    a {
+    button {
+      border: none;
+      background-color: transparent;
       display: flex;
       align-items: center;
       margin: 50px 0;
@@ -8959,8 +8936,9 @@ hr {
         margin-top: 48px;
         img{
 
-          width: 188px;
-          height: 82px;
+          width: 100%;
+          //height: 82px;
+          border-radius: 12px;
         }
         h4{
           font-weight: normal;

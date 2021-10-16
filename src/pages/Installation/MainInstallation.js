@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import NavbarGeneral from "../navbar/NavbarGeneral";
 import IPTVPartOne from "../IPTV/IPTVPartOne";
 import InstallationPartOne from "./InstallationPartOne";
@@ -13,6 +13,9 @@ import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import NavbarGeneralTwo from "../navbar/NavbarGeneralTwo";
 
 const MainInstallation = () => {
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
             <NavbarGeneralTwo/>

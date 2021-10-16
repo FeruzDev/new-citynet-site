@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import {API_PATH_RU} from "../../tools/constants";
+import {Link} from "react-router-dom";
 
 const PriceCards = () => {
 
@@ -58,10 +59,10 @@ const PriceCards = () => {
 
 
                                     <div className="third-arrow">
-                                        <a   className='font-family-medium' href="#!">
+                                        <Link to="/form"   className='font-family-medium' href="#!">
                                             Подключить
                                             <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/>
-                                        </a>
+                                        </Link>
 
                                     </div>
                                 </div>

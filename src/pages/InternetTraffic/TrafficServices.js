@@ -27,7 +27,7 @@ const TrafficServices = () => {
         <>
             <div className="traffic-services position-relative">
                 <div className="traffic-services-child container">
-                    <h3  className="font-family-medium">Популярные услуги</h3>
+                    <h3  className="font-family-medium">Новости</h3>
                     <div className="row">
 
 

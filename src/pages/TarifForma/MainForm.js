@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import NavbarGeneral from "../navbar/NavbarGeneral";
-import {NavLink} from "react-router-dom";
+import {NavLink, useHistory} from "react-router-dom";
 import DisplayNavbar from "../navbar/DisplayNavbar";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import NavbarGeneralEight from "../navbar/NavbarGeneralEight";
@@ -90,6 +90,9 @@ const MainForm = (props) => {
         console.log(newArr)
 
     }
+
+    let history = useHistory();
+
 
     const send =(value)=>{
 
@@ -224,10 +227,10 @@ const MainForm = (props) => {
                         </div>
                     </div>
                     <div className="form-back">
-                        <NavLink to="mainInternet/traffic" >
+                        <button onClick={() => history.goBack()} to="mainInternet/traffic" >
                             <img src="images/icon/formicon.png" alt=""/>
                             <p>Вернуться назад к выбору тарифа</p>
-                        </NavLink>
+                        </button>
                     </div>
                 </div>
             </div>

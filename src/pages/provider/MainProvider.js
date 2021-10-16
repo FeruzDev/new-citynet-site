@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import NavbarProvider from "./NavbarProvider";
 import BannerCarousel from "./BannerCarousel";
 import CategoryProvider from "./CategoryProvider";
@@ -21,6 +21,9 @@ import SubMenuTwo from "./SubMenuTwo";
 
 const MainProvider = () => {
 
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div className="provider-hidden">

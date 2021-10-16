@@ -15,9 +15,9 @@ const IptelephonyEight = () => {
                     </div>
                     <div className="col-sm-6 col-md-3 ">
                         <h4  className="font-family-medium">Направление</h4>
-                        <NavLink to="/home-internet">Интернет</NavLink>
+                        <NavLink to="/main-provider">Интернет</NavLink>
                         <NavLink to="/video-monitoring">Видеонаблюдение</NavLink>
-                        <NavLink to="/main-provider">Проектирование</NavLink>
+                        <NavLink to="/main-iptv-proekt">Проектирование</NavLink>
                         <NavLink  to="/Installation">Монтаж</NavLink>
                         <NavLink  to="/itequipment">IT оборудование</NavLink>
                         <NavLink  to="/ItDevelopment">IT разработка</NavLink>

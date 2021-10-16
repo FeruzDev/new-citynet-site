@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const TelephonyCardOne = () => {
     return (
@@ -15,7 +16,7 @@ const TelephonyCardOne = () => {
                                 Система IP телефонии — это, прежде всего гибкий инструмент для обеспечения высокой доступности каждого сотрудника компании. Быстрота и легкость
                                 модернизации, увеличения производительной мощности, основные важнейшие свойства нашего решения. </p>
                                 <div className="third-arrow">
-                                    <a href="#!">Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></a>
+                                    <Link to="/form"  >Подключить <img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></Link>
                                 </div>
                             </div>
                         </div>
