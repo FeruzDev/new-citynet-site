@@ -49,7 +49,7 @@ const IpTelephonySeven = () => {
 
                     partners.slice(0, 4).map(item =>(
                             <div className="row">
-                                <a href={item.link}> <img src={item.get_img_url} alt=""/></a>
+                                <a href={item.link} className="d-flex align-items-center"> <img src={item.get_img_url} alt=""/></a>
                             </div>
 
 
@@ -64,7 +64,7 @@ const IpTelephonySeven = () => {
 
                     partners.slice(4, 8).map(item =>(
                             <div className="row">
-                                <a href={item.link}> <img src={item.get_img_url} alt=""/></a>
+                                <a href={item.link} className="d-flex align-items-center"> <img src={item.get_img_url} alt=""/></a>
 
                             </div>
 

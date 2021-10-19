@@ -28,10 +28,6 @@ const BannerCarousel = () => {
                         <p>Видеонаблюдение – это система, включающая в себя сочетание оборудования и программного
                             обеспечения, предназначенного для визуального контроля за территорией, действиями и
                             ситуацией. </p>
-                        <div className="third-arrow">
-                            <NavLink  className="font-family-medium" to="/video-monitoring">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
-                                                    alt=""/></NavLink>
-                        </div>
 
 
                     </div>
@@ -51,10 +47,6 @@ const BannerCarousel = () => {
                         <p>Видеонаблюдение – это система, включающая в себя сочетание оборудования и программного
                             обеспечения, предназначенного для визуального контроля за территорией, действиями и
                             ситуацией. </p>
-                        <div className="third-arrow">
-                            <NavLink to="/equipment">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
-                                                    alt=""/></NavLink>
-                        </div>
 
 
                     </div>
@@ -73,10 +65,7 @@ const BannerCarousel = () => {
                         <p>Видеонаблюдение – это система, включающая в себя сочетание оборудования и программного
                             обеспечения, предназначенного для визуального контроля за территорией, действиями и
                             ситуацией. </p>
-                        <div className="third-arrow">
-                            <NavLink to="/equipment">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
-                                                    alt=""/></NavLink>
-                        </div>
+
 
 
                     </div>
@@ -95,10 +84,7 @@ const BannerCarousel = () => {
                         <p>Видеонаблюдение – это система, включающая в себя сочетание оборудования и программного
                             обеспечения, предназначенного для визуального контроля за территорией, действиями и
                             ситуацией. </p>
-                        <div className="third-arrow">
-                            <NavLink to="/equipment">Подробнее <img className="arrow-img-white" src="/images/icon/Arrow4.png"
-                                                    alt=""/></NavLink>
-                        </div>
+
 
 
                     </div>

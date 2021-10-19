@@ -78,7 +78,7 @@ const TvCarousel = () => {
 
                     {
                         popChannel.map(item => (
-                            <div><div className="box"><img src={item.image} alt=""/></div></div>
+                            <div><div className="box"><img src={item.get_img_url} alt=""/></div></div>
 
                         ))
                     }

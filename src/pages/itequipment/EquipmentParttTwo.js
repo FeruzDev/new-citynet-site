@@ -58,6 +58,14 @@ const EquipmentParttTwo = (props) => {
 
         console.log(allProduct)
     }
+
+    const [ch, setCh] = useState(null)
+    const openChild =(data)=>{
+
+        console.log(data.id)
+        console.log(data.children)
+        setCh(data.id)
+    }
     return (
         <div className="equipment-part-two">
                             <div id="catalog" className="container equipment-part-two-child">
@@ -66,28 +74,22 @@ const EquipmentParttTwo = (props) => {
                                          <div className="saidbar">
                                              <h4  className="font-family-medium">Каталог товаров</h4>
 
-
-
-
-
-
                                              {
                                                  category.map(item =>(
 
                                                      <div>
-                                                         <button >{item.title}</button>
+                                                         <button onClick={() => openChild(item)}>{item.title}</button>
                                                          <div className="btn-category-list  ">
-                                                             <span className="pl-3 d-block">{item.children?.map(item2 => (
-                                                                 <button   onClick={ (e) => getProduct(item2.id)} >  {item2.title } </button>
-                                                             ))}</span>
+                                                             <span className="pl-3 d-block ">{item.children?.map(item2 => (
+                                                                 <button className={ch== item.id? "d-block" : "d-none"} onClick={ (e) => getProduct(item2.id)} >  {item2.title } </button>
+                                                             ))}
+                                                             </span>
                                                          </div>
                                                      </div>
                                                  ))
                                              }
 
-
-
-                            </div>
+                             </div>
                         </div>
                         <div className="col-md-9">
                             {/*<div className="d-flex eqment">*/}
@@ -115,7 +117,7 @@ const EquipmentParttTwo = (props) => {
                                     allProduct?.map(item =>(
                                         <div className="col-lg-4 col-xl-3 col-md-6 col-sm-6">
                                             <div className="card-body">
-                                                <img src="images/icon/stock .png" alt=""/>
+                                                <img src="images/icon/stock.png" alt=""/>
                                                 <span><img  src= {item.images[0]?.get_img_url} alt=""/></span>
                                                 <h4>{item.title}</h4>
                                                 <p>{item.main_content.length > 50 ? item.main_content.slice(0, 50) + "..." : item.main_content }

@@ -26,6 +26,7 @@ const MainForm = (props) => {
     const [selectCityOne, setSelectCity] = useState({})
 
     useEffect(() => {
+        window.scrollTo(0, 0)
 
         axios.get(API_PATH_RU + "provider/v1/city-list/")
             .then(res => {

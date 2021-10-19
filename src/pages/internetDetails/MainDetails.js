@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import DetailsPartOne from "./DetailsPartOne";
 import DetailsPartTwo from "./DetailsPartTwo";
 import DetailsPartThree from "./DetailsPartThree";
@@ -10,6 +10,9 @@ import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import Clients from "../provider/Clients";
 
 const MainDetails = () => {
+    useEffect(() =>{
+        window.scrollTo(0, 0)
+    } , [])
     return (
         <div className="details-hidden">
             <NavbarGeneral/>
