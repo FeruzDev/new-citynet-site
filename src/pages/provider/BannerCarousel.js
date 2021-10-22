@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 const BannerCarousel = () => {
     const settings = {
@@ -117,8 +117,8 @@ const BannerCarousel = () => {
                 <h3>
                     Связить с нами
                 </h3>
+                <NavLink to="/contact"  >   <img src="/images/icon/sv.png" alt=""/></NavLink>
 
-                <img src="/images/callCentr.png" alt=""/>
             </div>
         </div>
 

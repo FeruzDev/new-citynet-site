@@ -122,7 +122,7 @@ option[value=""][disabled] {
     background: #53AFF7;
     border: 1px solid #58B7FF;
     box-sizing: border-box;
-    box-shadow: 0px 0px 8px 1px rgba(0, 119, 228, 0.8);
+    //box-shadow: 0px 0px 8px 1px rgba(0, 119, 228, 0.8);
 
   }
 
@@ -3536,7 +3536,7 @@ button.slick-arrow.slick-next {
 }
 
 .tv-part-one {
-  padding:   32px 0;
+  padding:   60px 0;
 
   .tv-part-one-child {
     background-image: url("../images/tvone.png");
@@ -4056,6 +4056,21 @@ button.slick-arrow.slick-next {
       }
 
       .col-md-9 {
+
+
+
+        .load-btn{
+
+
+          text-align: center;
+          width: 100%;
+          button{
+            margin-top: 20px;
+            background-color: transparent;
+            border: none;
+          }
+        }
+
         .eqment {
           margin-top: 20px;
         }
@@ -4227,8 +4242,10 @@ button.slick-arrow.slick-next {
         border-radius: 8px;
         padding: 16px;
         height: 440px;
-        margin-right: 15px;
+
         transition: 0.5s;
+        width: 92%;
+        position: relative;
 
         &:hover {
 
@@ -4276,6 +4293,12 @@ button.slick-arrow.slick-next {
 
         .btn {
 
+        }
+        .card-footer-it{
+          position: absolute;
+          bottom: 20px;
+
+          width: 100%;
         }
       }
 
@@ -6763,8 +6786,99 @@ hr {
   }
 }
 
+.all-channels{
 
 
+
+  .all-channels-childs{
+    padding-bottom: 300px;
+    position: relative;
+
+  }
+  .container{
+    h2{
+      margin-top: 39px;
+    }
+    .russian-channel, .HD-channel{
+      font-size: 35px;
+      line-height: 41px;
+      color: #101828;
+      margin-top: 144px;
+    }
+    .row{
+      .col-md-2{
+
+        margin-top: 48px;
+        img{
+
+          width: 100%;
+          //height: 82px;
+          border-radius: 12px;
+        }
+        h4{
+          font-weight: normal;
+          font-size: 18px;
+          color: #101828;
+          margin-top: 8px;
+
+        }
+      }
+    }
+  }
+}
+
+.new-page{
+
+  position: relative;
+
+  .col-md-4{
+    display: flex;
+    justify-content: center;
+  }
+  .new-page-child{
+
+    border: 2px solid #58B7FF;
+    box-shadow: 0px 0px 8px 2px rgba(0, 119, 228, 0.16);
+
+    width: 134px;
+    text-align: center;
+    height: 134px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 110px;
+    position: relative;
+    h6{
+      position: absolute;
+      bottom: -70px;
+      text-align: center;
+      width: 230px;
+
+
+      font-size: 18px;
+      line-height: 22px;
+
+
+      color: #101828;
+    }
+    img{
+      width: 73px;
+    }
+
+  }
+
+}
+
+
+.navbar-toggler{
+  border-color: rgba(41, 142, 234, 0.5) !important;
+}
+.navbar-toggler-icon{
+  background-image: url("../images/menu.png") !important;
+}
 ////////////////////////////////////////media//////////////////////////////////////////
 
 @media only screen and (min-width: 1024px) and (max-width: 1550px) {
@@ -7407,12 +7521,21 @@ hr {
       flex-direction: column;
       margin-bottom: 188px;
 
+      .smallChild{
+        background-color: transparent !important;
+        box-shadow: none !important;
+      }
+
+      .bigChild{
+        background-color: transparent !important;
+        box-shadow: none !important;
+      }
       .mediumChild {
         width: 200px;
         height: 61px;
-        background: rgba(0, 0, 0, 0.54);
+        background-color: transparent !important;
         margin-bottom: 38px;
-        box-shadow: 0px 0px 30px 6px rgba(0, 119, 228, 0.6), 0px 0px 8px 6px rgba(0, 119, 228, 0.16);
+        box-shadow: none !important;
         border-radius: 18px;
         border: 1px solid #58B7FF;
 
@@ -7422,6 +7545,7 @@ hr {
           line-height: 31px;
         }
       }
+
     }
 
     .contact-footer-home {
@@ -8082,13 +8206,23 @@ hr {
         }
 
         .box {
-          width: 100px;
-          height: 100px;
+          width: 33%;
+          height: 33%;
           margin-right: 0;
 
 
+
           img {
-            object-fit: contain;
+            object-fit: cover;
+            width: 50%;
+          }
+
+
+          h6{
+            font-size: 10px !important;
+            padding-left: 30px;
+            padding-right: 30px;
+
           }
         }
       }
@@ -8781,6 +8915,10 @@ hr {
     }
 
   }
+  .line50, .line52 , .line53, .line51 {
+    display: none !important;
+  }
+
   .traffic-services {
 
 
@@ -8795,6 +8933,7 @@ hr {
       display: none;
 
     }
+
 
     .row {
       .col-md-4 {
@@ -8889,6 +9028,9 @@ hr {
     display: none;
   }
   .banner-carousel {
+
+
+    margin: 20px auto;
     
 
     .for-call-center {
@@ -8897,16 +9039,28 @@ hr {
 
     .slick-slider {
       .carousel-item-img {
-        height: auto !important;
+        //height: auto !important;
+        height: 500px;
         .banner-carousel-img-item{
           height: inherit !important;
 
         }
+        h1{
+          font-size: 22px;
+          margin-top: -10px;
+        }
+        p{
+          font-size: 14px ;
+        }
         .banner-title {
-          left: -20px;
+          left: -30px;
+          top: 20px;
           .third-arrow {
             margin: 0;
           }
+        }
+        img{
+          object-fit: cover !important;
         }
       }
 
@@ -8922,91 +9076,6 @@ hr {
   }
 }
 
-.all-channels{
-
-
-
-  .all-channels-childs{
-    padding-bottom: 300px;
-    position: relative;
-
-  }
-  .container{
-    h2{
-      margin-top: 39px;
-    }
-    .russian-channel, .HD-channel{
-      font-size: 35px;
-      line-height: 41px;
-      color: #101828;
-      margin-top: 144px;
-    }
-    .row{
-      .col-md-2{
-
-        margin-top: 48px;
-        img{
-
-          width: 100%;
-          //height: 82px;
-          border-radius: 12px;
-        }
-        h4{
-          font-weight: normal;
-          font-size: 18px;
-          color: #101828;
-          margin-top: 8px;
-
-        }
-      }
-    }
-  }
-}
-
-.new-page{
-
-  position: relative;
-
-  .col-md-4{
-    display: flex;
-    justify-content: center;
-  }
-  .new-page-child{
-
-      border: 2px solid #58B7FF;
-    box-shadow: 0px 0px 8px 2px rgba(0, 119, 228, 0.16);
-
-      width: 134px;
-    text-align: center;
-      height: 134px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-
-      margin-top: 110px;
-      position: relative;
-      h6{
-        position: absolute;
-        bottom: -70px;
-        text-align: center;
-        width: 230px;
-
-
-          font-size: 18px;
-        line-height: 22px;
-
-
-        color: #101828;
-      }
-      img{
-        width: 73px;
-      }
-
-  }
-
-}
 @media only screen and (min-width: 1200px) {
   .navbar-b {
     display: none;

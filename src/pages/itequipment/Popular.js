@@ -87,14 +87,20 @@ const PriceProvider = () => {
                                     <p dangerouslySetInnerHTML={{__html: item.main_content.length > 50 ? item.main_content.slice(0, 50) : item.main_content }}>
                                     </p>
 
-                                    <h3  className="font-family-medium"><del></del><br/>{item.price}</h3>
-                                    <div className="d-flex justify-content-center mt-3">
-                                    {/*    <NavLink to="/equipment">*/}
-                                    {/*    <button type="button" className="btn btn-primary   font-family-medium" >Подробнее</button>*/}
-                                    {/*</NavLink>*/}
-                                        <Link  to={"/itequipment/equipment/" + item.id} className="btn btn-primary font-family-medium">Подробнее</Link>
 
-                                    </div>                        </div>
+                                    <div className="card-footer-it">
+                                        <h3  className="font-family-medium"><del></del><br/>{item.price}</h3>
+                                        <div className="d-flex pl-3  ml-3 mt-3">
+                                            {/*    <NavLink to="/equipment">*/}
+                                            {/*    <button type="button" className="btn btn-primary   font-family-medium" >Подробнее</button>*/}
+                                            {/*</NavLink>*/}
+                                            <Link  to={"/itequipment/equipment/" + item.id} className="btn btn-primary  font-family-medium">Подробнее</Link>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     ))

@@ -66,6 +66,16 @@ const EquipmentParttTwo = (props) => {
         console.log(data.children)
         setCh(data.id)
     }
+
+
+    const [load, setLoad] =useState(8)
+    const loadMore = () => {
+
+        setLoad(load + 4)
+    }
+
+
+    console.log(load)
     return (
         <div className="equipment-part-two">
                             <div id="catalog" className="container equipment-part-two-child">
@@ -92,6 +102,7 @@ const EquipmentParttTwo = (props) => {
                              </div>
                         </div>
                         <div className="col-md-9">
+
                             {/*<div className="d-flex eqment">*/}
                             {/*    <div className="input-group ml-3">*/}
                             {/*        <input type="text" className="form-control" placeholder="Поиск товара..."/>*/}
@@ -114,29 +125,44 @@ const EquipmentParttTwo = (props) => {
                             <div className="row mb-4">
 
                                 {
-                                    allProduct?.map(item =>(
+                                    allProduct?.slice(0, load).map(item =>(
                                         <div className="col-lg-4 col-xl-3 col-md-6 col-sm-6">
                                             <div className="card-body">
                                                 <img src="images/icon/stock.png" alt=""/>
                                                 <span><img  src= {item.images[0]?.get_img_url} alt=""/></span>
                                                 <h4>{item.title}</h4>
-                                                <p>{item.main_content.length > 50 ? item.main_content.slice(0, 50) + "..." : item.main_content }
-                                                </p>
+                                                <p dangerouslySetInnerHTML={{__html:   item.main_content.length > 50 ? item.main_content.slice(0, 50) + "..." : item.main_content }}  />
+
 
                                                 <h3  className="font-family-medium">
                                                     <del></del>
-                                                    <br/>{item.price} сум
+                                                    <br/>{item.price}
                                                 </h3>
                                                 <div className="d-flex justify-content-center mt-3"><NavLink to="/equipment">
                                                     <Link  to={"/itequipment/equipment/" + item.id} className="btn btn-primary font-family-medium">Подробнее</Link>
-                                                </NavLink></div>
+                                                </NavLink>
+                                                </div>
                                             </div>
                                         </div>
 
                                     ))
                                 }
 
+
+
+
+
                             </div>
+                            {allProduct.length > 8 ?
+
+                                <div className="load-btn ">
+
+
+                                    <button onClick={() => loadMore()}>Посмотреть больше</button>
+                                </div>
+                                :
+                                ""
+                                }
                         </div>
                     </div>
                 </div>
