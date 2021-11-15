@@ -6,8 +6,12 @@ const InstallationPartFour = () => {
 
             <div className="container">
 
-                <div className="row">
-                    <div className="col-md-6">
+                <div data-aos="fade-up"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="700"
+                     data-aos-delay="100"
+                     className="row">
+                    <div  className="col-md-6">
                         <div className="development-card">
                             <img src="/images/icon/developmentimages1.png" alt=""/>
                             <div className="card-one">

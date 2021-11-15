@@ -14,17 +14,33 @@ const IpTelephonySeven = () => {
         axios.get(API_PATH_RU + "index/v1/partners/")
             .then(res => {
                 setPartners(res.data)
+
+
+
+                console.log(res.data.length)
+
+
+                let i= 0
+                if( i < res.data.length / 8 , i++ ){
+
+                }else {
+
+                }
             })
             .catch(err =>{
                 console.log(err)
             })
+
+        setTimeout(() => {
+            console.log('Hello, World!')
+        }, 3000);
 
     }, [])
 
 
 
     return (
-        <div className="iptelephony-part-seven position-relative">
+        <div  className="iptelephony-part-seven position-relative">
 
             <div className="line23_5">
                 <div className="line-insert">
@@ -39,8 +55,8 @@ const IpTelephonySeven = () => {
                 </div>
             </div>
 
-            <div id='partner' className="container iptelephony-part-seven-child ">
-                <h4 className="font-family-medium">Наши партнеры</h4>
+            <div  id='partner' className="container iptelephony-part-seven-child ">
+                <h4   className="font-family-medium">Наши партнеры</h4>
 
 
                 <div className="row d-flex justify-content-between m-0">
@@ -48,14 +64,14 @@ const IpTelephonySeven = () => {
                 {
 
                     partners.slice(0, 4).map(item =>(
-                            <div className="row">
+                            <div  className="row">
                                 <a href={item.link} className="d-flex align-items-center"> <img src={item.get_img_url} alt=""/></a>
                             </div>
 
-
-
                     ))
                 }
+
+
                 </div>
 
                 <div className="row d-flex justify-content-between m-0">

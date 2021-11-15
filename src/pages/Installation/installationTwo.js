@@ -23,7 +23,10 @@ const InstallationTwo = () => {
                 </div>
             </div>
             <div className="container">
-                <div className="row">
+                <div data-aos="fade-up"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="700"
+                     data-aos-delay="100" className="row">
                     <div className="col-md-6">
                         <div className="TextPlus-child">
                             <img src="/images/icon/mon.svg" alt=""/>

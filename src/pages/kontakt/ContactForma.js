@@ -1,5 +1,4 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
 import axios from "axios";
 import {API_PATH_RU} from "../../tools/constants";
 import {toast} from "react-toastify";
@@ -60,9 +59,13 @@ const ContactForma = () => {
                       </div>
                   </div>
 
-                  <div className="container">
+                  <div  className="container">
                       <div className="Contact-forma-child">
-                          <form className="row">
+                          <form data-aos="fade-up"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="700"
+                                data-aos-delay="100"
+                                className="row">
                               <div className=" col-md-6 ">
                                   <h4 className="font-family-medium">Свяжитесь с нами</h4>
                                   <div className="row">
@@ -74,7 +77,13 @@ const ContactForma = () => {
                                       <div className="col-md-12">
                                           <input required type="email" className="form-control " id="emailC"
                                                  placeholder="Почта"/>
-                                          <input required type="text" className="form-control" id="numberC"
+
+                                      </div>
+                                      <div className="col-md-12">
+                                          <span className="number-mask">
+                                              +998
+                                          </span>
+                                          <input required type="text" className="form-control number-mask-input" id="numberC"
                                                  placeholder="Контакный телефон"/>
                                       </div>
                                       <input type="text" required className="form-control m-3 text" id="messageC"
@@ -114,7 +123,10 @@ const ContactForma = () => {
 
 
 
-                    <iframe className="gmap_iframe" frameBorder="0" scrolling="no" marginHeight="0"
+                    <iframe data-aos="fade-up"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="700"
+                            className="gmap_iframe" frameBorder="0" scrolling="no" marginHeight="0"
                             marginWidth="0"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793.4305478506374!2d69.20449370284854!3d41.3394216578485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8c0f99cd4899%3A0x46baaa98cb0739de!2s2%20Beruni%20Ave%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1634319666353!5m2!1sen!2s"></iframe>
 

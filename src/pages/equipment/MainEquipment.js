@@ -56,6 +56,7 @@ const MainEquipment = (props) => {
 
 
     return (
+
         <div className="equipment position-relative overflow-hidden">
             <NavbarGeneralSeven/>
             <DisplayNavbar/>
@@ -66,7 +67,11 @@ const MainEquipment = (props) => {
                         <div className="col-md-3">
 
                         </div>
-                        <div className="col-md-9">
+                        <div data-aos="fade-up"
+                             data-aos-easing="ease-out-cubic"
+                             data-aos-duration="700"
+                             data-aos-delay="100"
+                             className="col-md-9">
                             {/*<p>Главная > Каталог > ITC Audio T-6708 Сетевой аудио адаптер, без встроенного усилителя</p>*/}
                             <div className="row">
                                 <div className="col-md-5">
@@ -92,9 +97,10 @@ const MainEquipment = (props) => {
                                     <h3  className="font-family-medium">{product.price} сум</h3>
                                     <span><img src="images/icon/stock .png" alt=""/></span>
                                     <p>Запросить дилерскую цену</p>
-                                    <Link to="/contact" type="button" className="btn btn-primary"><span>заказать</span></Link>
+                                    <Link to="/contact" type="button" className="btn btn-primary"><span>Заказать</span></Link>
                                 </div>
                             </div>
+
                             <div className="equipment-footer">
 
                                 <ul className="nav nav-tabs" id="myTab" role="tablist">

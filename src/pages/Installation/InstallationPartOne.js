@@ -11,8 +11,16 @@ const DetailsPartOne = () => {
                     <div className="col-md-6">
 
                         <div>
-                            <h4 className="font-family-medium">Монтажные работы </h4>
-                            <p>В строительстве для грамотной установки деталей наша компания использует уже готовые
+                            <h4 data-aos="fade-up"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="700"
+
+                                className="font-family-medium">Монтажные работы </h4>
+                            <p data-aos="fade-up"
+                               data-aos-easing="ease-out-cubic"
+                               data-aos-duration="700"
+                               data-aos-delay="200"
+                            >В строительстве для грамотной установки деталей наша компания использует уже готовые
                                 материалы. При это мы производим сборку и установку конструктивных элементов или
                                 оборудования. Монтажные работы в компании «CityNet» включают в себя внедрение различных
                                 коммуникаций, подключение средств автоматизации и контроля.</p>

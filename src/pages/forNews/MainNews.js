@@ -20,14 +20,27 @@ const MainNews = () => {
     return (
         <div className="main-news" id="news">
             <div className="container">
-                <div className="news-main-title">
+                <div data-aos="fade-up"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="700"
 
-                    <h2 className="font-family-medium">
+                     className="news-main-title">
+
+                    <h2  className="font-family-medium">
                         Новости
                     </h2>
                     <Link to="/all-news">Все новости</Link>
                 </div>
-                <div className="row">
+                <div  data-aos="fade-up"
+                      data-aos-offset="100"
+                      data-aos-duration="700"
+                      data-aos-easing="ease-in-out"
+                      data-aos-mirror="true"
+                      data-aos-once="false"
+                      className="row"
+                      data-aos-delay="100"
+                >
+
 
 
 
@@ -37,7 +50,7 @@ const MainNews = () => {
                         news.map(item =>(
 
 
-                            <div className="col-md-4">
+                            <Link  to={"/all-news/news-detail/" + item.id} className="col-md-4">
                                 <img src={item.get_img_url} alt=""/>
 
                                 <h3 className="font-family-medium">{item.title}</h3>
@@ -45,12 +58,12 @@ const MainNews = () => {
 
 
 
-                                    <p className="d-inline mb-0 " dangerouslySetInnerHTML={{__html: item.content.length > 70 ? item.content.slice(0, 70) + "  " : item.content + "  "   }} />
+                                    <p className=" mb-0 " dangerouslySetInnerHTML={{__html: item.content.length > 70 ? item.content.slice(0, 70) + "  " : item.content + "  "   }} />
                                 <Link  to={"/all-news/news-detail/" + item.id}>Читать дальше</Link>
 
 
 
-                            </div>
+                            </Link>
 
 
                         ))

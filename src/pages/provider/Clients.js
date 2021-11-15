@@ -40,7 +40,11 @@ const Clients = () => {
 
 
     return (
-        <div className="clients container">
+        <div   data-aos="fade-up"
+               data-aos-easing="ease-out-cubic"
+               data-aos-duration="700"
+               data-aos-delay="100"
+               className="clients container">
 
 
             <h1 className="font-family-medium">Наши клиенты</h1>

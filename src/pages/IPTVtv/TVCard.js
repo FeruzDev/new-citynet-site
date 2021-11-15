@@ -4,8 +4,15 @@ const TvCard = () => {
     return (
         <div className="tv-card">
             <div className="tv-card-child container">
-                <h4 className="font-family-medium">Наши рекомендации</h4>
-                <p>
+                <h4 data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="700"
+                    className="font-family-medium">Наши рекомендации</h4>
+                <p data-aos="fade-up"
+                   data-aos-easing="ease-out-cubic"
+                   data-aos-duration="700"
+                   data-aos-delay="100"
+                >
                     IPTV (Internet Protocol Television) – это современная технология, позволяющая эффективно передавать
                     телевизионный сигнал через сеть Интернет. IPTV – это полностью интерактивный сервис, работающий
                     через интернет, в отличие от кабельного или спутникового телевидения. Данная технология позволяет

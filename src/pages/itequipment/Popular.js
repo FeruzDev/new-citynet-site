@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Slider from "react-slick";
-import {Link, NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 import axios from "axios";
 import {API_PATH_RU} from "../../tools/constants";
 
@@ -69,8 +69,12 @@ const PriceProvider = () => {
 
 
     return (
-        <div className="position-relative">
-        <div className="provider container">
+        <div id="popularProduct" className="position-relative">
+        <div data-aos="fade-up"
+             data-aos-easing="ease-out-cubic"
+             data-aos-duration="700"
+             data-aos-delay="100"
+             className="provider container">
 
             <h1 className="font-family-medium">Популярные</h1>
             <Slider {...settings}>

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Slider from "react-slick";
-import {Link, NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 import axios from "axios";
 import {API_PATH_RU} from "../../tools/constants";
 
@@ -69,9 +69,13 @@ const EquipmentNew = () => {
 
     return (
         <div>
-            <div id="new23" className="provider container">
+            <div data-aos="fade-up"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="700"
+                 data-aos-delay="100"
+                 id="new23" className="provider container">
 
-                <h1>Новинки</h1>
+                <h1  className="font-family-medium">Новинки</h1>
                 <Slider {...settings}>
                     {
                         pop.map(item => (

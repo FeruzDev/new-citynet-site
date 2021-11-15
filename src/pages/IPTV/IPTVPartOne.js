@@ -12,9 +12,17 @@ const DetailsPartOne = () => {
 
                         <div className="col-md-7">
                             <div>
-                                <h4 className="font-family-medium">Проектирование
+                                <h4 data-aos="fade-up"
+                                    data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="700"
+
+                                    className="font-family-medium">Проектирование
                                 </h4>
-                                <p>«Качественная работа на стадии проектирования – залог наиболее эффективного решения».
+                                <p data-aos="fade-up"
+                                   data-aos-easing="ease-out-cubic"
+                                   data-aos-duration="700"
+                                   data-aos-delay="400"
+                                >«Качественная работа на стадии проектирования – залог наиболее эффективного решения».
                                     Именно под этим лозунгом и работает команда проектировщиков из компании «CityNet».
                                     Мы подбираем оборудование, согласно пожеланиям заказчика, составляем план-схему
                                     помещения и размещения оборудования в нем, схему коммутации оборудования. </p>

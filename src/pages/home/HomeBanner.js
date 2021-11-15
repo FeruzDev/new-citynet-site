@@ -6,8 +6,6 @@ const HomeBanner = () => {
     return (
         <div className="home-banner ">
 
-            {/*<img className="backMain" src="/images/backMain.png" alt=""/>*/}
-
             <div className="home-navbar">
 
                 <div className="row">

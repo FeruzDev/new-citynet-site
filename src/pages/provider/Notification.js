@@ -27,16 +27,13 @@ const Notification = () => {
 
             {
 
-                not.slice(0, 1).map(item => (
+                not?.slice(0, 1).map(item => (
                     <>
 
-                        <h2 className="font-family-medium">{item.title}</h2>
+                        <h2 className="font-family-medium" dangerouslySetInnerHTML={{__html: (item.title)}} / >
                         <div className="notification-body">
-                            <p className="font-family-regular">
-                                {
-                                    item.content
-                                }
-                            </p>
+                            <p dangerouslySetInnerHTML={{__html: (item.content)}} className="font-family-regular" />
+
                         </div>
                     </>
                 ))

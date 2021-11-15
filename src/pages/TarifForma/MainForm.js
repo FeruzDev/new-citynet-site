@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import NavbarGeneral from "../navbar/NavbarGeneral";
-import {NavLink, useHistory} from "react-router-dom";
+import { useHistory} from "react-router-dom";
 import DisplayNavbar from "../navbar/DisplayNavbar";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import NavbarGeneralEight from "../navbar/NavbarGeneralEight";
 import axios from "axios";
 import {API_PATH_RU} from "../../tools/constants";
 import {toast} from "react-toastify";
+
 
 const MainForm = (props) => {
     const [city, setCity] = useState([])
@@ -23,7 +23,6 @@ const MainForm = (props) => {
     const [homeId, setHomeId] = useState([])
 
 
-    const [selectCityOne, setSelectCity] = useState({})
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -36,6 +35,7 @@ const MainForm = (props) => {
                 toast.error("Oшибка")
 
             })
+
 
 
     } , [])
@@ -79,16 +79,13 @@ const MainForm = (props) => {
     const selectHomeNumber = (value) =>{
         setHomeId(value)
 
-
-        // console.log(history)
-        // history.push("/")
     }
 
     const selectStreet = (value) =>{
 
         let   newArr = street.filter(item => item.id === value)
 
-        console.log(newArr)
+
 
     }
 
@@ -98,7 +95,6 @@ const MainForm = (props) => {
     const send =(value)=>{
 
 
-        console.log(cityId)
 
         let bigData = new FormData();
         bigData.append("city",  cityId)
@@ -112,7 +108,7 @@ const MainForm = (props) => {
 
         axios.post(API_PATH_RU + "provider/v1/request/" , bigData)
             .then(res => {
-                toast.success("Успешно отправлен")
+                toast.success("Ваша заявка успешно отправлена!")
                 document.getElementById('Streetn').value = ""
                 document.getElementById('Homen').value =""
                 document.getElementById('Flatn').value =""
@@ -137,14 +133,17 @@ const MainForm = (props) => {
             <DisplayNavbar/>
             <div className="main-form">
                 <div className="container ">
-                    <div className="main-form-child">
+                    <div data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100" className="main-form-child">
 
 
-                        <div className="row">
+                        <div  className="row">
                             <div className=" col-md-6  ">
                                 <h4 className="font-family-medium">Заявка на подключение</h4>
                                 <p>Заполните заявку и наши специалисты свяжутся с Вами в течение 24 часов!</p>
-                                <form className="row">
+                                <div className="row">
                                     <div className="col-md-6">
                                         <div className="form-group">
                                             <select required  className="form-control"  id="Cityn" onChange={e => selectCity(e.target.value)}  >
@@ -197,7 +196,7 @@ const MainForm = (props) => {
                                                 {/*         className="form-control"*/}
                                                 {/*         id="Homen" placeholder="Дом"/>*/}
 
-                                                <select required  id="Homen" onChange={e => selectHomeNumber(e.target.value)} className="form-control"   >
+                                                <select    id="Homen" onChange={e => selectHomeNumber(e.target.value)} className="form-control"   >
                                                     <option value="" disabled selected>Дом</option>
                                                     {
                                                     home.map(item => (
@@ -212,18 +211,36 @@ const MainForm = (props) => {
 
 
                                             </div>
-                                            <div className="col-md-6"><input  required type="number" id="Flatn" className="form-control pr-0"
-                                                                             placeholder="Квартира"/></div>
+                                            <div className="col-md-6">
+
+
+                                                <input    type="text" id="Flatn" className="form-control pr-0"
+                                                                             placeholder="Квартира"/>
+
+
+                                            </div>
                                         </div>
 
                                     </div>
                                     <input required type="text" id="FullNamen" className="form-control m-3" placeholder="Полное имя"/>
-                                    <input required type="number" className="form-control mx-3" id="Phonen" placeholder="Контакный телефон"/>
+
+
+                                    <div className="position-relative w-100">
+                                          <span className="number-mask">
+                                              +998
+                                          </span>
+                                        <input required type="text" className="form-control  number-mask-input" id="Phonen" placeholder="Контакный телефон"/>
+
+
+
+                                    </div>
+
+
                                     <div className="third-arrow ml-3">
-                                        <button  onClick={() =>send()} className="font-family-medium"> <img className="arrow-img-white" src="/images/icon/Arrow4.png"
+                                        <button  onClick={send}  className="font-family-medium"> <img className="arrow-img-white" src="/images/icon/Arrow4.png"
                                                            alt=""/>Отправить заявку</button>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>

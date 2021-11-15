@@ -26,16 +26,20 @@ const PriceCards = () => {
     return (
         <div id="tariffis2" className="price-cards  ">
 
-            <div className="container">
+            <div   data-aos="fade-up"
+                   data-aos-easing="ease-out-cubic"
+                   data-aos-duration="700"
+
+                   className="container">
                 <h1 className='font-family-medium'>Тарифый планы</h1>
 
-                <div className="row">
+                <div  className="row">
 
 
 
                     {
                         tarif.map(item => (
-                            <div className="col-md-4">
+                            <div  className="col-md-4">
                                 <div className="box">
                                     <h3  className='font-family-medium'>{item.title}</h3>
 

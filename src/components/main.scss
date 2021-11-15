@@ -42,6 +42,14 @@ body{
 
 
 }
+
+.btn-primary{
+  background-color: #0086E7 !important;
+}
+
+.bg-primary{
+  background-color: #0086E7 !important;
+}
 a:hover{
   text-decoration: none;
 }
@@ -1226,6 +1234,7 @@ nav {
           font-size: 18px;
           line-height: 21px;
           margin-top: 22px;
+          width: 80%;
         }
 
 
@@ -3536,7 +3545,7 @@ button.slick-arrow.slick-next {
 }
 
 .tv-part-one {
-  padding:   60px 0;
+  padding:   60px 0 0 0 ;
 
   .tv-part-one-child {
     background-image: url("../images/tvone.png");
@@ -3889,7 +3898,7 @@ button.slick-arrow.slick-next {
     p {
       font-size: 15px;
       line-height: 21px;
-      color: #878B93;
+      color: #878B93  ;
     }
 
     .row {
@@ -3929,6 +3938,8 @@ button.slick-arrow.slick-next {
         margin-bottom: 273px;
 
 
+
+
         .equipment-footer {
           .btn-group {
             margin-bottom: 40px;
@@ -3938,16 +3949,58 @@ button.slick-arrow.slick-next {
           h4 {
                   font-size: 15px;
             line-height: 18px;
-            margin-bottom: 23px;
+            margin-bottom: 12px;
+            margin-top: 20px;
           }
 
           p {
             font-size: 15px;
             line-height: 18px;
             margin-bottom: 10px;
-            color: #101828
+            color: #101828 !important;
+
+
+
+            table{
+              width: 100%;
+
+              tbody{
+
+                tr:nth-child(odd){
+
+
+                  td{
+                    background: #fafafa;
+
+
+                  }
+                }
+
+                tr:nth-child(even){
+
+                }
+
+
+                tr{
+
+                  border-bottom: 1px solid rgba(171, 171, 171, 0.3);
+                  td{
+                    width: 50%;
+                    padding-top: 5px;
+
+                    padding-left:  15px;
+                    padding-bottom: 5px;
+                  }
+                }
+
+              }
+            }
+
           }
         }
+
+
+
 
         .row {
           .col-md-5 {
@@ -4023,6 +4076,16 @@ button.slick-arrow.slick-next {
   }
 }
 
+
+.child-button{
+
+  &:active{
+    background-color: #007BFF;
+    color: white;
+
+  }
+}
+
 .equipment-part-two {
   .equipment-part-two-child {
     padding: 0;
@@ -4057,7 +4120,9 @@ button.slick-arrow.slick-next {
 
       .col-md-9 {
 
-
+        p, h3{
+          color: #101828 !important;
+        }
 
         .load-btn{
 
@@ -4444,6 +4509,14 @@ button.slick-arrow.slick-next {
     .row {
       .col-md-6 {
 
+        .number-mask{
+          position: absolute;
+          left: 25px;
+          bottom:7px;
+        }
+        .number-mask-input{
+          padding-left: 70px;
+        }
         h4 {
               font-size: 36px;
           line-height: 42px;
@@ -4512,6 +4585,7 @@ button.slick-arrow.slick-next {
           }
 
           .col-md-6 {
+
             .form-group {
 
               .form-control:focus {
@@ -4655,6 +4729,19 @@ button.slick-arrow.slick-next {
 
           }
 
+
+          .col-md-12{
+            position: relative;
+
+            .number-mask{
+              position: absolute;
+              left: 25px;
+              bottom:7px;
+            }
+            .number-mask-input{
+              padding-left: 50px;
+            }
+          }
           .third-arrow {
 
             margin-top: 46px;
@@ -5082,7 +5169,10 @@ button.slick-arrow.slick-next {
             line-height: 19px;
             margin-left: 42px;
 
+
           }
+
+
         }
       }
 
@@ -5236,8 +5326,8 @@ button.slick-arrow.slick-next {
 
     .mediumChild {
       //background-image: url("../images/Ellipse35.png");
-      width: 228px;
-      height: 228px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
 
       span {
@@ -6661,7 +6751,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     a:hover{
       text-decoration: none;
     }
@@ -6671,6 +6761,7 @@ hr {
     .row{
       .col-md-4{
 
+        margin-top: 20px;
         img{
           width: 100%;
           border-radius: 12px;
@@ -6705,6 +6796,19 @@ hr {
 
 .news-list{
   margin-top: 40px;
+
+  .load-btn{
+
+
+    text-align: center;
+    width: 100%;
+    button{
+      margin-top: 20px;
+      background-color: transparent;
+      border: none;
+    }
+  }
+
   .container{
     .row{
       margin-top: 32px;
@@ -7197,6 +7301,7 @@ hr {
 
           p {
             font-size: 18px;
+
           }
         }
       }
@@ -7587,10 +7692,17 @@ hr {
 }
 
 
-@media only screen and (min-width: 360px) and (max-width: 576px) {
+@media only screen and  (max-width: 576px) {
 
   .line23_412{
     display: none !important;
+  }
+
+
+  .news-detail{
+    padding-left: 10px;
+    padding-right: 10px;
+
   }
   .news-list{
 

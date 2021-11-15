@@ -22,10 +22,19 @@ const BannerCarousel = () => {
                     <div className="row banner-title">
 
 
-                        <h1  className="font-family-medium">
+                        <h1 data-aos="fade-up"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="700"
+
+                            className="font-family-medium">
                             Системы видеонаблюдения
                         </h1>
-                        <p>Видеонаблюдение – это система, включающая в себя сочетание оборудования и программного
+                        <p
+                            data-aos="fade-up"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="700"
+                            data-aos-delay="200"
+                        >Видеонаблюдение – это система, включающая в себя сочетание оборудования и программного
                             обеспечения, предназначенного для визуального контроля за территорией, действиями и
                             ситуацией. </p>
 
@@ -41,10 +50,16 @@ const BannerCarousel = () => {
                     <div className="row banner-title">
 
 
-                        <h1>
+                        <h1 data-aos="fade-up"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="700"
+                             >
                             Системы видеонаблюдения
                         </h1>
-                        <p>Видеонаблюдение – это система, включающая в себя сочетание оборудования и программного
+                        <p data-aos="fade-up"
+                           data-aos-easing="ease-out-cubic"
+                           data-aos-duration="700"
+                           data-aos-delay="200">Видеонаблюдение – это система, включающая в себя сочетание оборудования и программного
                             обеспечения, предназначенного для визуального контроля за территорией, действиями и
                             ситуацией. </p>
 

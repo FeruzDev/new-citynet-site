@@ -5,27 +5,45 @@ const NewPage = () => {
         <div id="servicesTwo" className="new-page">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-4">
+                        <div
+                            data-aos="fade-up"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="700"
+                            className="col-md-4">
                             <div className="new-page-child">
                                 <img src="/images/PNG/q1.png" alt=""/>
                                 <h6  className="font-family-medium">Подключение безлимитного Интернета </h6>
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div
+                            data-aos="fade-up"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="700"
+                            data-aos-delay="100"
+                            className="col-md-4">
                             <div className="new-page-child">
                                 <img src="/images/PNG/q2.png" alt=""/>
 
                                 <h6  className="font-family-medium"> IP телефония  </h6>
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div
+                            data-aos="fade-up"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="700"
+                            data-aos-delay="200"
+                            className="col-md-4">
                             <div className="new-page-child">
                                 <img src="/images/PNG/q3.png" alt=""/>
 
                                 <h6  className="font-family-medium">VPN</h6>
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div  data-aos="fade-up"
+                              data-aos-easing="ease-out-cubic"
+                              data-aos-duration="700"
+                              data-aos-delay="300"
+                              className="col-md-4">
                             <div className="new-page-child">
                                 <img src="/images/PNG/q4.png" alt=""/>
 
@@ -33,14 +51,22 @@ const NewPage = () => {
                                 </h6>
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div   data-aos="fade-up"
+                               data-aos-easing="ease-out-cubic"
+                               data-aos-duration="700"
+                               data-aos-delay="400"
+                               className="col-md-4">
                             <div className="new-page-child">
                                 <img src="/images/PNG/q5.png" alt=""/>
 
                                 <h6  className="font-family-medium">Видеонаблюдение </h6>
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div   data-aos="fade-up"
+                               data-aos-easing="ease-out-cubic"
+                               data-aos-duration="700"
+                               data-aos-delay="500"
+                               className="col-md-4">
                             <div className="new-page-child">
                                 <img src="/images/PNG/q6.png" alt=""/>
 

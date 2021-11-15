@@ -41,12 +41,19 @@ const IptvPartFour = () => {
                 </div>
             </div>
             <div className="container iptv-part-four-child">
-                <h4 className="font-family-medium">Проделанные работы</h4>
+                <h4 data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="700"
+
+                    className="font-family-medium">Проделанные работы</h4>
                 <div className="row">
 
                     {
                         ins.slice(0, 3).map(item => (
-                            <div className="col-md-4 col-sm-6">
+                            <div  data-aos="fade-up"
+                                  data-aos-easing="ease-out-cubic"
+                                  data-aos-duration="700"
+                                  className="col-md-4 col-sm-6">
                                 <div className="boxed">
                                     <img src={item.get_img_url} alt=""/>
                                 </div>

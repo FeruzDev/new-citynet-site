@@ -1,4 +1,4 @@
-import React, {Component, useEffect, useState} from "react";
+import React, { useEffect, useState} from "react";
 import Slider from "react-slick";
 import {Link} from "react-router-dom";
 import axios from "axios";
@@ -72,7 +72,11 @@ const TvCarousel = () => {
     return (
         <div className="  tv-carousel">
 
-            <div className="container">
+            <div data-aos="fade-up"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="700"
+                 data-aos-delay="100"
+                 className="container">
                 <Slider {...settings}>
 
 

@@ -1,7 +1,5 @@
 import React from 'react';
 import {Link, NavLink} from "react-router-dom";
-import MainInternetTraffic from "../InternetTraffic/MainInternetTraffic";
-import {getLanguage, getText} from "../../locales";
 import {LANGUAGE} from "../../tools/constants";
 
 const NavbarGeneralSeven = (props) => {
@@ -45,6 +43,7 @@ const NavbarGeneralSeven = (props) => {
                             <Link to="/">Главная</Link>
 
                             <a href="#catalog">Каталог</a>
+                            <a href="#popularProduct">Популярные</a>
                             <a href="#new23">Новинки</a>
 
                         </div>

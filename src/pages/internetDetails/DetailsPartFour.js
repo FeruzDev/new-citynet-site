@@ -6,12 +6,25 @@ const DetailsPartFour = () => {
             <div className="container details-part-four-child">
                 <div className="row">
                     <div className="col-md-6">
-                        <div className="card"><img src="images/icon/detailsfour.png" alt=""/></div>
+                        <div data-aos="fade-up"
+                             data-aos-easing="ease-out-cubic"
+                             data-aos-duration="700"
+                             data-aos-delay="100"
+                             className="card"><img src="images/icon/detailsfour.png" alt=""/></div>
                     </div>
                     <div className="col-md-6">
                         <div className="card">
-                        <h4 className="font-family-medium">Какая скорость интернета считается нормальной для социальных сетей</h4>
-                        <p>Простой ответ выглядит так – чем выше скорость интернета, тем лучше. Но если бы всё было так просто, то Вы бы сюда не пришли за ответом, верно?
+                        <h4 data-aos="fade-up"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="700"
+                            data-aos-delay="100"
+                            className="font-family-medium">Какая скорость интернета считается нормальной для социальных сетей</h4>
+                        <p
+                            data-aos="fade-up"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="700"
+                            data-aos-delay="100"
+                        >Простой ответ выглядит так – чем выше скорость интернета, тем лучше. Но если бы всё было так просто, то Вы бы сюда не пришли за ответом, верно?
                             Всё дело в том, что не у всех имеется возможность провести интернет со скоростью, скажем, 100 Мбит/сек по техническим или финансовым причинам.
                             Поэтому в такой ситуации люди и задаются вопросом – Какая скорость интернета считается нормальной?</p>
                         </div>

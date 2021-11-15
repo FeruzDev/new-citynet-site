@@ -1,16 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import NavbarProvider from "./NavbarProvider";
+import React, {useEffect} from 'react';
 import BannerCarousel from "./BannerCarousel";
-import CategoryProvider from "./CategoryProvider";
 import PriceProvider from "./PriceProvider";
-import SpecialOffers from "./SpecialOffers";
-import Test from "../../components/Test";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
-import TrafficServices from "../InternetTraffic/TrafficServices";
-import TrafficOne from "../InternetTraffic/TrafficOne";
-import IpTelephonyThree from "../iptelephony/IpTelephonyThree";
 import NavbarGeneral from "../navbar/NavbarGeneral";
-import FormaProvider from "./FormaProvider";
 import ProviderPart from "./PrividerPart";
 import DisplayNavbar from "../navbar/DisplayNavbar";
 import NewPage from "./NewPage";
@@ -18,6 +10,7 @@ import Notification from "./Notification";
 import Zona from "./Zona";
 import Clients from "./Clients";
 import SubMenuTwo from "./SubMenuTwo";
+import MainNews from "../forNews/MainNews";
 
 const MainProvider = () => {
 
@@ -31,16 +24,15 @@ const MainProvider = () => {
             <NavbarGeneral   />
             <DisplayNavbar/>
             <BannerCarousel/>
-            {/*<Notification/>*/}
             <SubMenuTwo/>
+            <Notification/>
             <PriceProvider/>
             <ProviderPart/>
+
             <NewPage/>
 
             <Zona/>
-            {/*<FormaProvider/>*/}
-            <TrafficServices/>
-            {/*<Test/>*/}
+            <MainNews/>
 
             <Clients/>
             <IptelephonyEight/>

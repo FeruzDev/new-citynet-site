@@ -8,7 +8,6 @@ const IpTelephonyTwo = () => {
         <div
             data-aos="fade-up"
             data-aos-offset="100"
-            data-aos-delay="1"
             data-aos-duration="700"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"

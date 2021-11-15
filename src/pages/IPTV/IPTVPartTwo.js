@@ -31,12 +31,20 @@ const IptvPartTwo = () => {
             <div className="container iptv-part-two-child card-imageses">
 
                 <div className="row">
-                    <div className="col-md-4">
+                    <div data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+
+                         className="col-md-4">
                         <img src="images/icon/a1.svg" alt=""/>
                         <p>Высокий профессионализм и инженерная культура индивидуальных исполнителей</p>
 
                     </div>
-                    <div className="col-md-4">
+                    <div data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="200"
+                         className="col-md-4">
 
                         <img src="images/icon/a2.svg" alt=""/>
                         <p>
@@ -44,7 +52,11 @@ const IptvPartTwo = () => {
                             для каждого проекта</p>
 
                     </div>
-                    <div className="col-md-4">
+                    <div data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="400"
+                         className="col-md-4">
 
                         <img src="images/icon/a3.svg" alt=""/>
                         <p>Выполнение проектных работ в соответствие с ГОСТ и нормативными документами отрасли</p>
@@ -56,19 +68,62 @@ const IptvPartTwo = () => {
 
             <div className=" pr-content">
               <div className="container">
-                  <h2 className="font-family-medium">Услуги, предоставляемые нашей компанией на этапе проектирования</h2>
+                  <h2 data-aos="fade-up"
+                      data-aos-easing="ease-out-cubic"
+                      data-aos-duration="700"
+                      data-aos-delay="100" className="font-family-medium">Услуги, предоставляемые нашей компанией на этапе проектирования</h2>
 
-                  <p>Независимо от этапа, на котором будет находится ваш проект, компании «CityNet» сможет предоставить
+                  <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                  >Независимо от этапа, на котором будет находится ваш проект, компании «CityNet» сможет предоставить
                       любой вид работ:</p>
-                  <p>•	Систем пожарной сигнализации;</p>
-                  <p>•	Локально-вычислительной сети;</p>
-                  <p>•	Структурированных кабельных систем;</p>
-                  <p>•	Система оповещения;</p>
-                  <p>•	Охранной сигнализации;</p>
-                  <p>•	Видеонаблюдения;</p>
-                  <p>•	Наружной сети связи;</p>
-                  <p>•	Систем контроля и управления доступом;</p>
-                  <p>•	Видео конференцсвязи.</p>
+                  <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                  >•	Систем пожарной сигнализации;</p>
+                  <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="200"
+                  >•	Локально-вычислительной сети;</p>
+                  <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="300"
+                  >•	Структурированных кабельных систем;</p>
+                  <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="400"
+                  >•	Система оповещения;</p>
+                  <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="500"
+                  >•	Охранной сигнализации;</p>
+                  <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="700"
+                  >•	Видеонаблюдения;</p>
+                  <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="800"
+                  >•	Наружной сети связи;</p>
+                  <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="900"
+                  >•	Систем контроля и управления доступом;</p>
+                  <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="1000"
+                  >•	Видео конференцсвязи.</p>
 
               </div>
 

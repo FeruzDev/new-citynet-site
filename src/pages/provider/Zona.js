@@ -3,7 +3,11 @@ import {Link} from "react-router-dom";
 
 const Zona = () => {
     return (
-        <div className="zona">
+        <div   data-aos="fade-up"
+               data-aos-easing="ease-out-cubic"
+               data-aos-duration="700"
+               data-aos-delay="100"
+               className="zona">
 
 
 

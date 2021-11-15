@@ -19,18 +19,34 @@ const NewsList = () => {
     } , [])
 
 
+
+    const [load, setLoad] =useState(8)
+    const loadMore = () => {
+
+        setLoad(load + 4)
+    }
+
+
+
+
     return (
         <div className="news-list">
 
             <div className="container">
-                <h2 className="font-family-medium">Новости</h2>
+                <h2 data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="700"
+                    className="font-family-medium">Новости</h2>
 
 
 
 
                 {
-                    allNews.map(item => (
-                        <div className="row">
+                    allNews?.slice(0, load).map(item => (
+                        <div data-aos="fade-up"
+                             data-aos-easing="ease-out-cubic"
+                             data-aos-duration="700"
+                             className="row">
 
                             <div className="col-md-4">
                                 <img src={item.get_img_url} alt="123"/>
@@ -53,6 +69,19 @@ const NewsList = () => {
                         </div>
                     ))
                 }
+
+
+                {allNews.length > 28 ?
+
+                    <div className="load-btn mt-5">
+
+
+                        <button onClick={() => loadMore()}>Посмотреть больше</button>
+                    </div>
+                    :
+                    ""
+                }
+
             </div>
 
 

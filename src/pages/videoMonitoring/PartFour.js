@@ -34,18 +34,19 @@ const PartFour = () => {
     return (
         <div id="new2" className="telephony-card-four position-relative">
 
-            <div className="telephony-card-four-child container">
-                <h3 className="font-family-medium"> Новые поступления оборудования</h3>
-                <div className="row">
+            <div className="telephony-card-four-child container" >
+                <h3  className="font-family-medium"> Новые поступления оборудования</h3>
+                <div
+                      className="row">
 
-                    <div className="col-md-8 offset-2">
-                     <div className="position-relative">
+                    <div  className="col-md-8 offset-2">
+                     <div  className="position-relative">
                          <img  src={camera[0]?.images[0]?.get_img_url} alt=""/>
                          <div className="third-arrow">
                              <NavLink to="/itequipment">Перейти на сайт<img className="arrow-img-white" src="/images/icon/Arrow4.png" alt=""/></NavLink>
                          </div>
                      </div>
-                        <h3>  {camera[0]?.title} </h3>
+                        <h3  >  {camera[0]?.title} </h3>
                         <div className="line"></div>
                         <p dangerouslySetInnerHTML={{__html:  camera[0]?.main_content }} />
                     </div>

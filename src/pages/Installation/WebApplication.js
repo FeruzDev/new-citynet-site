@@ -29,11 +29,22 @@ const   WebApplication = () => {
                 <div className="container installation-part-three-child">
                     <div className="row">
                         <div className="col-md-5">
-                            <img src="images/icon/web.png" alt=""/>
+                            <img data-aos="fade-up"
+                                 data-aos-easing="ease-out-cubic"
+                                 data-aos-duration="700"
+                                 src="images/icon/web.png" alt=""/>
                         </div>
                         <div className="col-md-7">
-                            <h4 className="font-family-medium">Веб-приложение</h4>
-                            <p>Веб-приложение – это программа, которая запущена на удаленном сервере (веб-сайте) и может
+                            <h4 data-aos="fade-up"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="700"
+                                className="font-family-medium">Веб-приложение</h4>
+                            <p
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="700"
+                                data-aos-delay="100"
+                            >Веб-приложение – это программа, которая запущена на удаленном сервере (веб-сайте) и может
                                 использоваться пользователем на любом устройстве в тех местах, где есть выход во
                                 всемирную сеть. Создание веб-приложений для смартфонов, планшетов и настольных
                                 компьютеров – лучшая инвестиция в развитие компании. Эти универсальные решения позволяют

@@ -5,8 +5,17 @@ const TelText = () => {
         <div className="tel-text">
 
             <div className="container">
-                <h2>Как работает IP-телефония?</h2>
-                <p>
+                <h2
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="700"
+
+                >Как работает IP-телефония?</h2>
+                <p data-aos="fade-up"
+                   data-aos-easing="ease-out-cubic"
+                   data-aos-duration="700"
+                   data-aos-delay="500"
+                >
                     Суть передачи информации заключается в том, что сигнал переводится из аналогового формата (голос) в
                     цифровой, и подается на коммутирующее оборудование, где он зашифровывается и сжимается. В
                     дальнейшем, пакет информации попадает к адресату по сети Интернет, где посредством специальных

@@ -1,11 +1,9 @@
 import React, {useEffect} from 'react';
 import TrafficOne from "./TrafficOne";
-import PriceProvider from "../provider/PriceProvider";
-import TrafficTablisa from "./TrafficTablisa";
-import TrafficServices from "./TrafficServices";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import NavbarGeneral from "../navbar/NavbarGeneral";
 import DisplayNavbar from "../navbar/DisplayNavbar";
+import MainNews from "../forNews/MainNews";
 
 
 const MainInternetTraffic = () => {
@@ -19,8 +17,8 @@ const MainInternetTraffic = () => {
             <DisplayNavbar/>
 
             <TrafficOne/>
-            {/*<TrafficTablisa/>*/}
-            <TrafficServices/>
+            <MainNews/>
+
             <IptelephonyEight/>
         </div>
     );

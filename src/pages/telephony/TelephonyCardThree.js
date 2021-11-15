@@ -4,7 +4,10 @@ const TelephonyCardThree = () => {
     return (
         <div id="advantages" className="telephony-card-three position-relative">
             <div className="container telephony-card-two-child">
-                <div className="row d-flex">
+                <div data-aos="fade-up"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="700"
+                     className="row d-flex">
                     <div className="col-md-5 align-items-center-5">
                         <img src="images/icon/Gthreeone.png" alt=""/>
                     </div>

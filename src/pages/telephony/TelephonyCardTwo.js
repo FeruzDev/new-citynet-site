@@ -6,7 +6,11 @@ const TelephonyCardTwo = () => {
             <div className="container telephony-card-two-child">
                 <h4></h4>
                 <div className="row">
-                    <div className="col-md-4">
+                    <div data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                         className="col-md-4">
                         <div className="card">
                             <img src="images/icon/Group1150.svg" alt=""/>
                             <h5 className="font-family-medium">Низкая стоимость </h5>
@@ -14,7 +18,13 @@ const TelephonyCardTwo = () => {
                                 фиксированной телефонной связью);</p>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="700"
+                        data-aos-delay="200"
+
+                        className="col-md-4">
                         <div className="card">
                             <img src="images/icon/Group1149.svg" alt=""/>
                             <h5 className="font-family-medium">Конференц-связь </h5>
@@ -23,14 +33,23 @@ const TelephonyCardTwo = () => {
                                 бизнеса</p>
                         </div>
                     </div>
-                    <div className="col-md-4">
-                        <div className="card">
+                    <div
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="700"
+                        data-aos-delay="300"
+                        className="col-md-4">
+                        <div  className="card">
                             <img src="images/icon/Group1148.svg" alt=""/>
                             <h5 className="font-family-medium">Возможность видеозвонков</h5>
                             <p>Возможность совершать видеозвонки (стоимость берется из расчета трафика)</p>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="400"
+                         className="col-md-4">
                         <div className="card">
                             <img src="images/icon/Group1151.svg" alt=""/>
                             <h5 className="font-family-medium">Легкая и быстрая настройка </h5>
@@ -38,7 +57,12 @@ const TelephonyCardTwo = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="700"
+                        data-aos-delay="500"
+                        className="col-md-4">
                         <div className="card">
                             <img src="images/icon/Group1152.svg" alt=""/>
                             <h5 className="font-family-medium"> Использование гарнитуры </h5>
@@ -47,7 +71,12 @@ const TelephonyCardTwo = () => {
                                 для call-центров</p>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="700"
+                        data-aos-delay="600"
+                        className="col-md-4">
                         <div className="card">
                             <img src="images/icon/Group1153.svg" alt=""/>
                             <h5 className="font-family-medium">Большая функциональность</h5>

@@ -38,7 +38,10 @@ const MainNewForDetail = () => {
             <div className="container">
                 <div className="news-main-title">
 
-                    <h2  className="font-family-medium">
+                    <h2 data-aos="fade-up"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="700"
+                        className="font-family-medium">
                         Ещё новости
                     </h2>
 
@@ -49,10 +52,13 @@ const MainNewForDetail = () => {
 
                     {
                         news.map(item => (
-                            <div className="col-md-4">
+                            <div data-aos="fade-up"
+                                 data-aos-easing="ease-out-cubic"
+                                 data-aos-duration="700"
+                                 className="col-md-4">
                                 <img src={item.get_img_url} alt=""/>
 
-                                <h3 className="font-family-medium">{item.title}</h3>
+                                <h3  className="font-family-medium">{item.title}</h3>
                                 <p className="d-inline" dangerouslySetInnerHTML={{__html: item.content.length > 60  ? item.content.slice(0, 60) + "..." : item.content }}></p>
                                 <Link className="ml-2"  to={"/all-news/news-detail/" + item.id}>Читать дальше</Link>
                             </div>

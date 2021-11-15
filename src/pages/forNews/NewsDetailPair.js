@@ -31,10 +31,13 @@ const NewsDetailPair = (props) => {
 
         <NavbarGeneral />
      <DisplayNavbar/>
-        <div className="news-detail container">
+        <div  data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="700"
+              className="news-detail container">
 
 
-            <h2>{newsItem.title}</h2>
+            <h2 >{newsItem.title}</h2>
             <span>{newsItem.date_created?.slice(0, 10)}</span>
 
             <img src={newsItem.get_img_url} alt="123"/>

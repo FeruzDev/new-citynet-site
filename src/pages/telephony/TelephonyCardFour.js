@@ -34,11 +34,14 @@ const TelephonyCardFour = () => {
             {
                 tel ?
                     <>
-                        <div className="telephony-card-four-child telephony-card-four-child container">
+                        <div  className="telephony-card-four-child telephony-card-four-child container">
                             <h4 className="font-family-medium">Новые поступления оборудования</h4>
                             <div className="row">
 
-                                <div className="col-md-8 offset-2">
+                                <div data-aos="fade-up"
+                                     data-aos-easing="ease-out-cubic"
+                                     data-aos-duration="700"
+                                     className="col-md-8 offset-2">
                                     <img src={tel[0]?.images[0] ? tel[0]?.images[0].get_img_url : ""} alt=""/>
 
                                     <h3> {tel[0]?.title} </h3>

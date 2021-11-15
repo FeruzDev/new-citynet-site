@@ -68,7 +68,7 @@ const PriceProvider = () => {
     }, [])
 
     return (
-        <div id="tariffs" className="position-relative">
+        <div  id="tariffs" className="position-relative">
             <div className="line56">
                 <div className="line-insert">
                     <svg width="704" height="101" viewBox="0 0 704 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +95,11 @@ const PriceProvider = () => {
                 </div>
             </div>
 
-        <div className="price-provider container">
+        <div
+            data-aos="fade-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="700"
+            className="price-provider container">
             <h1 className="font-family-medium">Тарифный планы</h1>
             <div className="provider-opacity"></div>
             <Slider {...settings}>

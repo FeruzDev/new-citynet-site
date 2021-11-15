@@ -1,12 +1,7 @@
 import React, {useEffect} from 'react';
-import NavbarGeneral from "../navbar/NavbarGeneral";
-import InstallationPartOne from "../Installation/InstallationPartOne";
 import DevelopmentPartOne from "./DevelopmentPartOne";
-import InstallationPartThree from "../Installation/InstallationPartThree";
 import InstallationPartFour from "./InstallationPartFour";
 import WebApplication from "../Installation/WebApplication";
-import IptvPartFour from "../IPTV/IPTVPartFour";
-import DevelopmentPart from "./DevelopmentPart";
 import DisplayNavbar from "../navbar/DisplayNavbar";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import NavbarGeneralFive from "../navbar/NavbarGeneralFive";
@@ -22,7 +17,7 @@ const ItDevelopment = () => {
             <DevelopmentPartOne/>
             <WebApplication/>
             <InstallationPartFour/>
-            <DevelopmentPart/>
+            {/*<DevelopmentPart/>*/}
             <IptelephonyEight/>
 
         </div>

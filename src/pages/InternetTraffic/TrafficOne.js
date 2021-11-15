@@ -13,10 +13,10 @@ const IptvPartThree = (props) => {
     const [districtId, setDistrickId] = useState([])
 
     const [street, setStreet] = useState([])
-    const [home, setHome] = useState([])
+    // const [home, setHome] = useState([])
 
 
-    const [selectCityOne, setSelectCity] = useState({})
+    // const [selectCityOne, setSelectCity] = useState({})
 
     useEffect(() => {
 
@@ -79,9 +79,17 @@ const IptvPartThree = (props) => {
         <>
 
         <div className="forma-provider position-relative">
-            <h2 className="container font-family-medium">Зона покрытия</h2>
+            <h2  data-aos="fade-up"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="700"
 
-            <div className="container traffic-part-one-child">
+                 className="container font-family-medium">Зона покрытия</h2>
+
+            <div  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="700"
+                  data-aos-delay="100"
+                  className="container traffic-part-one-child">
                 <div className="row">
                     <div className="col-md-6">
                         <img src="/images/icon/internettraffic.png" alt=""/>

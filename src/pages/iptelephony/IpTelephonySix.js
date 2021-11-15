@@ -13,7 +13,13 @@ export default class SimpleSlider extends Component {
         return (
             <div className="ipt-corousel ">
 
-                <div className="container ipt-corousel-child position-relative">
+                <div  data-aos="fade-up"
+                      data-aos-offset="100"
+                      data-aos-duration="700"
+                      data-aos-easing="ease-in-out"
+                      data-aos-mirror="true"
+                      data-aos-once="false"
+                      className="container ipt-corousel-child position-relative">
                     <div className="line26">
                         <div className="line-insert">
                             <svg width="55" height="853" viewBox="0 0 55 853" fill="none"

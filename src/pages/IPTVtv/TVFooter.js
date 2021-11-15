@@ -33,11 +33,22 @@ const TvFooter = () => {
             <div className="container tv-footer-child">
                 <div className="row">
                     <div className="col-md-5">
-                        <img src="images/icon/tvfooter.png" alt=""/>
+                        <img data-aos="fade-up"
+                             data-aos-easing="ease-out-cubic"
+                             data-aos-duration="700"
+
+                             src="images/icon/tvfooter.png" alt=""/>
                     </div>
                     <div className="col-md-7">
-                        <h4 className="font-family-medium">Приятные бонусы при подключении интернета</h4>
-                        <p>Обеспечение пользователей услугами высококачественного интернета является нашей основной
+                        <h4 data-aos="fade-up"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="700"
+                            className="font-family-medium">Приятные бонусы при подключении интернета</h4>
+                        <p data-aos="fade-up"
+                           data-aos-easing="ease-out-cubic"
+                           data-aos-duration="700"
+                           data-aos-delay="200"
+                        >Обеспечение пользователей услугами высококачественного интернета является нашей основной
                             задачей. Но, мы стремимся быть ближе к нашим абонентам и дарим Вам бесплатный доступ к IPTV
                             и доступным каналам при подключении нашего высокоскоростного интернета</p>
                     </div>

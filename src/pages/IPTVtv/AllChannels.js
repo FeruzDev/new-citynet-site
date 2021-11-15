@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import NavbarGeneral from "../navbar/NavbarGeneral";
 import DisplayNavbar from "../navbar/DisplayNavbar";
 import IptelephonyEight from "../iptelephony/IptelephonyEight";
 import NavbarGeneralThree from "../navbar/NavbarGeneralThree";
@@ -36,7 +35,11 @@ const AllChannels = () => {
                       allChannels.map(item => (
 
                           <>
-                              <h2 className="font-family-medium mt-5">{item.title}</h2>
+                              <h2 data-aos="fade-up"
+                                  data-aos-easing="ease-out-cubic"
+                                  data-aos-duration="700"
+                                  data-aos-delay="100"
+                                  className="font-family-medium mt-5">{item.title}</h2>
 
 
 
@@ -46,7 +49,10 @@ const AllChannels = () => {
                                   {
                                       item.channels?.map(item2=>(
 
-                                          <div className="col-md-2">
+                                          <div data-aos="fade-up"
+                                               data-aos-easing="ease-out-cubic"
+                                               data-aos-duration="700"
+                                               className="col-md-2">
                                               <img src={item2.get_img_url} alt=""/>
 
                                               <h4>    {item2.title}      </h4>

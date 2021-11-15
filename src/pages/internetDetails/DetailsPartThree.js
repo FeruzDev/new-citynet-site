@@ -4,31 +4,68 @@ const DetailsPartThree = () => {
     return (
         <div className="details-part-three position-relative">
             <div className="container">
-                <h3 className="font-family-medium">Какие цели мы преследуем и что можем предложить нашей клиентуре</h3>
-                <h5 className="font-family-medium">Целями компании являются создание единого городского информационного пространства и предоставление
+                <h3 data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="700"
+
+                    className="font-family-medium">Какие цели мы преследуем и что можем предложить нашей клиентуре</h3>
+                <h5
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="700"
+
+                    className="font-family-medium">Целями компании являются создание единого городского информационного пространства и предоставление
                     максимального количества сервисов и услуг клиентам сети. В рамках одного подключения полного пакета
                     мы можем предоставить такие услуги как:
                 </h5>
 
 
 
-                <p>                •	Подключение высокоскоростного и безлимитного Интернета;
+                <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                >                •	Подключение высокоскоростного и безлимитного Интернета;
                 </p>
-                <p>                •	IP телефония;
+                <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                >                •	IP телефония;
                 </p>
-                <p>                •	VPN;
+                <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                >                •	VPN;
                 </p>
-                <p>                •	IP телевидение;
+                <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                >                •	IP телевидение;
                 </p>
-                <p>                •	Видеонаблюдение;
+                <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                >                •	Видеонаблюдение;
                 </p>
-                <p>
+                <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                >
                     •	Хостинг;
 
                 </p>
 
 
-                <h5 className="font-family-medium">
+                <h5 data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                    className="font-family-medium">
                     К тому же, у вас будет возможность воспользоваться услугами интерактивного телевидения, которые дают возможность:
                 </h5>
 
@@ -40,22 +77,46 @@ const DetailsPartThree = () => {
 
 
 
-                <p>
+                <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                >
                     •	пользование видеотекой с огромным выбором передач и фильмов;
                 </p>
-                <p>
+                <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                >
                     •	просмотр каналов кабельного/спутникового/центрального ТВ в любое время с дополнительной функцией «удаление» рекламы»;
                 </p>
-                <p>
+                <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                >
                     •	доступ к сетевым играм;
                 </p>
-                <p>
+                <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                >
                     •	общение с использованием экрана телевизора;
                 </p>
-                <p>
+                <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                >
                     •	оформление своих подписок, которые самостоятельно настроили;
                 </p>
-                <p>
+                <p data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="700"
+                         data-aos-delay="100"
+                >
                     •	доступ к интернету с выводом на экран.
                 </p>
 
