@@ -22,9 +22,10 @@ import NewsDetailPair from "./pages/forNews/NewsDetailPair";
 import AOS from 'aos';
 
 function App() {
+    AOS.init();
 
     AOS.init({
-
+        once: "true"
     });
 
     return (

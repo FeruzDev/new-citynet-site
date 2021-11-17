@@ -19,10 +19,13 @@ const MainNews = () => {
     } , [])
     return (
         <div className="main-news" id="news">
-            <div className="container">
-                <div data-aos="fade-up"
-                     data-aos-easing="ease-out-cubic"
-                     data-aos-duration="700"
+            <div data-aos="fade-up"
+
+                 data-aos-duration="700"
+                 data-aos-easing="ease-in-out"
+
+                 className="container">
+                <div
 
                      className="news-main-title">
 
@@ -31,14 +34,9 @@ const MainNews = () => {
                     </h2>
                     <Link to="/all-news">Все новости</Link>
                 </div>
-                <div  data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-duration="700"
-                      data-aos-easing="ease-in-out"
-                      data-aos-mirror="true"
-                      data-aos-once="false"
+                <div
                       className="row"
-                      data-aos-delay="100"
+
                 >
 
 

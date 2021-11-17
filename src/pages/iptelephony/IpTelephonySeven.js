@@ -1,13 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import {API_PATH_RU} from "../../tools/constants";
+import Slider from "react-slick";
 
 const IpTelephonySeven = () => {
 
     const [partners ,setPartners] = useState([])
+    const [count ,setCount] = useState(0)
+    const [count2 ,setCount2] = useState(4)
 
 
     useEffect(() => {
+
+        console.log(count, count2)
 
 
 
@@ -31,12 +36,27 @@ const IpTelephonySeven = () => {
                 console.log(err)
             })
 
-        setTimeout(() => {
-            console.log('Hello, World!')
-        }, 3000);
+
+
 
     }, [])
 
+
+
+
+    const settings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+        rows: 2,
+        slidesPerRow: 1
+    };
 
 
     return (
@@ -55,41 +75,36 @@ const IpTelephonySeven = () => {
                 </div>
             </div>
 
-            <div  id='partner' className="container iptelephony-part-seven-child ">
+            <div  data-aos="fade-up"
+
+                  data-aos-duration="700"
+                  data-aos-easing="ease-in-out"
+
+
+                  id='partner' className="container iptelephony-part-seven-child ">
                 <h4   className="font-family-medium">Наши партнеры</h4>
 
 
-                <div className="row d-flex justify-content-between m-0">
+              <div className="shadow-box">
+                  <div className="provider-opacity"></div>
+                  <Slider {...settings}>
 
-                {
+                      {
 
-                    partners.slice(0, 4).map(item =>(
-                            <div  className="row">
-                                <a href={item.link} className="d-flex align-items-center"> <img src={item.get_img_url} alt=""/></a>
-                            </div>
+                          partners?.map(item =>(
+                              <div className="box">
+                                  <a href={item.link} className="d-flex align-items-center"> <img src={item.get_img_url} alt=""/></a>
 
-                    ))
-                }
-
-
-                </div>
-
-                <div className="row d-flex justify-content-between m-0">
-
-                {
-
-                    partners.slice(4, 8).map(item =>(
-                            <div className="row">
-                                <a href={item.link} className="d-flex align-items-center"> <img src={item.get_img_url} alt=""/></a>
-
-                            </div>
+                              </div>
 
 
 
-                    ))
-                }
-                </div>
+                          ))
+                      }
+                  </Slider>
+                  <div className="provider-opacity2"></div>
 
+              </div>
 
             </div>
 

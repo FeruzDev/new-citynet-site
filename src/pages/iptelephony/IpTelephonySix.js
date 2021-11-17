@@ -14,11 +14,10 @@ export default class SimpleSlider extends Component {
             <div className="ipt-corousel ">
 
                 <div  data-aos="fade-up"
-                      data-aos-offset="100"
+
                       data-aos-duration="700"
                       data-aos-easing="ease-in-out"
-                      data-aos-mirror="true"
-                      data-aos-once="false"
+
                       className="container ipt-corousel-child position-relative">
                     <div className="line26">
                         <div className="line-insert">

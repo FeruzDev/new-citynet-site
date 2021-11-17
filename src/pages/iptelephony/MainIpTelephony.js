@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import IpTelephonyTwo from "./IpTelephonyTwo";
 import IpTelephonyThree from "./IpTelephonyThree";
 import IpTelephonyFour from "./IpTelephonyFour";
@@ -9,8 +9,10 @@ import IptelephonyEight from "./IptelephonyEight";
 import HomeBanner from "../home/HomeBanner";
 import NavbarHome from "../navbar/NavbarHome";
 import MainNews from "../forNews/MainNews";
+import {toast} from "react-toastify";
 
 const MainIpTelephony = () => {
+
 
     return (
 

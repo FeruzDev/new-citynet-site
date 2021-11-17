@@ -200,7 +200,7 @@ option[value=""][disabled] {
 
           font-size: 36px;
         line-height: 42px;
-        width: 60%;
+        width: 50%;
         color: white;
       }
 
@@ -209,7 +209,7 @@ option[value=""][disabled] {
         font-size: 18px;
         margin-top: 10px;
         line-height: 26px;;
-        width: 50%;
+        width: 40%;
         height: 63px;
         color: #FFFFFF;
       }
@@ -2910,9 +2910,48 @@ button.slick-arrow.slick-next {
       color: #171717;
     }
 
-    .row {
-      margin-top: 100px;
+    .shadow-box{
+      position: relative;
+      .provider-opacity2 {
+        position: absolute;
+        z-index: 2;
+        width: 50px;
+        height: 100%;
+        background-color: white;
+        right: -10px;
+        top: 0;
+        box-shadow: -15px 0px 20px 0px white;
+      }
 
+      .provider-opacity  {
+        position: absolute;
+        z-index: 2;
+        width: 50px;
+        height: 100%;
+        background-color: white;
+        left: -10px;
+        box-shadow: -15px 0px 20px 0px white;
+        transform: rotate(180deg);
+      }
+
+    }
+    .box {
+      margin-top:100px;
+
+      margin-left: 10px;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+        }
+      }
       .col-md-3 {
 
       }

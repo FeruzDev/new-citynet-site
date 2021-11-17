@@ -10,11 +10,9 @@ const IpTelephonyThree = () => {
 
                 <div className="iptelephony-part-three-child container">
                     <div data-aos="fade-up"
-                         data-aos-offset="100"
                          data-aos-duration="700"
                          data-aos-easing="ease-in-out"
-                         data-aos-mirror="true"
-                         data-aos-once="false"
+
                          className="row" >
                         <div   className="col-md-6">
                             <img src="/images/icon/iptelephonyfour.png" alt=""/>
