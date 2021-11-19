@@ -54,9 +54,9 @@ const IptelephonyEight = () => {
                 <div className="eight-footer">
                     <div><p>EazyCamper. All rights reserved. </p></div>
                     <div>
-                        <a href="#"><img src="/images/icon/iptinstagrm.png" alt=""/></a>
-                        <a href="#"><img src="/images/icon/ipttelegram.png" alt=""/></a>
-                        <a href="#"><img src="/images/icon/iptfacebook.png" alt=""/></a>
+                        <a  target="_blank" href="https://www.instagram.com/citynet.uz/"><img src="/images/icon/iptinstagrm.png" alt=""/></a>
+                        <a  target="_blank" href="https://www.facebook.com/CITYNET.uz/?hc_ref=ARQvY-U9sMXimoeLrrjrcRZhIReXVj2uDfNm0M2knofLbzhB2PMLapRiNVQhRoo2T2A&__xts__[0]=68.ARCOqj1RtjhB26acCbqIimU_9Im-iIUzOqPfoAOjJs_b--dxpSKLKsIcI4bkwpw-d3syG5F4Vi1iJ-yWQeAm8CTm-U2pUznBPVWqnhb_Aw1LCS1p3VqH1VSSKwpYf5M0bz-6AQsR1hJLrZGthxqs22PHDOUPsca9NrAC4hmTbR0_QqwBxq3AXL2GNY_VlYdMWvjZzMjNch7U10H-qPkwWo76vtkHBVCAIMGxfh5kVKN1MN54KLvJ-hShdu8WVmIZ17ONxD_TqhJ7id0SF8PCnGohgMBPQBeee8KmfwLCebqYLC50DcDt4_a0gBNIL0pf&__tn__=kC-R"><img src="/images/icon/ipttelegram.png" alt=""/></a>
+                        <a target="_blank"  href="https://t.me/citynet_uzb"><img src="/images/icon/iptfacebook.png" alt=""/></a>
                     </div>
                 </div>
             </div>

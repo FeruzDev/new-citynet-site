@@ -2229,14 +2229,15 @@ nav {
       margin-top: 68px;
     }
 
-    .row {
+    .row-carousel {
       margin-bottom: 50px;
 
-      .col-md-4, .col-sm-6 {
+
         .boxed {
           overflow: hidden;
           width: 100%;
           border-radius: 18px;
+
 
           img {
             width: 100%;
@@ -2251,11 +2252,12 @@ nav {
         }
 
         h5 {
-          margin-top: 32px;
+          margin-top: 24px;
               font-size: 24px;
           line-height: 28px;
 
           color: #171717;
+          margin-left: 20px;
         }
 
         p {
@@ -2264,7 +2266,7 @@ nav {
 
           color: #878B93;
         }
-      }
+
 
     }
   }

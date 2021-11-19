@@ -1,16 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import {API_PATH_RU} from "../../tools/constants";
+import Slider from "react-slick"
+
+
 
 const IptvPartFour = () => {
 
 
     const [ins ,setIns] = useState([])
 
-
     useEffect(() => {
-
-
 
         axios.get(API_PATH_RU + "index/v1/objects/")
             .then(res => {
@@ -22,8 +22,17 @@ const IptvPartFour = () => {
 
     }, [])
 
-
-
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear"
+    };
 
     return (
         <div id="installation"className="iptv-part-four position-relative">
@@ -46,25 +55,45 @@ const IptvPartFour = () => {
                     data-aos-duration="700"
 
                     className="font-family-medium">Проделанные работы</h4>
-                <div className="row">
+                <div className="row-carousel">
 
-                    {
-                        ins.slice(0, 3).map(item => (
-                            <div  data-aos="fade-up"
-                                  data-aos-easing="ease-out-cubic"
-                                  data-aos-duration="700"
-                                  className="col-md-4 col-sm-6">
-                                <div className="boxed">
-                                    <img src={item.get_img_url} alt=""/>
+                    {/*{*/}
+                    {/*    ins.slice(0, 3).map(item => (*/}
+                    {/*        <div  data-aos="fade-up"*/}
+                    {/*              data-aos-easing="ease-out-cubic"*/}
+                    {/*              data-aos-duration="700"*/}
+                    {/*              className="col-md-4 col-sm-6">*/}
+                    {/*            <div className="boxed">*/}
+                    {/*                <img src={item.get_img_url} alt=""/>*/}
+                    {/*            </div>*/}
+                    {/*            <h5 className="font-family-medium">{item.title}</h5>*/}
+                    {/*            <p>{item.content}</p>*/}
+                    {/*        </div>*/}
+
+
+                    {/*    ))*/}
+                    {/*}*/}
+
+
+                    <Slider {...settings}>
+
+                        {
+                            ins.map(item => (
+                                <div data-aos="fade-up"
+                                     data-aos-easing="ease-out-cubic"
+                                     data-aos-duration="700"
+                                     className="p-3 w-100">
+                                    <div className="boxed">
+                                        <img src={item.get_img_url} alt=""/>
+                                    </div>
+                                    <h5 className="font-family-medium">{item.title}</h5>
+                                    <p>{item?.content}</p>
                                 </div>
-                                <h5 className="font-family-medium">{item.title}</h5>
-                                <p>{item.content}</p>
-                            </div>
 
 
-                        ))
-                    }
-
+                            ))
+                        }
+                    </Slider>
 
 
 
